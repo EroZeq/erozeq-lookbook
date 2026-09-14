@@ -1,109 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="dark" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EroZeq's Mod Assets Lookbook</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>EroZeq's Assets Lookbook</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "secondary-container": "#00b55d", "secondary": "#4de082", "on-primary-fixed": "#1b0062",
+                        "tertiary": "#c8c6c6", "on-primary-fixed-variant": "#4617cb", "surface-variant": "#353535",
+                        "secondary-fixed": "#6dfe9c", "surface-container-high": "#2a2a2a", "surface-bright": "#393939",
+                        "on-secondary-fixed-variant": "#005227", "on-surface": "#e5e2e1", "on-error": "#690005",
+                        "outline": "#938ea1", "on-surface-variant": "#c9c4d8", "tertiary-fixed": "#e4e2e1",
+                        "error-container": "#93000a", "on-tertiary-fixed": "#1b1c1c", "primary-fixed-dim": "#c9beff",
+                        "on-tertiary": "#303030", "secondary-fixed-dim": "#4de082", "surface-container-lowest": "#0e0e0e",
+                        "on-secondary-fixed": "#00210c", "surface-tint": "#c9beff", "primary": "#c9beff",
+                        "tertiary-container": "#929090", "on-error-container": "#ffdad6", "primary-fixed": "#e6deff",
+                        "inverse-surface": "#e5e2e1", "background": "#131313", "surface-container-low": "#1c1b1b",
+                        "error": "#ffb4ab", "surface": "#131313", "on-primary-container": "#290089",
+                        "on-tertiary-fixed-variant": "#474747", "on-background": "#e5e2e1", "outline-variant": "#484555",
+                        "inverse-on-surface": "#313030", "on-secondary-container": "#003e1c", "inverse-primary": "#5f3de3",
+                        "on-secondary": "#003919", "on-primary": "#30009b", "on-tertiary-container": "#292a2a",
+                        "primary-container": "#937dff", "surface-dim": "#131313", "surface-container-highest": "#353535",
+                        "tertiary-fixed-dim": "#c8c6c6", "surface-container": "#20201f"
+                    },
+                    fontFamily: { "headline": ["Space Grotesk"], "body": ["Be Vietnam Pro"], "label": ["Space Grotesk"] },
+                    borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .pixel-grid { background-image: radial-gradient(rgba(201, 190, 255, 0.05) 1px, transparent 1px); background-size: 20px 20px; }
+        html { scroll-behavior: smooth; }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            background-color: var(--surface-container-highest, #353535);
+            border: 2px solid var(--surface-variant, #353535);
+            aspect-ratio: 16 / 9;
+            transition: all 0.3s ease;
+        }
+        .gallery-item:hover {
+            border-color: var(--primary, #c9beff);
+            transform: translateY(-4px);
+            box-shadow: 8px 8px 0px 0px rgba(201, 190, 255, 0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .item-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(19, 19, 19, 0.95), transparent);
+            padding: 1.5rem 1rem 1rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover .item-overlay {
+            transform: translateY(0);
+        }
+        .item-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+            color: var(--on-background, #e5e2e1);
+        }
+    </style>
 </head>
-<body>
-    <div class="background-elements">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary min-h-screen flex flex-col">
+
+<!-- Header -->
+<header class="sticky top-0 w-full flex justify-between items-center px-4 sm:px-6 h-16 sm:h-20 bg-background/90 backdrop-blur-md z-50 border-b-2 border-surface-container-high">
+    <div class="flex items-center gap-3 sm:gap-4 min-w-0">
+        <div class="text-xl sm:text-2xl font-black text-[#7A5CFF] bg-surface-container-high px-3 py-1 border-0 font-headline uppercase tracking-tighter shrink-0">E</div>
+        <span class="font-headline font-black text-base sm:text-xl tracking-tighter text-primary uppercase truncate max-w-[45vw] sm:max-w-none">EroZeq's Assets</span>
+    </div>
+    <nav class="hidden md:flex items-center gap-8 h-full">
+        <a class="font-headline uppercase tracking-tighter text-on-surface-variant pb-1 hover:text-primary transition-colors flex items-center gap-2" href="#">
+            <span class="material-symbols-outlined text-xl">photo_library</span>
+            Lookbook
+        </a>
+        <a class="font-headline uppercase tracking-tighter text-on-surface-variant pb-1 hover:text-primary transition-colors flex items-center gap-2" href="https://github.com/EroZeq/erozeq-lookbook" target="_blank">
+            <span class="material-symbols-outlined text-xl">code</span>
+            GitHub Repo
+        </a>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<main class="flex-grow py-12 px-4 md:px-12 max-w-7xl mx-auto w-full pixel-grid">
+    
+    <div class="mb-12 border-b-4 border-surface-container-high pb-4">
+        <h1 class="font-headline text-4xl md:text-5xl font-black uppercase tracking-tighter text-on-surface-variant mb-2">Mod Assets <span class="text-primary">Lookbook</span></h1>
+        <p class="text-on-surface-variant font-body">A curated collection of Minecraft modding assets, gameplay recordings, and logic screenshots.</p>
     </div>
 
-    <main class="container">
-        <header class="header">
-            <h1>EroZeq's <span>Mod Assets</span></h1>
-            <p>A curated lookbook of Minecraft modding assets, gameplay recordings, and logic screenshots.</p>
-        </header>
-
-        <div class="gallery">
-            <!-- Icon -->
-            <div class="gallery-item" data-type="icon">
-                <img src="assets/images/icon.png" alt="Mod Icon" loading="lazy">
-                <div class="item-overlay">
-                    <span class="item-title">Mod Icon</span>
-                </div>
-            </div>
-
-            <!-- Gameplay -->
-            <div class="gallery-item" data-type="gameplay">
-                <img src="assets/images/gameplay_1.png" alt="Gameplay 1" loading="lazy">
-                <div class="item-overlay"><span class="item-title">Gameplay Preview 1</span></div>
-            </div>
-            <div class="gallery-item" data-type="gameplay">
-                <img src="assets/images/gameplay_2.png" alt="Gameplay 2" loading="lazy">
-                <div class="item-overlay"><span class="item-title">Gameplay Preview 2</span></div>
-            </div>
-            <div class="gallery-item" data-type="gameplay">
-                <img src="assets/images/gameplay_3.png" alt="Gameplay 3" loading="lazy">
-                <div class="item-overlay"><span class="item-title">Gameplay Preview 3</span></div>
-            </div>
-
-            <!-- Items & Logic -->
-            <div class="gallery-item" data-type="logic">
-                <img src="assets/images/all_items.png" alt="All Items" loading="lazy">
-                <div class="item-overlay"><span class="item-title">All Items Layout</span></div>
-            </div>
-            <div class="gallery-item" data-type="logic">
-                <img src="assets/images/tnt_logic.png" alt="TNT Logic" loading="lazy">
-                <div class="item-overlay"><span class="item-title">TNT Logic</span></div>
-            </div>
-
-            <!-- Recordings (GIFs) -->
-            <div class="gallery-item wide" data-type="recording">
-                <img src="assets/images/how_to_make_portal.gif" alt="How to make portal" loading="lazy">
-                <div class="item-overlay"><span class="item-title">How To Make a Portal (GIF)</span></div>
-            </div>
-            <div class="gallery-item" data-type="recording">
-                <img src="assets/images/recording_1.gif" alt="Recording 1" loading="lazy">
-                <div class="item-overlay"><span class="item-title">Gameplay Recording (GIF)</span></div>
-            </div>
-            <div class="gallery-item" data-type="recording">
-                <img src="assets/images/video_project_5.gif" alt="Video Project 5" loading="lazy">
-                <div class="item-overlay"><span class="item-title">Video Project 5 (GIF)</span></div>
-            </div>
-            <div class="gallery-item" data-type="recording">
-                <img src="assets/images/video_project_7.gif" alt="Video Project 7" loading="lazy">
-                <div class="item-overlay"><span class="item-title">Video Project 7 (GIF)</span></div>
-            </div>
-            <div class="gallery-item" data-type="recording">
-                <img src="assets/images/video_project_8.gif" alt="Video Project 8" loading="lazy">
-                <div class="item-overlay"><span class="item-title">Video Project 8 (GIF)</span></div>
-            </div>
-            <div class="gallery-item" data-type="recording">
-                <img src="assets/images/video_project_9.gif" alt="Video Project 9" loading="lazy">
-                <div class="item-overlay"><span class="item-title">Video Project 9 (GIF)</span></div>
-            </div>
-
-            <!-- Screenshots -->
-            <div class="gallery-item" data-type="screenshot">
-                <img src="assets/images/screenshot_1.png" alt="Screenshot 1" loading="lazy">
-                <div class="item-overlay"><span class="item-title">Screenshot 1</span></div>
-            </div>
-            <div class="gallery-item" data-type="screenshot">
-                <img src="assets/images/screenshot_2.png" alt="Screenshot 2" loading="lazy">
-                <div class="item-overlay"><span class="item-title">Screenshot 2</span></div>
-            </div>
-            <div class="gallery-item" data-type="screenshot">
-                <img src="assets/images/screenshot_3.png" alt="Screenshot 3" loading="lazy">
-                <div class="item-overlay"><span class="item-title">Screenshot 3</span></div>
-            </div>
-            <div class="gallery-item" data-type="screenshot">
-                <img src="assets/images/screenshot_4.png" alt="Screenshot 4" loading="lazy">
-                <div class="item-overlay"><span class="item-title">Screenshot 4</span></div>
-            </div>
-            <div class="gallery-item" data-type="screenshot">
-                <img src="assets/images/screenshot_5.png" alt="Screenshot 5" loading="lazy">
-                <div class="item-overlay"><span class="item-title">Screenshot 5</span></div>
-            </div>
-            <div class="gallery-item" data-type="screenshot">
-                <img src="assets/images/screenshot_6.png" alt="Screenshot 6" loading="lazy">
-                <div class="item-overlay"><span class="item-title">Screenshot 6</span></div>
-            </div>
+    <!-- Gallery Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Icon -->
+        <div class="gallery-item">
+            <img src="assets/images/icon.png" alt="Mod Icon" loading="lazy">
+            <div class="item-overlay"><span class="item-title">Mod Icon</span></div>
         </div>
-    </main>
+
+        <!-- Gameplay -->
+        <div class="gallery-item">
+            <img src="assets/images/gameplay_1.png" alt="Gameplay 1" loading="lazy">
+            <div class="item-overlay"><span class="item-title">Gameplay Preview 1</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/gameplay_2.png" alt="Gameplay 2" loading="lazy">
+            <div class="item-overlay"><span class="item-title">Gameplay Preview 2</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/gameplay_3.png" alt="Gameplay 3" loading="lazy">
+            <div class="item-overlay"><span class="item-title">Gameplay Preview 3</span></div>
+        </div>
+
+        <!-- Logic -->
+        <div class="gallery-item">
+            <img src="assets/images/all_items.png" alt="All Items" loading="lazy">
+            <div class="item-overlay"><span class="item-title">All Items Layout</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/tnt_logic.png" alt="TNT Logic" loading="lazy">
+            <div class="item-overlay"><span class="item-title">TNT Logic</span></div>
+        </div>
+
+        <!-- Recordings -->
+        <div class="gallery-item sm:col-span-2 lg:col-span-2">
+            <img src="assets/images/how_to_make_portal.gif" alt="How to make portal" loading="lazy">
+            <div class="item-overlay"><span class="item-title">How To Make a Portal (GIF)</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/recording_1.gif" alt="Recording 1" loading="lazy">
+            <div class="item-overlay"><span class="item-title">Gameplay Recording (GIF)</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/video_project_5.gif" alt="Video Project 5" loading="lazy">
+            <div class="item-overlay"><span class="item-title">Video Project 5 (GIF)</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/video_project_7.gif" alt="Video Project 7" loading="lazy">
+            <div class="item-overlay"><span class="item-title">Video Project 7 (GIF)</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/video_project_8.gif" alt="Video Project 8" loading="lazy">
+            <div class="item-overlay"><span class="item-title">Video Project 8 (GIF)</span></div>
+        </div>
+        <div class="gallery-item sm:col-span-2 lg:col-span-2">
+            <img src="assets/images/video_project_9.gif" alt="Video Project 9" loading="lazy">
+            <div class="item-overlay"><span class="item-title">Video Project 9 (GIF)</span></div>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="gallery-item">
+            <img src="assets/images/screenshot_1.png" alt="Screenshot 1" loading="lazy">
+            <div class="item-overlay"><span class="item-title">Screenshot 1</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/screenshot_2.png" alt="Screenshot 2" loading="lazy">
+            <div class="item-overlay"><span class="item-title">Screenshot 2</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/screenshot_3.png" alt="Screenshot 3" loading="lazy">
+            <div class="item-overlay"><span class="item-title">Screenshot 3</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/screenshot_4.png" alt="Screenshot 4" loading="lazy">
+            <div class="item-overlay"><span class="item-title">Screenshot 4</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/screenshot_5.png" alt="Screenshot 5" loading="lazy">
+            <div class="item-overlay"><span class="item-title">Screenshot 5</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/screenshot_6.png" alt="Screenshot 6" loading="lazy">
+            <div class="item-overlay"><span class="item-title">Screenshot 6</span></div>
+        </div>
+
+    </div>
+</main>
+
+<footer class="w-full py-8 px-8 flex flex-col md:flex-row justify-between items-center gap-6 bg-surface-container-lowest border-t-4 border-surface-container-low mt-auto">
+    <div class="flex flex-col items-center md:items-start gap-2">
+        <span class="text-lg font-bold text-primary font-headline uppercase tracking-tighter">EroZeq's Assets</span>
+        <p class="font-body text-sm text-on-surface-variant">© 2026 EroZeq. All rights reserved.</p>
+    </div>
+    <div class="flex gap-8">
+        <a class="font-body text-sm text-on-surface-variant hover:text-secondary underline decoration-2 transition-colors" href="https://github.com/EroZeq/erozeq-lookbook">GitHub Repo</a>
+        <a class="font-body text-sm text-on-surface-variant hover:text-secondary underline decoration-2 transition-colors" href="https://github.com/EroZeq">EroZeq's GitHub</a>
+    </div>
+</footer>
+
 </body>
 </html>
