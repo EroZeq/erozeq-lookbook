@@ -85,6 +85,15 @@
             letter-spacing: -0.02em;
             color: var(--on-background, #e5e2e1);
         }
+        .mod-section-title {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--surface-container-high, #2a2a2a);
+        }
     </style>
 </head>
 <body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary min-h-screen flex flex-col">
@@ -96,13 +105,11 @@
         <span class="font-headline font-black text-base sm:text-xl tracking-tighter text-primary uppercase truncate max-w-[45vw] sm:max-w-none">EroZeq's Assets</span>
     </div>
     <nav class="hidden md:flex items-center gap-8 h-full">
-        <a class="font-headline uppercase tracking-tighter text-on-surface-variant pb-1 hover:text-primary transition-colors flex items-center gap-2" href="#">
-            <span class="material-symbols-outlined text-xl">photo_library</span>
-            Lookbook
+        <a class="font-headline uppercase tracking-tighter text-on-surface-variant pb-1 hover:text-primary transition-colors flex items-center gap-2" href="#universal-portals">
+            Universal Portals
         </a>
-        <a class="font-headline uppercase tracking-tighter text-on-surface-variant pb-1 hover:text-primary transition-colors flex items-center gap-2" href="https://github.com/EroZeq/erozeq-lookbook" target="_blank">
-            <span class="material-symbols-outlined text-xl">code</span>
-            GitHub Repo
+        <a class="font-headline uppercase tracking-tighter text-on-surface-variant pb-1 hover:text-primary transition-colors flex items-center gap-2" href="#tnt-fall-blocks">
+            TNT - Fall Blocks
         </a>
     </nav>
 </header>
@@ -110,21 +117,25 @@
 <!-- Main Content -->
 <main class="flex-grow py-12 px-4 md:px-12 max-w-7xl mx-auto w-full pixel-grid">
     
-    <div class="mb-12 border-b-4 border-surface-container-high pb-4">
+    <div class="mb-8">
         <h1 class="font-headline text-4xl md:text-5xl font-black uppercase tracking-tighter text-on-surface-variant mb-2">Mod Assets <span class="text-primary">Lookbook</span></h1>
-        <p class="text-on-surface-variant font-body">A curated collection of Minecraft modding assets, gameplay recordings, and logic screenshots.</p>
+        <p class="text-on-surface-variant font-body">A curated collection of Minecraft modding assets, logically grouped by project.</p>
     </div>
 
-    <!-- Gallery Grid -->
+    <!-- Universal Portals Section -->
+    <div id="universal-portals" class="mod-section-title">
+        <span class="material-symbols-outlined text-3xl text-primary">portal</span>
+        <h2 class="font-headline text-3xl font-black uppercase tracking-tighter text-on-surface">Universal Portals</h2>
+    </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        
-        <!-- Icon -->
-        <div class="gallery-item">
-            <img src="assets/images/icon.png" alt="Mod Icon" loading="lazy">
-            <div class="item-overlay"><span class="item-title">Mod Icon</span></div>
+        <div class="gallery-item sm:col-span-2 lg:col-span-2">
+            <img src="assets/images/how_to_make_portal.gif" alt="How to make portal" loading="lazy">
+            <div class="item-overlay"><span class="item-title">How To Make a Portal (GIF)</span></div>
         </div>
-
-        <!-- Gameplay -->
+        <div class="gallery-item">
+            <img src="assets/images/all_items.png" alt="All Items" loading="lazy">
+            <div class="item-overlay"><span class="item-title">All Items Layout</span></div>
+        </div>
         <div class="gallery-item">
             <img src="assets/images/gameplay_1.png" alt="Gameplay 1" loading="lazy">
             <div class="item-overlay"><span class="item-title">Gameplay Preview 1</span></div>
@@ -137,47 +148,17 @@
             <img src="assets/images/gameplay_3.png" alt="Gameplay 3" loading="lazy">
             <div class="item-overlay"><span class="item-title">Gameplay Preview 3</span></div>
         </div>
-
-        <!-- Logic -->
-        <div class="gallery-item">
-            <img src="assets/images/all_items.png" alt="All Items" loading="lazy">
-            <div class="item-overlay"><span class="item-title">All Items Layout</span></div>
-        </div>
-        <div class="gallery-item">
-            <img src="assets/images/tnt_logic.png" alt="TNT Logic" loading="lazy">
-            <div class="item-overlay"><span class="item-title">TNT Logic</span></div>
-        </div>
-
-        <!-- Recordings -->
         <div class="gallery-item sm:col-span-2 lg:col-span-2">
-            <img src="assets/images/how_to_make_portal.gif" alt="How to make portal" loading="lazy">
-            <div class="item-overlay"><span class="item-title">How To Make a Portal (GIF)</span></div>
-        </div>
-        <div class="gallery-item">
-            <img src="assets/images/recording_1.gif" alt="Recording 1" loading="lazy">
+            <img src="assets/images/recording_1.gif" alt="Recording" loading="lazy">
             <div class="item-overlay"><span class="item-title">Gameplay Recording (GIF)</span></div>
         </div>
         <div class="gallery-item">
-            <img src="assets/images/video_project_5.gif" alt="Video Project 5" loading="lazy">
-            <div class="item-overlay"><span class="item-title">Video Project 5 (GIF)</span></div>
-        </div>
-        <div class="gallery-item">
-            <img src="assets/images/video_project_7.gif" alt="Video Project 7" loading="lazy">
-            <div class="item-overlay"><span class="item-title">Video Project 7 (GIF)</span></div>
-        </div>
-        <div class="gallery-item">
-            <img src="assets/images/video_project_8.gif" alt="Video Project 8" loading="lazy">
-            <div class="item-overlay"><span class="item-title">Video Project 8 (GIF)</span></div>
-        </div>
-        <div class="gallery-item sm:col-span-2 lg:col-span-2">
-            <img src="assets/images/video_project_9.gif" alt="Video Project 9" loading="lazy">
-            <div class="item-overlay"><span class="item-title">Video Project 9 (GIF)</span></div>
-        </div>
-
-        <!-- Screenshots -->
-        <div class="gallery-item">
             <img src="assets/images/screenshot_1.png" alt="Screenshot 1" loading="lazy">
             <div class="item-overlay"><span class="item-title">Screenshot 1</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/screenshot_1_copy.png" alt="Screenshot 1 Alt" loading="lazy">
+            <div class="item-overlay"><span class="item-title">Screenshot 1 (Alt)</span></div>
         </div>
         <div class="gallery-item">
             <img src="assets/images/screenshot_2.png" alt="Screenshot 2" loading="lazy">
@@ -199,8 +180,44 @@
             <img src="assets/images/screenshot_6.png" alt="Screenshot 6" loading="lazy">
             <div class="item-overlay"><span class="item-title">Screenshot 6</span></div>
         </div>
-
+        <div class="gallery-item">
+            <img src="assets/images/icon.png" alt="Icon" loading="lazy">
+            <div class="item-overlay"><span class="item-title">Portal Icon</span></div>
+        </div>
     </div>
+
+    <!-- TNT - Fall Blocks Section -->
+    <div id="tnt-fall-blocks" class="mod-section-title">
+        <span class="material-symbols-outlined text-3xl text-error">local_fire_department</span>
+        <h2 class="font-headline text-3xl font-black uppercase tracking-tighter text-on-surface">TNT - Fall Blocks</h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="gallery-item">
+            <img src="assets/images/tnt_logic.png" alt="TNT Logic" loading="lazy">
+            <div class="item-overlay"><span class="item-title">TNT Logic</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/icon_copy.png" alt="Mod Icon" loading="lazy">
+            <div class="item-overlay"><span class="item-title">Mod Icon</span></div>
+        </div>
+        <div class="gallery-item sm:col-span-2 lg:col-span-2">
+            <img src="assets/images/video_project_9.gif" alt="Video Project 9" loading="lazy">
+            <div class="item-overlay"><span class="item-title">Video Project 9 (GIF)</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/video_project_7.gif" alt="Video Project 7" loading="lazy">
+            <div class="item-overlay"><span class="item-title">Video Project 7 (GIF)</span></div>
+        </div>
+        <div class="gallery-item sm:col-span-2 lg:col-span-2">
+            <img src="assets/images/video_project_5.gif" alt="Video Project 5" loading="lazy">
+            <div class="item-overlay"><span class="item-title">Video Project 5 (GIF)</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/video_project_8.gif" alt="Video Project 8" loading="lazy">
+            <div class="item-overlay"><span class="item-title">Video Project 8 (GIF)</span></div>
+        </div>
+    </div>
+
 </main>
 
 <footer class="w-full py-8 px-8 flex flex-col md:flex-row justify-between items-center gap-6 bg-surface-container-lowest border-t-4 border-surface-container-low mt-auto">
