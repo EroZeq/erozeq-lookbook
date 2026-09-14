@@ -47,7 +47,6 @@
             overflow: hidden;
             background-color: var(--surface-container-highest, #353535);
             border: 2px solid var(--surface-variant, #353535);
-            aspect-ratio: 16 / 9;
             transition: all 0.3s ease;
         }
         .gallery-item:hover {
@@ -55,10 +54,10 @@
             transform: translateY(-4px);
             box-shadow: 8px 8px 0px 0px rgba(201, 190, 255, 0.1);
         }
-        .gallery-item img {
+        .gallery-item img, .gallery-item video {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: auto;
+            display: block;
             transition: transform 0.5s ease;
         }
         .gallery-item:hover img {
@@ -129,7 +128,7 @@
     <div id="enchanted-shears" class="mod-section-title">
         <h2 class="font-headline text-2xl sm:text-3xl font-black uppercase tracking-tighter text-on-surface">Enchanted Shears</h2>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
         <div class="gallery-item">
             <img src="assets/images/enchanted-shears/icon.png" alt="Icon" loading="lazy">
             <div class="item-overlay"><span class="item-title">Mod Icon</span></div>
@@ -152,7 +151,7 @@
     <div id="universal-portals" class="mod-section-title">
         <h2 class="font-headline text-2xl sm:text-3xl font-black uppercase tracking-tighter text-on-surface">Universal Portals</h2>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
         <div class="gallery-item sm:col-span-2 lg:col-span-2">
             <img src="assets/images/universal-portals/how_to_make_portal.gif" alt="How to make portal" loading="lazy">
             <div class="item-overlay"><span class="item-title">How To Make a Portal (GIF)</span></div>
@@ -227,7 +226,7 @@
     <div id="tnt-fall-blocks" class="mod-section-title">
         <h2 class="font-headline text-2xl sm:text-3xl font-black uppercase tracking-tighter text-on-surface">TNT - Fall Blocks</h2>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
         <div class="gallery-item">
             <img src="assets/images/tnt-fall-blocks/tnt_logic.png" alt="TNT Logic" loading="lazy">
             <div class="item-overlay"><span class="item-title">TNT Logic</span></div>
@@ -241,7 +240,7 @@
             <div class="item-overlay"><span class="item-title">Gameplay Recording (GIF)</span></div>
         </div>
         <div class="gallery-item sm:col-span-2 lg:col-span-2">
-            <video autoplay loop muted playsinline class="w-full h-full object-cover">
+            <video autoplay loop muted playsinline class="w-full h-auto block">
                 <source src="assets/images/tnt-fall-blocks/recording.mp4" type="video/mp4">
             </video>
             <div class="item-overlay"><span class="item-title">Gameplay Recording (MP4)</span></div>
