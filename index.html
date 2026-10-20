@@ -225,22 +225,22 @@
     <div class="mb-8 flex flex-col lg:flex-row lg:items-end justify-between gap-6">
         <div>
             <h1 class="font-headline text-4xl md:text-5xl font-black uppercase tracking-tighter text-on-surface-variant mb-2">Mod Assets <span class="text-primary">Lookbook</span></h1>
-            <p class="text-on-surface-variant font-body">A curated collection of Minecraft modding assets, logically grouped by project. Najedź na grafikę, aby sprawdzić wagę w MB i skopiować wersję <strong>Normal</strong> lub skompresowaną <strong>Lite</strong>.</p>
+            <p class="text-on-surface-variant font-body">A curated collection of Minecraft modding assets, logically grouped by project. Hover over any asset to inspect file size and copy the <strong>Normal</strong> or <strong>Lite</strong> version.</p>
         </div>
 
         <!-- Toolbar: Display Mode & Copy Format & Bandwidth Summary -->
         <div class="flex flex-wrap items-center gap-3 bg-surface-container-low border-2 border-surface-container-high p-3 shrink-0">
             <div class="flex flex-col pr-3 border-r border-surface-container-high">
-                <span class="font-headline text-[11px] uppercase tracking-wider text-outline font-bold">Transfer strony (Lite)</span>
-                <span id="bandwidth-summary" class="font-headline text-sm font-black text-secondary">Ładowanie statystyk...</span>
+                <span class="font-headline text-[11px] uppercase tracking-wider text-outline font-bold">Page Bandwidth (Lite)</span>
+                <span id="bandwidth-summary" class="font-headline text-sm font-black text-secondary">Loading stats...</span>
             </div>
             <div class="flex items-center gap-2">
-                <button id="toggle-preview-mode" type="button" class="px-3 py-1.5 bg-surface-container-high hover:bg-surface-bright border border-secondary/50 text-xs font-headline font-bold uppercase tracking-wider text-on-surface transition-colors flex items-center gap-1.5" title="Przełącz jakość wyświetlanych na stronie grafik (oszczędzanie transferu)">
+                <button id="toggle-preview-mode" type="button" class="px-3 py-1.5 bg-surface-container-high hover:bg-surface-bright border border-secondary/50 text-xs font-headline font-bold uppercase tracking-wider text-on-surface transition-colors flex items-center gap-1.5" title="Toggle displayed image quality on the page (saves bandwidth)">
                     <span class="w-2 h-2 bg-secondary inline-block" id="preview-mode-dot"></span>
-                    <span>Widok: <strong id="preview-mode-label" class="text-secondary">LITE</strong></span>
+                    <span>View: <strong id="preview-mode-label" class="text-secondary">LITE</strong></span>
                 </button>
-                <button id="toggle-copy-format" type="button" class="px-3 py-1.5 bg-surface-container-high hover:bg-surface-bright border border-outline-variant text-xs font-headline font-bold uppercase tracking-wider text-on-surface transition-colors" title="Przełącz co ma być kopiowane po kliknięciu (bezpośredni URL lub kod Markdown)">
-                    Kopiuj: <strong id="copy-format-label" class="text-primary">URL</strong>
+                <button id="toggle-copy-format" type="button" class="px-3 py-1.5 bg-surface-container-high hover:bg-surface-bright border border-outline-variant text-xs font-headline font-bold uppercase tracking-wider text-on-surface transition-colors" title="Toggle what gets copied on click (Direct URL or Markdown)">
+                    Copy: <strong id="copy-format-label" class="text-primary">URL</strong>
                 </button>
             </div>
         </div>
@@ -530,7 +530,7 @@
 <div id="copy-toast" class="fixed bottom-6 right-6 z-50 bg-surface-container-low border-2 border-secondary px-4 py-3 shadow-2xl transform translate-y-24 opacity-0 pointer-events-none transition-all duration-300 flex items-center gap-3">
     <span class="w-2.5 h-2.5 bg-secondary shrink-0"></span>
     <div class="flex flex-col">
-        <span id="copy-toast-title" class="font-headline text-xs font-black uppercase tracking-wider text-secondary">Skopiowano do schowka!</span>
+        <span id="copy-toast-title" class="font-headline text-xs font-black uppercase tracking-wider text-secondary">Copied to clipboard!</span>
         <span id="copy-toast-desc" class="font-body text-xs text-on-surface-variant truncate max-w-xs"></span>
     </div>
 </div>
@@ -618,10 +618,10 @@
         const labelSpan = btn.querySelector('.copy-btn-label-text');
         const origText = labelSpan ? labelSpan.textContent : '';
         btn.classList.add('copied');
-        if (labelSpan) labelSpan.textContent = '✓ SKOPIOWANO';
+        if (labelSpan) labelSpan.textContent = '✓ COPIED';
 
         showToast(
-            `Skopiowano ${variantLabel} (${sizeText})`,
+            `Copied ${variantLabel} (${sizeText})`,
             text
         );
 
@@ -693,16 +693,16 @@
         const saveTag = savedPct > 0 ? `<span class="text-[#4de082]">-${savedPct}%</span>` : `<span>OPT</span>`;
 
         actions.innerHTML = `
-            <button type="button" class="copy-btn copy-btn-normal" title="Skopiuj oryginalną grafikę (Normal)">
+            <button type="button" class="copy-btn copy-btn-normal" title="Copy original asset URL (Normal)">
                 <span class="copy-btn-label">
-                    <span class="copy-btn-label-text">Kopiuj Normal</span>
+                    <span class="copy-btn-label-text">Copy Normal</span>
                     <span class="opacity-60">ORIG</span>
                 </span>
                 <span class="copy-btn-size" data-role="normal-size">${normalFormatted}</span>
             </button>
-            <button type="button" class="copy-btn copy-btn-lite" title="Skopiuj skompresowaną grafikę bez utraty jakości (Lite)">
+            <button type="button" class="copy-btn copy-btn-lite" title="Copy compressed asset URL (Lite)">
                 <span class="copy-btn-label">
-                    <span class="copy-btn-label-text">Kopiuj Lite</span>
+                    <span class="copy-btn-label-text">Copy Lite</span>
                     <span data-role="saved-pct">${saveTag}</span>
                 </span>
                 <span class="copy-btn-size" data-role="lite-size">${liteFormatted}</span>
@@ -783,9 +783,9 @@
         const summaryEl = document.getElementById('bandwidth-summary');
         if (summaryEl && manifestData.summary) {
             const s = manifestData.summary;
-            summaryEl.textContent = `${s.totalLiteFormatted} zamiast ${s.totalNormalFormatted} (-${s.totalSavedPercent}%)`;
+            summaryEl.textContent = `${s.totalLiteFormatted} vs ${s.totalNormalFormatted} (-${s.totalSavedPercent}%)`;
         } else if (summaryEl) {
-            summaryEl.textContent = 'Aktywna kompresja Lite';
+            summaryEl.textContent = 'Lite Compression Active';
         }
 
         document.querySelectorAll('.gallery-item').forEach(enhanceGalleryItem);
@@ -796,10 +796,10 @@
                 previewMode = previewMode === 'lite' ? 'normal' : 'lite';
                 applyPreviewMode();
                 showToast(
-                    `Tryb wyświetlania: ${previewMode.toUpperCase()}`,
+                    `Preview Mode: ${previewMode.toUpperCase()}`,
                     previewMode === 'lite'
-                        ? 'Strona wyświetla lekkie wersje grafik (oszczędność transferu).'
-                        : 'Strona wyświetla oryginalne, nieskompresowane pliki.'
+                        ? 'Displaying lightweight Lite assets (bandwidth saver).'
+                        : 'Displaying original uncompressed assets.'
                 );
             });
         }
@@ -811,10 +811,10 @@
                 copyFormat = copyFormat === 'url' ? 'markdown' : 'url';
                 formatLabel.textContent = copyFormat === 'url' ? 'URL' : 'MARKDOWN';
                 showToast(
-                    `Format kopiowania: ${formatLabel.textContent}`,
+                    `Copy Format: ${formatLabel.textContent}`,
                     copyFormat === 'url'
-                        ? 'Przyciski kopiują bezpośredni link URL do pliku.'
-                        : 'Przyciski kopiują gotowy kod ![Alt](URL) do Modrinth/GitHub.'
+                        ? 'Buttons now copy direct file URLs.'
+                        : 'Buttons now copy ![Alt](URL) Markdown snippets.'
                 );
             });
         }
