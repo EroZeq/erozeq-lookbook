@@ -201,22 +201,31 @@
 <header class="sticky top-0 w-full flex justify-between items-center px-4 sm:px-6 h-16 sm:h-20 bg-background/90 backdrop-blur-md z-50 border-b-2 border-surface-container-high">
     <div class="flex items-center gap-3 sm:gap-4 min-w-0">
         <div class="text-xl sm:text-2xl font-black text-[#7A5CFF] bg-surface-container-high px-3 py-1 border-0 font-headline uppercase tracking-tighter shrink-0">E</div>
-        <span class="font-headline font-black text-base sm:text-xl tracking-tighter text-primary uppercase truncate max-w-[45vw] sm:max-w-none">EroZeq's Assets</span>
+        <span data-i18n="brandTitle" class="font-headline font-black text-base sm:text-xl tracking-tighter text-primary uppercase truncate max-w-[40vw] sm:max-w-none">EroZeq's Assets</span>
     </div>
-    <nav class="hidden md:flex items-center gap-8 h-full">
-        <a class="font-headline uppercase tracking-tighter text-on-surface-variant pb-1 hover:text-primary transition-colors flex items-center gap-2" href="#cubeatlas">
-            CubeAtlas
-        </a>
-        <a class="font-headline uppercase tracking-tighter text-on-surface-variant pb-1 hover:text-primary transition-colors flex items-center gap-2" href="#tnt-fall-blocks">
-            TNT - Fall Blocks
-        </a>
-        <a class="font-headline uppercase tracking-tighter text-on-surface-variant pb-1 hover:text-primary transition-colors flex items-center gap-2" href="#universal-portals">
-            Universal Portals
-        </a>
-        <a class="font-headline uppercase tracking-tighter text-on-surface-variant pb-1 hover:text-primary transition-colors flex items-center gap-2" href="#enchanted-shears">
-            Enchanted Shears
-        </a>
-    </nav>
+    <div class="flex items-center gap-4 sm:gap-8 h-full">
+        <nav class="hidden md:flex items-center gap-8 h-full">
+            <a class="font-headline uppercase tracking-tighter text-on-surface-variant pb-1 hover:text-primary transition-colors flex items-center gap-2" href="#cubeatlas">
+                CubeAtlas
+            </a>
+            <a class="font-headline uppercase tracking-tighter text-on-surface-variant pb-1 hover:text-primary transition-colors flex items-center gap-2" href="#tnt-fall-blocks">
+                TNT - Fall Blocks
+            </a>
+            <a class="font-headline uppercase tracking-tighter text-on-surface-variant pb-1 hover:text-primary transition-colors flex items-center gap-2" href="#universal-portals">
+                Universal Portals
+            </a>
+            <a class="font-headline uppercase tracking-tighter text-on-surface-variant pb-1 hover:text-primary transition-colors flex items-center gap-2" href="#enchanted-shears">
+                Enchanted Shears
+            </a>
+        </nav>
+        <!-- Language Switcher: EN | ES | PT | PL -->
+        <div class="flex items-center bg-surface-container-low border border-surface-container-high p-0.5" role="group" aria-label="Language Switcher">
+            <button type="button" data-lang="en" class="lang-btn px-2 py-1 text-xs font-headline font-bold uppercase tracking-wider transition-colors bg-primary text-on-primary" title="English">EN</button>
+            <button type="button" data-lang="es" class="lang-btn px-2 py-1 text-xs font-headline font-bold uppercase tracking-wider transition-colors text-on-surface-variant hover:text-primary" title="Español">ES</button>
+            <button type="button" data-lang="pt" class="lang-btn px-2 py-1 text-xs font-headline font-bold uppercase tracking-wider transition-colors text-on-surface-variant hover:text-primary" title="Português">PT</button>
+            <button type="button" data-lang="pl" class="lang-btn px-2 py-1 text-xs font-headline font-bold uppercase tracking-wider transition-colors text-on-surface-variant hover:text-primary" title="Polski">PL</button>
+        </div>
+    </div>
 </header>
 
 <!-- Main Content -->
@@ -224,23 +233,23 @@
     
     <div class="mb-8 flex flex-col lg:flex-row lg:items-end justify-between gap-6">
         <div>
-            <h1 class="font-headline text-4xl md:text-5xl font-black uppercase tracking-tighter text-on-surface-variant mb-2">Mod Assets <span class="text-primary">Lookbook</span></h1>
-            <p class="text-on-surface-variant font-body">A curated collection of Minecraft modding assets, logically grouped by project. Hover over any asset to inspect file size and copy the <strong>Normal</strong> or <strong>Lite</strong> version.</p>
+            <h1 data-i18n-html="heroHeading" class="font-headline text-4xl md:text-5xl font-black uppercase tracking-tighter text-on-surface-variant mb-2">Mod Assets <span class="text-primary">Lookbook</span></h1>
+            <p data-i18n-html="heroSubtitle" class="text-on-surface-variant font-body">A curated collection of Minecraft modding assets, logically grouped by project. Hover over any asset to inspect file size and copy the <strong>Normal</strong> or <strong>Lite</strong> version.</p>
         </div>
 
         <!-- Toolbar: Display Mode & Copy Format & Bandwidth Summary -->
         <div class="flex flex-wrap items-center gap-3 bg-surface-container-low border-2 border-surface-container-high p-3 shrink-0">
             <div class="flex flex-col pr-3 border-r border-surface-container-high">
-                <span class="font-headline text-[11px] uppercase tracking-wider text-outline font-bold">Page Bandwidth (Lite)</span>
+                <span data-i18n="bandwidthLabel" class="font-headline text-[11px] uppercase tracking-wider text-outline font-bold">Page Bandwidth (Lite)</span>
                 <span id="bandwidth-summary" class="font-headline text-sm font-black text-secondary">Loading stats...</span>
             </div>
             <div class="flex items-center gap-2">
                 <button id="toggle-preview-mode" type="button" class="px-3 py-1.5 bg-surface-container-high hover:bg-surface-bright border border-secondary/50 text-xs font-headline font-bold uppercase tracking-wider text-on-surface transition-colors flex items-center gap-1.5" title="Toggle displayed image quality on the page (saves bandwidth)">
                     <span class="w-2 h-2 bg-secondary inline-block" id="preview-mode-dot"></span>
-                    <span>View: <strong id="preview-mode-label" class="text-secondary">LITE</strong></span>
+                    <span><span data-i18n="viewPrefix">View:</span> <strong id="preview-mode-label" class="text-secondary">LITE</strong></span>
                 </button>
                 <button id="toggle-copy-format" type="button" class="px-3 py-1.5 bg-surface-container-high hover:bg-surface-bright border border-outline-variant text-xs font-headline font-bold uppercase tracking-wider text-on-surface transition-colors" title="Toggle what gets copied on click (Direct URL or Markdown)">
-                    Copy: <strong id="copy-format-label" class="text-primary">URL</strong>
+                    <span data-i18n="copyPrefix">Copy:</span> <strong id="copy-format-label" class="text-primary">URL</strong>
                 </button>
             </div>
         </div>
@@ -537,13 +546,13 @@
 
 <footer class="w-full py-8 px-8 flex flex-col md:flex-row justify-between items-center gap-6 bg-surface-container-lowest border-t-4 border-surface-container-low mt-auto">
     <div class="flex flex-col items-center md:items-start gap-2">
-        <span class="text-lg font-bold text-primary font-headline uppercase tracking-tighter">EroZeq's Assets</span>
-        <p class="font-body text-sm text-on-surface-variant">© 2026 EroZeq. All rights reserved.</p>
+        <span data-i18n="brandTitle" class="text-lg font-bold text-primary font-headline uppercase tracking-tighter">EroZeq's Assets</span>
+        <p data-i18n="footerRights" class="font-body text-sm text-on-surface-variant">© 2026 EroZeq. All rights reserved.</p>
     </div>
     <div class="flex gap-8">
-        <a class="font-body text-sm text-on-surface-variant hover:text-secondary underline decoration-2 transition-colors" href="https://github.com/EroZeq/erozeq-lookbook">GitHub Repo</a>
-        <a class="font-body text-sm text-on-surface-variant hover:text-secondary underline decoration-2 transition-colors" href="https://github.com/EroZeq">EroZeq's GitHub</a>
-        <a class="font-body text-sm text-on-surface-variant hover:text-secondary underline decoration-2 transition-colors" href="https://erozeq.click">EroZeq's Mods Site</a>
+        <a data-i18n="footerRepo" class="font-body text-sm text-on-surface-variant hover:text-secondary underline decoration-2 transition-colors" href="https://github.com/EroZeq/erozeq-lookbook">GitHub Repo</a>
+        <a data-i18n="footerGithub" class="font-body text-sm text-on-surface-variant hover:text-secondary underline decoration-2 transition-colors" href="https://github.com/EroZeq">EroZeq's GitHub</a>
+        <a data-i18n="footerModsSite" class="font-body text-sm text-on-surface-variant hover:text-secondary underline decoration-2 transition-colors" href="https://erozeq.click">EroZeq's Mods Site</a>
     </div>
 </footer>
 
@@ -553,10 +562,358 @@
         ? window.location.origin + window.location.pathname.replace(/\/index\.html$/, '').replace(/\/$/, '')
         : 'https://lookbook.erozeq.click';
 
+    const I18N = {
+        en: {
+            brandTitle: "EroZeq's Assets",
+            heroHeading: 'Mod Assets <span class="text-primary">Lookbook</span>',
+            heroSubtitle: 'A curated collection of Minecraft modding assets, logically grouped by project. Hover over any asset to inspect file size and copy the <strong>Normal</strong> or <strong>Lite</strong> version.',
+            bandwidthLabel: 'Page Bandwidth (Lite)',
+            loadingStats: 'Loading stats...',
+            liteActive: 'Lite Compression Active',
+            vsWord: 'vs',
+            viewPrefix: 'View:',
+            copyPrefix: 'Copy:',
+            viewBtnTitle: 'Toggle displayed image quality on the page (saves bandwidth)',
+            copyBtnTitle: 'Toggle what gets copied on click (Direct URL or Markdown)',
+            copyNormal: 'Copy Normal',
+            copyLite: 'Copy Lite',
+            copyNormalTitle: 'Copy original asset URL (Normal)',
+            copyLiteTitle: 'Copy compressed asset URL (Lite)',
+            copiedBtn: '✓ COPIED',
+            toastCopied: (variant, size) => `Copied ${variant} (${size})`,
+            toastPreviewTitle: (mode) => `Preview Mode: ${mode}`,
+            toastPreviewLite: 'Displaying lightweight Lite assets (bandwidth saver).',
+            toastPreviewNormal: 'Displaying original uncompressed assets.',
+            toastFormatTitle: (fmt) => `Copy Format: ${fmt}`,
+            toastFormatUrl: 'Buttons now copy direct file URLs.',
+            toastFormatMd: 'Buttons now copy ![Alt](URL) Markdown snippets.',
+            footerRights: '© 2026 EroZeq. All rights reserved.',
+            footerRepo: 'GitHub Repo',
+            footerGithub: "EroZeq's GitHub",
+            footerModsSite: "EroZeq's Mods Site",
+            titles: {
+                "Mod Banner": "Mod Banner",
+                "Mod Icon Frame + Title (GIF)": "Mod Icon Frame + Title (GIF)",
+                "Mod Icon Frame (GIF)": "Mod Icon Frame (GIF)",
+                "Mod Icon Full (GIF)": "Mod Icon Full (GIF)",
+                "Cherry Biome (GIF)": "Cherry Biome (GIF)",
+                "Jungle Biome (GIF)": "Jungle Biome (GIF)",
+                "Taiga Biome (GIF)": "Taiga Biome (GIF)",
+                "Badlands Biome (GIF)": "Badlands Biome (GIF)",
+                "Ice Spikes Biome (GIF)": "Ice Spikes Biome (GIF)",
+                "Crimson Biome (GIF)": "Crimson Biome (GIF)",
+                "Ancient City (GIF)": "Ancient City (GIF)",
+                "End City (GIF)": "End City (GIF)",
+                "Players (GIF)": "Players (GIF)",
+                "Screenshot 1": "Screenshot 1",
+                "Village (GIF)": "Village (GIF)",
+                "Screenshot 2": "Screenshot 2",
+                "Waypoints (GIF)": "Waypoints (GIF)",
+                "Mountain Island (GIF)": "Mountain Island (GIF)",
+                "Pillager Outpost (GIF)": "Pillager Outpost (GIF)",
+                "TNT Logic Banner": "TNT Logic Banner",
+                "Mod Icon Full": "Mod Icon Full",
+                "Mod Icon Frame": "Mod Icon Frame",
+                "Gameplay Recording (GIF)": "Gameplay Recording (GIF)",
+                "Gameplay Recording (MP4)": "Gameplay Recording (MP4)",
+                "Video Project 9 (GIF)": "Video Project 9 (GIF)",
+                "Video Project 7 (GIF)": "Video Project 7 (GIF)",
+                "Video Project 5 (GIF)": "Video Project 5 (GIF)",
+                "Video Project 8 (GIF)": "Video Project 8 (GIF)",
+                "Portal 360 (GIF)": "Portal 360 (GIF)",
+                "Portal Cycle (GIF)": "Portal Cycle (GIF)",
+                "Portal Duo": "Portal Duo",
+                "Ice Spikes Biome": "Ice Spikes Biome",
+                "Jungle Biome": "Jungle Biome",
+                "Mushroom Fields Biome": "Mushroom Fields Biome",
+                "The End": "The End",
+                "How To Make a Portal (GIF)": "How To Make a Portal (GIF)",
+                "All Items Layout": "All Items Layout",
+                "Gameplay Preview 1": "Gameplay Preview 1",
+                "Gameplay Preview 2": "Gameplay Preview 2",
+                "Gameplay Preview 3": "Gameplay Preview 3",
+                "Screenshot 3": "Screenshot 3",
+                "Screenshot 4": "Screenshot 4",
+                "Screenshot 5": "Screenshot 5",
+                "Screenshot 6": "Screenshot 6",
+                "Portal Icon": "Portal Icon",
+                "Portal": "Portal",
+                "Shears Spin (GIF)": "Shears Spin (GIF)",
+                "Mod Icon": "Mod Icon",
+                "Config": "Config",
+                "Info": "Info",
+                "Footer": "Footer"
+            }
+        },
+        es: {
+            brandTitle: "Recursos de EroZeq",
+            heroHeading: '<span class="text-primary">Catálogo</span> de Recursos de Mods',
+            heroSubtitle: 'Una colección seleccionada de recursos para mods de Minecraft, agrupados por proyecto. Pasa el cursor sobre cualquier imagen para ver su peso en MB y copiar la versión <strong>Normal</strong> o <strong>Lite</strong>.',
+            bandwidthLabel: 'Datos de Página (Lite)',
+            loadingStats: 'Cargando datos...',
+            liteActive: 'Compresión Lite Activa',
+            vsWord: 'vs',
+            viewPrefix: 'Vista:',
+            copyPrefix: 'Copiar:',
+            viewBtnTitle: 'Cambiar la calidad de imagen mostrada en la página (ahorra datos)',
+            copyBtnTitle: 'Cambiar el formato al copiar (Enlace URL directo o Markdown)',
+            copyNormal: 'Copiar Normal',
+            copyLite: 'Copiar Lite',
+            copyNormalTitle: 'Copiar enlace del recurso original (Normal)',
+            copyLiteTitle: 'Copiar enlace del recurso comprimido sin pérdida (Lite)',
+            copiedBtn: '✓ COPIADO',
+            toastCopied: (variant, size) => `Copiado ${variant} (${size})`,
+            toastPreviewTitle: (mode) => `Modo de Vista: ${mode}`,
+            toastPreviewLite: 'Mostrando recursos ligeros Lite (ahorro de transferencia).',
+            toastPreviewNormal: 'Mostrando recursos originales sin comprimir.',
+            toastFormatTitle: (fmt) => `Formato de Copia: ${fmt}`,
+            toastFormatUrl: 'Los botones ahora copian enlaces URL directos.',
+            toastFormatMd: 'Los botones ahora copian código Markdown ![Alt](URL).',
+            footerRights: '© 2026 EroZeq. Todos los derechos reservados.',
+            footerRepo: 'Repositorio GitHub',
+            footerGithub: 'GitHub de EroZeq',
+            footerModsSite: 'Sitio de Mods de EroZeq',
+            titles: {
+                "Mod Banner": "Banner del Mod",
+                "Mod Icon Frame + Title (GIF)": "Marco de Icono + Título (GIF)",
+                "Mod Icon Frame (GIF)": "Marco de Icono del Mod (GIF)",
+                "Mod Icon Full (GIF)": "Icono Completo del Mod (GIF)",
+                "Cherry Biome (GIF)": "Bioma de Cerezos (GIF)",
+                "Jungle Biome (GIF)": "Bioma de Jungla (GIF)",
+                "Taiga Biome (GIF)": "Bioma de Taiga (GIF)",
+                "Badlands Biome (GIF)": "Bioma de Tierras Baldías (GIF)",
+                "Ice Spikes Biome (GIF)": "Bioma de Picos de Hielo (GIF)",
+                "Crimson Biome (GIF)": "Bioma Carmesí (GIF)",
+                "Ancient City (GIF)": "Ciudad Antigua (GIF)",
+                "End City (GIF)": "Ciudad del End (GIF)",
+                "Players (GIF)": "Jugadores (GIF)",
+                "Screenshot 1": "Captura de Pantalla 1",
+                "Village (GIF)": "Aldea (GIF)",
+                "Screenshot 2": "Captura de Pantalla 2",
+                "Waypoints (GIF)": "Puntos de Ruta (GIF)",
+                "Mountain Island (GIF)": "Isla Montañosa (GIF)",
+                "Pillager Outpost (GIF)": "Puesto de Saqueadores (GIF)",
+                "TNT Logic Banner": "Banner de TNT Logic",
+                "Mod Icon Full": "Icono Completo del Mod",
+                "Mod Icon Frame": "Marco de Icono del Mod",
+                "Gameplay Recording (GIF)": "Grabación de Juego (GIF)",
+                "Gameplay Recording (MP4)": "Grabación de Juego (MP4)",
+                "Video Project 9 (GIF)": "Proyecto de Video 9 (GIF)",
+                "Video Project 7 (GIF)": "Proyecto de Video 7 (GIF)",
+                "Video Project 5 (GIF)": "Proyecto de Video 5 (GIF)",
+                "Video Project 8 (GIF)": "Proyecto de Video 8 (GIF)",
+                "Portal 360 (GIF)": "Portal 360 (GIF)",
+                "Portal Cycle (GIF)": "Ciclo de Portal (GIF)",
+                "Portal Duo": "Dúo de Portales",
+                "Ice Spikes Biome": "Bioma de Picos de Hielo",
+                "Jungle Biome": "Bioma de Jungla",
+                "Mushroom Fields Biome": "Bioma de Campos de Champiñones",
+                "The End": "El End",
+                "How To Make a Portal (GIF)": "Cómo Crear un Portal (GIF)",
+                "All Items Layout": "Diseño de Todos los Objetos",
+                "Gameplay Preview 1": "Vista Previa de Juego 1",
+                "Gameplay Preview 2": "Vista Previa de Juego 2",
+                "Gameplay Preview 3": "Vista Previa de Juego 3",
+                "Screenshot 3": "Captura de Pantalla 3",
+                "Screenshot 4": "Captura de Pantalla 4",
+                "Screenshot 5": "Captura de Pantalla 5",
+                "Screenshot 6": "Captura de Pantalla 6",
+                "Portal Icon": "Icono del Portal",
+                "Portal": "Portal",
+                "Shears Spin (GIF)": "Giro de Tijeras (GIF)",
+                "Mod Icon": "Icono del Mod",
+                "Config": "Configuración",
+                "Info": "Información",
+                "Footer": "Pie de Página"
+            }
+        },
+        pt: {
+            brandTitle: "Recursos de EroZeq",
+            heroHeading: '<span class="text-primary">Catálogo</span> de Recursos de Mods',
+            heroSubtitle: 'Uma coleção selecionada de recursos para mods de Minecraft, agrupados por projeto. Passe o cursor sobre qualquer imagem para ver o tamanho em MB e copiar a versão <strong>Normal</strong> ou <strong>Lite</strong>.',
+            bandwidthLabel: 'Tráfego da Página (Lite)',
+            loadingStats: 'Carregando dados...',
+            liteActive: 'Compressão Lite Ativa',
+            vsWord: 'vs',
+            viewPrefix: 'Vista:',
+            copyPrefix: 'Copiar:',
+            viewBtnTitle: 'Alternar a qualidade das imagens exibidas na página (economiza dados)',
+            copyBtnTitle: 'Alternar o formato copiado ao clicar (URL direto ou Markdown)',
+            copyNormal: 'Copiar Normal',
+            copyLite: 'Copiar Lite',
+            copyNormalTitle: 'Copiar link do recurso original (Normal)',
+            copyLiteTitle: 'Copiar link do recurso comprimido sem perda (Lite)',
+            copiedBtn: '✓ COPIADO',
+            toastCopied: (variant, size) => `Copiado ${variant} (${size})`,
+            toastPreviewTitle: (mode) => `Modo de Visualização: ${mode}`,
+            toastPreviewLite: 'Exibindo recursos leves Lite (economia de dados).',
+            toastPreviewNormal: 'Exibindo recursos originais sem compressão.',
+            toastFormatTitle: (fmt) => `Formato de Cópia: ${fmt}`,
+            toastFormatUrl: 'Os botões agora copiam links URL diretos.',
+            toastFormatMd: 'Os botões agora copiam código Markdown ![Alt](URL).',
+            footerRights: '© 2026 EroZeq. Todos os direitos reservados.',
+            footerRepo: 'Repositório GitHub',
+            footerGithub: 'GitHub do EroZeq',
+            footerModsSite: 'Site de Mods do EroZeq',
+            titles: {
+                "Mod Banner": "Banner do Mod",
+                "Mod Icon Frame + Title (GIF)": "Moldura do Ícone + Título (GIF)",
+                "Mod Icon Frame (GIF)": "Moldura do Ícone do Mod (GIF)",
+                "Mod Icon Full (GIF)": "Ícone Completo do Mod (GIF)",
+                "Cherry Biome (GIF)": "Bioma de Cerejeiras (GIF)",
+                "Jungle Biome (GIF)": "Bioma de Selva (GIF)",
+                "Taiga Biome (GIF)": "Bioma de Taiga (GIF)",
+                "Badlands Biome (GIF)": "Bioma de Ermos (GIF)",
+                "Ice Spikes Biome (GIF)": "Bioma de Picos de Gelo (GIF)",
+                "Crimson Biome (GIF)": "Bioma Carmesim (GIF)",
+                "Ancient City (GIF)": "Cidade Ancestral (GIF)",
+                "End City (GIF)": "Cidade do End (GIF)",
+                "Players (GIF)": "Jogadores (GIF)",
+                "Screenshot 1": "Captura de Tela 1",
+                "Village (GIF)": "Vila (GIF)",
+                "Screenshot 2": "Captura de Tela 2",
+                "Waypoints (GIF)": "Pontos de Referência (GIF)",
+                "Mountain Island (GIF)": "Ilha Montanhosa (GIF)",
+                "Pillager Outpost (GIF)": "Posto de Saqueadores (GIF)",
+                "TNT Logic Banner": "Banner do TNT Logic",
+                "Mod Icon Full": "Ícone Completo do Mod",
+                "Mod Icon Frame": "Moldura do Ícone do Mod",
+                "Gameplay Recording (GIF)": "Gravação de Gameplay (GIF)",
+                "Gameplay Recording (MP4)": "Gravação de Gameplay (MP4)",
+                "Video Project 9 (GIF)": "Projeto de Vídeo 9 (GIF)",
+                "Video Project 7 (GIF)": "Projeto de Vídeo 7 (GIF)",
+                "Video Project 5 (GIF)": "Projeto de Vídeo 5 (GIF)",
+                "Video Project 8 (GIF)": "Projeto de Vídeo 8 (GIF)",
+                "Portal 360 (GIF)": "Portal 360 (GIF)",
+                "Portal Cycle (GIF)": "Ciclo de Portal (GIF)",
+                "Portal Duo": "Dupla de Portais",
+                "Ice Spikes Biome": "Bioma de Picos de Gelo",
+                "Jungle Biome": "Bioma de Selva",
+                "Mushroom Fields Biome": "Bioma de Campos de Cogumelos",
+                "The End": "O End",
+                "How To Make a Portal (GIF)": "Como Fazer um Portal (GIF)",
+                "All Items Layout": "Layout de Todos os Itens",
+                "Gameplay Preview 1": "Prévia de Gameplay 1",
+                "Gameplay Preview 2": "Prévia de Gameplay 2",
+                "Gameplay Preview 3": "Prévia de Gameplay 3",
+                "Screenshot 3": "Captura de Tela 3",
+                "Screenshot 4": "Captura de Tela 4",
+                "Screenshot 5": "Captura de Tela 5",
+                "Screenshot 6": "Captura de Tela 6",
+                "Portal Icon": "Ícone do Portal",
+                "Portal": "Portal",
+                "Shears Spin (GIF)": "Giro da Tosquiadeira (GIF)",
+                "Mod Icon": "Ícone do Mod",
+                "Config": "Configuração",
+                "Info": "Informação",
+                "Footer": "Rodapé"
+            }
+        },
+        pl: {
+            brandTitle: "Zasoby EroZeq",
+            heroHeading: '<span class="text-primary">Lookbook</span> Zasobów Modów',
+            heroSubtitle: 'Wyselekcjonowana kolekcja zasobów do modów Minecraft, pogrupowana według projektów. Najedź na grafikę, aby sprawdzić wagę w MB i skopiować wersję <strong>Normal</strong> lub skompresowaną <strong>Lite</strong>.',
+            bandwidthLabel: 'Transfer Strony (Lite)',
+            loadingStats: 'Ładowanie statystyk...',
+            liteActive: 'Aktywna Kompresja Lite',
+            vsWord: 'zamiast',
+            viewPrefix: 'Widok:',
+            copyPrefix: 'Kopiuj:',
+            viewBtnTitle: 'Przełącz jakość wyświetlanych na stronie grafik (oszczędzanie transferu)',
+            copyBtnTitle: 'Przełącz co ma być kopiowane po kliknięciu (bezpośredni URL lub kod Markdown)',
+            copyNormal: 'Kopiuj Normal',
+            copyLite: 'Kopiuj Lite',
+            copyNormalTitle: 'Skopiuj link do oryginalnej grafiki (Normal)',
+            copyLiteTitle: 'Skopiuj link do skompresowanej grafiki bez utraty jakości (Lite)',
+            copiedBtn: '✓ SKOPIOWANO',
+            toastCopied: (variant, size) => `Skopiowano ${variant} (${size})`,
+            toastPreviewTitle: (mode) => `Tryb wyświetlania: ${mode}`,
+            toastPreviewLite: 'Strona wyświetla lekkie wersje grafik Lite (oszczędność transferu).',
+            toastPreviewNormal: 'Strona wyświetla oryginalne, nieskompresowane pliki.',
+            toastFormatTitle: (fmt) => `Format kopiowania: ${fmt}`,
+            toastFormatUrl: 'Przyciski kopiują teraz bezpośredni link URL do pliku.',
+            toastFormatMd: 'Przyciski kopiują teraz gotowy kod Markdown ![Alt](URL).',
+            footerRights: '© 2026 EroZeq. Wszelkie prawa zastrzeżone.',
+            footerRepo: 'Repozytorium GitHub',
+            footerGithub: 'GitHub EroZeq',
+            footerModsSite: 'Strona Modów EroZeq',
+            titles: {
+                "Mod Banner": "Baner Moda",
+                "Mod Icon Frame + Title (GIF)": "Ikona w Ramce + Tytuł (GIF)",
+                "Mod Icon Frame (GIF)": "Ikona Moda w Ramce (GIF)",
+                "Mod Icon Full (GIF)": "Pełna Ikona Moda (GIF)",
+                "Cherry Biome (GIF)": "Biom Wiśniowy (GIF)",
+                "Jungle Biome (GIF)": "Biom Dżungli (GIF)",
+                "Taiga Biome (GIF)": "Biom Tajgi (GIF)",
+                "Badlands Biome (GIF)": "Biom Badlands (GIF)",
+                "Ice Spikes Biome (GIF)": "Biom Lodowych Kolców (GIF)",
+                "Crimson Biome (GIF)": "Szkarłatny Biom (GIF)",
+                "Ancient City (GIF)": "Starożytne Miasto (GIF)",
+                "End City (GIF)": "Miasto Endu (GIF)",
+                "Players (GIF)": "Gracze (GIF)",
+                "Screenshot 1": "Zrzut Ekranu 1",
+                "Village (GIF)": "Wioska (GIF)",
+                "Screenshot 2": "Zrzut Ekranu 2",
+                "Waypoints (GIF)": "Punkty Nawigacyjne (GIF)",
+                "Mountain Island (GIF)": "Górska Wyspa (GIF)",
+                "Pillager Outpost (GIF)": "Posterunek Rozbójników (GIF)",
+                "TNT Logic Banner": "Baner TNT Logic",
+                "Mod Icon Full": "Pełna Ikona Moda",
+                "Mod Icon Frame": "Ikona Moda w Ramce",
+                "Gameplay Recording (GIF)": "Nagranie Rozgrywki (GIF)",
+                "Gameplay Recording (MP4)": "Nagranie Rozgrywki (MP4)",
+                "Video Project 9 (GIF)": "Projekt Wideo 9 (GIF)",
+                "Video Project 7 (GIF)": "Projekt Wideo 7 (GIF)",
+                "Video Project 5 (GIF)": "Projekt Wideo 5 (GIF)",
+                "Video Project 8 (GIF)": "Projekt Wideo 8 (GIF)",
+                "Portal 360 (GIF)": "Portal 360 (GIF)",
+                "Portal Cycle (GIF)": "Cykl Portalu (GIF)",
+                "Portal Duo": "Podwójny Portal",
+                "Ice Spikes Biome": "Biom Lodowych Kolców",
+                "Jungle Biome": "Biom Dżungli",
+                "Mushroom Fields Biome": "Biom Grzybowych Pól",
+                "The End": "The End",
+                "How To Make a Portal (GIF)": "Jak Zrobić Portal (GIF)",
+                "All Items Layout": "Układ Wszystkich Przedmiotów",
+                "Gameplay Preview 1": "Podgląd Rozgrywki 1",
+                "Gameplay Preview 2": "Podgląd Rozgrywki 2",
+                "Gameplay Preview 3": "Podgląd Rozgrywki 3",
+                "Screenshot 3": "Zrzut Ekranu 3",
+                "Screenshot 4": "Zrzut Ekranu 4",
+                "Screenshot 5": "Zrzut Ekranu 5",
+                "Screenshot 6": "Zrzut Ekranu 6",
+                "Portal Icon": "Ikona Portalu",
+                "Portal": "Portal",
+                "Shears Spin (GIF)": "Obrót Nożyc (GIF)",
+                "Mod Icon": "Ikona Moda",
+                "Config": "Konfiguracja",
+                "Info": "Informacje",
+                "Footer": "Stopka"
+            }
+        }
+    };
+
+    function detectInitialLang() {
+        const params = new URLSearchParams(window.location.search);
+        const qLang = (params.get('lang') || '').toLowerCase();
+        if (I18N[qLang]) return qLang;
+        try {
+            const saved = localStorage.getItem('lookbook_lang');
+            if (saved && I18N[saved]) return saved;
+        } catch {}
+        const nav = (navigator.language || 'en').slice(0, 2).toLowerCase();
+        return I18N[nav] ? nav : 'en';
+    }
+
+    let currentLang = detectInitialLang();
     let previewMode = 'lite'; // 'lite' | 'normal'
     let copyFormat = 'url';   // 'url' | 'markdown'
     let manifestData = { assets: {}, summary: null };
     let toastTimer = null;
+
+    function t() {
+        return I18N[currentLang] || I18N.en;
+    }
 
     function formatBytes(bytes) {
         if (!bytes || isNaN(bytes)) return '— MB';
@@ -615,20 +972,106 @@
             document.body.removeChild(ta);
         }
 
+        const dict = t();
         const labelSpan = btn.querySelector('.copy-btn-label-text');
-        const origText = labelSpan ? labelSpan.textContent : '';
         btn.classList.add('copied');
-        if (labelSpan) labelSpan.textContent = '✓ COPIED';
+        if (labelSpan) labelSpan.textContent = dict.copiedBtn;
 
         showToast(
-            `Copied ${variantLabel} (${sizeText})`,
+            dict.toastCopied(variantLabel, sizeText),
             text
         );
 
         setTimeout(() => {
             btn.classList.remove('copied');
-            if (labelSpan) labelSpan.textContent = origText;
+            const currentDict = t();
+            if (labelSpan) {
+                labelSpan.textContent = btn.classList.contains('copy-btn-lite')
+                    ? currentDict.copyLite
+                    : currentDict.copyNormal;
+            }
         }, 1400);
+    }
+
+    function updateBandwidthSummary() {
+        const summaryEl = document.getElementById('bandwidth-summary');
+        if (!summaryEl) return;
+        const dict = t();
+        if (manifestData.summary) {
+            const s = manifestData.summary;
+            summaryEl.textContent = `${s.totalLiteFormatted} ${dict.vsWord} ${s.totalNormalFormatted} (-${s.totalSavedPercent}%)`;
+        } else {
+            summaryEl.textContent = dict.liteActive;
+        }
+    }
+
+    function applyLanguage(lang) {
+        if (!I18N[lang]) return;
+        currentLang = lang;
+        document.documentElement.lang = lang;
+        try {
+            localStorage.setItem('lookbook_lang', lang);
+        } catch {}
+
+        const dict = t();
+
+        // Update active state on language buttons
+        document.querySelectorAll('.lang-btn').forEach((btn) => {
+            const isActive = btn.dataset.lang === lang;
+            btn.className = isActive
+                ? 'lang-btn px-2 py-1 text-xs font-headline font-bold uppercase tracking-wider transition-colors bg-primary text-on-primary'
+                : 'lang-btn px-2 py-1 text-xs font-headline font-bold uppercase tracking-wider transition-colors text-on-surface-variant hover:text-primary';
+        });
+
+        // Update plain text i18n nodes
+        document.querySelectorAll('[data-i18n]').forEach((el) => {
+            const key = el.getAttribute('data-i18n');
+            if (dict[key]) el.textContent = dict[key];
+        });
+
+        // Update HTML i18n nodes
+        document.querySelectorAll('[data-i18n-html]').forEach((el) => {
+            const key = el.getAttribute('data-i18n-html');
+            if (dict[key]) el.innerHTML = dict[key];
+        });
+
+        // Update toolbar tooltips
+        const previewBtn = document.getElementById('toggle-preview-mode');
+        if (previewBtn) previewBtn.title = dict.viewBtnTitle;
+        const formatBtn = document.getElementById('toggle-copy-format');
+        if (formatBtn) formatBtn.title = dict.copyBtnTitle;
+
+        // Update gallery item titles and copy buttons
+        document.querySelectorAll('.gallery-item').forEach((item) => {
+            const titleEl = item.querySelector('.item-title');
+            if (titleEl) {
+                if (!titleEl.dataset.origTitle) {
+                    titleEl.dataset.origTitle = titleEl.textContent.trim();
+                }
+                const orig = titleEl.dataset.origTitle;
+                titleEl.textContent = dict.titles[orig] || orig;
+            }
+
+            const normalBtn = item.querySelector('.copy-btn-normal');
+            if (normalBtn) {
+                normalBtn.title = dict.copyNormalTitle;
+                if (!normalBtn.classList.contains('copied')) {
+                    const lbl = normalBtn.querySelector('.copy-btn-label-text');
+                    if (lbl) lbl.textContent = dict.copyNormal;
+                }
+            }
+
+            const liteBtn = item.querySelector('.copy-btn-lite');
+            if (liteBtn) {
+                liteBtn.title = dict.copyLiteTitle;
+                if (!liteBtn.classList.contains('copied')) {
+                    const lbl = liteBtn.querySelector('.copy-btn-label-text');
+                    if (lbl) lbl.textContent = dict.copyLite;
+                }
+            }
+        });
+
+        updateBandwidthSummary();
     }
 
     function enhanceGalleryItem(item) {
@@ -636,6 +1079,11 @@
         const videoSource = item.querySelector('video source');
         const overlay = item.querySelector('.item-overlay');
         if (!overlay) return;
+
+        const titleEl = item.querySelector('.item-title');
+        if (titleEl && !titleEl.dataset.origTitle) {
+            titleEl.dataset.origTitle = titleEl.textContent.trim();
+        }
 
         let normalPath = '';
         let litePath = '';
@@ -690,19 +1138,20 @@
             overlay.appendChild(actions);
         }
 
+        const dict = t();
         const saveTag = savedPct > 0 ? `<span class="text-[#4de082]">-${savedPct}%</span>` : `<span>OPT</span>`;
 
         actions.innerHTML = `
-            <button type="button" class="copy-btn copy-btn-normal" title="Copy original asset URL (Normal)">
+            <button type="button" class="copy-btn copy-btn-normal" title="${dict.copyNormalTitle}">
                 <span class="copy-btn-label">
-                    <span class="copy-btn-label-text">Copy Normal</span>
+                    <span class="copy-btn-label-text">${dict.copyNormal}</span>
                     <span class="opacity-60">ORIG</span>
                 </span>
                 <span class="copy-btn-size" data-role="normal-size">${normalFormatted}</span>
             </button>
-            <button type="button" class="copy-btn copy-btn-lite" title="Copy compressed asset URL (Lite)">
+            <button type="button" class="copy-btn copy-btn-lite" title="${dict.copyLiteTitle}">
                 <span class="copy-btn-label">
-                    <span class="copy-btn-label-text">Copy Lite</span>
+                    <span class="copy-btn-label-text">${dict.copyLite}</span>
                     <span data-role="saved-pct">${saveTag}</span>
                 </span>
                 <span class="copy-btn-size" data-role="lite-size">${liteFormatted}</span>
@@ -780,26 +1229,24 @@
             console.warn('Manifest not loaded, falling back to live HEAD size detection.', err);
         }
 
-        const summaryEl = document.getElementById('bandwidth-summary');
-        if (summaryEl && manifestData.summary) {
-            const s = manifestData.summary;
-            summaryEl.textContent = `${s.totalLiteFormatted} vs ${s.totalNormalFormatted} (-${s.totalSavedPercent}%)`;
-        } else if (summaryEl) {
-            summaryEl.textContent = 'Lite Compression Active';
-        }
-
         document.querySelectorAll('.gallery-item').forEach(enhanceGalleryItem);
+        applyLanguage(currentLang);
+
+        document.querySelectorAll('.lang-btn').forEach((btn) => {
+            btn.addEventListener('click', () => {
+                applyLanguage(btn.dataset.lang);
+            });
+        });
 
         const previewBtn = document.getElementById('toggle-preview-mode');
         if (previewBtn) {
             previewBtn.addEventListener('click', () => {
                 previewMode = previewMode === 'lite' ? 'normal' : 'lite';
                 applyPreviewMode();
+                const dict = t();
                 showToast(
-                    `Preview Mode: ${previewMode.toUpperCase()}`,
-                    previewMode === 'lite'
-                        ? 'Displaying lightweight Lite assets (bandwidth saver).'
-                        : 'Displaying original uncompressed assets.'
+                    dict.toastPreviewTitle(previewMode.toUpperCase()),
+                    previewMode === 'lite' ? dict.toastPreviewLite : dict.toastPreviewNormal
                 );
             });
         }
@@ -810,11 +1257,10 @@
             formatBtn.addEventListener('click', () => {
                 copyFormat = copyFormat === 'url' ? 'markdown' : 'url';
                 formatLabel.textContent = copyFormat === 'url' ? 'URL' : 'MARKDOWN';
+                const dict = t();
                 showToast(
-                    `Copy Format: ${formatLabel.textContent}`,
-                    copyFormat === 'url'
-                        ? 'Buttons now copy direct file URLs.'
-                        : 'Buttons now copy ![Alt](URL) Markdown snippets.'
+                    dict.toastFormatTitle(formatLabel.textContent),
+                    copyFormat === 'url' ? dict.toastFormatUrl : dict.toastFormatMd
                 );
             });
         }
