@@ -1,0 +1,44 @@
+name: Compress New Assets (Lite)
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'assets/images/**'
+      - 'compress_assets.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  compress:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install pillow numpy
+
+      - name: Run asset compressor
+        run: python compress_assets.py
+
+      - name: Commit and push Lite assets & manifest
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/lite assets/manifest.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: auto-compress Lite assets and update manifest"
+            git push
+          else
+            echo "No asset changes to commit."
+          fi

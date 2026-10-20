@@ -1,0 +1,702 @@
+{
+  "summary": {
+    "totalNormalBytes": 269471864,
+    "totalLiteBytes": 87434375,
+    "totalNormalFormatted": "256.99 MB",
+    "totalLiteFormatted": "83.38 MB",
+    "totalSavedFormatted": "173.60 MB",
+    "totalSavedPercent": 68
+  },
+  "assets": {
+    "assets/images/cubeatlas/banner.png": {
+      "normalPath": "assets/images/cubeatlas/banner.png",
+      "litePath": "assets/lite/cubeatlas/banner.png",
+      "normalSize": 36587,
+      "liteSize": 10310,
+      "normalSizeFormatted": "35.7 KB",
+      "liteSizeFormatted": "10.1 KB",
+      "savedPercent": 72,
+      "mtime": 1791637680
+    },
+    "assets/images/cubeatlas/biome-ancient-city-flat-360.gif": {
+      "normalPath": "assets/images/cubeatlas/biome-ancient-city-flat-360.gif",
+      "litePath": "assets/lite/cubeatlas/biome-ancient-city-flat-360.gif",
+      "normalSize": 7636527,
+      "liteSize": 2309447,
+      "normalSizeFormatted": "7.28 MB",
+      "liteSizeFormatted": "2.20 MB",
+      "savedPercent": 70,
+      "mtime": 1791221642
+    },
+    "assets/images/cubeatlas/biome-badlands-flat-360.gif": {
+      "normalPath": "assets/images/cubeatlas/biome-badlands-flat-360.gif",
+      "litePath": "assets/lite/cubeatlas/biome-badlands-flat-360.gif",
+      "normalSize": 7881988,
+      "liteSize": 3136402,
+      "normalSizeFormatted": "7.52 MB",
+      "liteSizeFormatted": "2.99 MB",
+      "savedPercent": 60,
+      "mtime": 1791221734
+    },
+    "assets/images/cubeatlas/biome-cherry-flat-360.gif": {
+      "normalPath": "assets/images/cubeatlas/biome-cherry-flat-360.gif",
+      "litePath": "assets/lite/cubeatlas/biome-cherry-flat-360.gif",
+      "normalSize": 7153335,
+      "liteSize": 2722578,
+      "normalSizeFormatted": "6.82 MB",
+      "liteSizeFormatted": "2.60 MB",
+      "savedPercent": 62,
+      "mtime": 1791221828
+    },
+    "assets/images/cubeatlas/biome-crimson-flat-360.gif": {
+      "normalPath": "assets/images/cubeatlas/biome-crimson-flat-360.gif",
+      "litePath": "assets/lite/cubeatlas/biome-crimson-flat-360.gif",
+      "normalSize": 5601026,
+      "liteSize": 1791300,
+      "normalSizeFormatted": "5.34 MB",
+      "liteSizeFormatted": "1.71 MB",
+      "savedPercent": 68,
+      "mtime": 1791221924
+    },
+    "assets/images/cubeatlas/biome-end-city-flat-360.gif": {
+      "normalPath": "assets/images/cubeatlas/biome-end-city-flat-360.gif",
+      "litePath": "assets/lite/cubeatlas/biome-end-city-flat-360.gif",
+      "normalSize": 7817358,
+      "liteSize": 2732216,
+      "normalSizeFormatted": "7.46 MB",
+      "liteSizeFormatted": "2.61 MB",
+      "savedPercent": 65,
+      "mtime": 1791222016
+    },
+    "assets/images/cubeatlas/biome-icespikes-flat-360.gif": {
+      "normalPath": "assets/images/cubeatlas/biome-icespikes-flat-360.gif",
+      "litePath": "assets/lite/cubeatlas/biome-icespikes-flat-360.gif",
+      "normalSize": 7324204,
+      "liteSize": 2830178,
+      "normalSizeFormatted": "6.98 MB",
+      "liteSizeFormatted": "2.70 MB",
+      "savedPercent": 61,
+      "mtime": 1791222208
+    },
+    "assets/images/cubeatlas/biome-jungle-flat-360.gif": {
+      "normalPath": "assets/images/cubeatlas/biome-jungle-flat-360.gif",
+      "litePath": "assets/lite/cubeatlas/biome-jungle-flat-360.gif",
+      "normalSize": 7531593,
+      "liteSize": 2750214,
+      "normalSizeFormatted": "7.18 MB",
+      "liteSizeFormatted": "2.62 MB",
+      "savedPercent": 63,
+      "mtime": 1791222304
+    },
+    "assets/images/cubeatlas/biome-taiga-flat-360.gif": {
+      "normalPath": "assets/images/cubeatlas/biome-taiga-flat-360.gif",
+      "litePath": "assets/lite/cubeatlas/biome-taiga-flat-360.gif",
+      "normalSize": 7553134,
+      "liteSize": 3033773,
+      "normalSizeFormatted": "7.20 MB",
+      "liteSizeFormatted": "2.89 MB",
+      "savedPercent": 60,
+      "mtime": 1791222492
+    },
+    "assets/images/cubeatlas/icon-g3-flat-360_frame.gif": {
+      "normalPath": "assets/images/cubeatlas/icon-g3-flat-360_frame.gif",
+      "litePath": "assets/lite/cubeatlas/icon-g3-flat-360_frame.gif",
+      "normalSize": 2966758,
+      "liteSize": 764561,
+      "normalSizeFormatted": "2.83 MB",
+      "liteSizeFormatted": "0.73 MB",
+      "savedPercent": 74,
+      "mtime": 1791314625
+    },
+    "assets/images/cubeatlas/icon-h6-flat-360.gif": {
+      "normalPath": "assets/images/cubeatlas/icon-h6-flat-360.gif",
+      "litePath": "assets/lite/cubeatlas/icon-h6-flat-360.gif",
+      "normalSize": 6793969,
+      "liteSize": 2911873,
+      "normalSizeFormatted": "6.48 MB",
+      "liteSizeFormatted": "2.78 MB",
+      "savedPercent": 57,
+      "mtime": 1791309559
+    },
+    "assets/images/cubeatlas/icon-h6-flat-360_frame.gif": {
+      "normalPath": "assets/images/cubeatlas/icon-h6-flat-360_frame.gif",
+      "litePath": "assets/lite/cubeatlas/icon-h6-flat-360_frame.gif",
+      "normalSize": 3015004,
+      "liteSize": 765344,
+      "normalSizeFormatted": "2.88 MB",
+      "liteSizeFormatted": "0.73 MB",
+      "savedPercent": 75,
+      "mtime": 1791314730
+    },
+    "assets/images/cubeatlas/players-flat-360.gif": {
+      "normalPath": "assets/images/cubeatlas/players-flat-360.gif",
+      "litePath": "assets/lite/cubeatlas/players-flat-360.gif",
+      "normalSize": 6250646,
+      "liteSize": 2249498,
+      "normalSizeFormatted": "5.96 MB",
+      "liteSizeFormatted": "2.15 MB",
+      "savedPercent": 64,
+      "mtime": 1791134027
+    },
+    "assets/images/cubeatlas/screen.png": {
+      "normalPath": "assets/images/cubeatlas/screen.png",
+      "litePath": "assets/lite/cubeatlas/screen.png",
+      "normalSize": 899909,
+      "liteSize": 115262,
+      "normalSizeFormatted": "0.86 MB",
+      "liteSizeFormatted": "0.11 MB",
+      "savedPercent": 87,
+      "mtime": 1791328273
+    },
+    "assets/images/cubeatlas/screen2.png": {
+      "normalPath": "assets/images/cubeatlas/screen2.png",
+      "litePath": "assets/lite/cubeatlas/screen2.png",
+      "normalSize": 982190,
+      "liteSize": 136191,
+      "normalSizeFormatted": "0.94 MB",
+      "liteSizeFormatted": "0.13 MB",
+      "savedPercent": 86,
+      "mtime": 1791328327
+    },
+    "assets/images/cubeatlas/village-flat-360.gif": {
+      "normalPath": "assets/images/cubeatlas/village-flat-360.gif",
+      "litePath": "assets/lite/cubeatlas/village-flat-360.gif",
+      "normalSize": 7007837,
+      "liteSize": 2391253,
+      "normalSizeFormatted": "6.68 MB",
+      "liteSizeFormatted": "2.28 MB",
+      "savedPercent": 66,
+      "mtime": 1791134040
+    },
+    "assets/images/cubeatlas/waypoints-textured-360.gif": {
+      "normalPath": "assets/images/cubeatlas/waypoints-textured-360.gif",
+      "litePath": "assets/lite/cubeatlas/waypoints-textured-360.gif",
+      "normalSize": 6886874,
+      "liteSize": 2591524,
+      "normalSizeFormatted": "6.57 MB",
+      "liteSizeFormatted": "2.47 MB",
+      "savedPercent": 62,
+      "mtime": 1791134065
+    },
+    "assets/images/enchanted-shears/config.png": {
+      "normalPath": "assets/images/enchanted-shears/config.png",
+      "litePath": "assets/lite/enchanted-shears/config.png",
+      "normalSize": 17518,
+      "liteSize": 5788,
+      "normalSizeFormatted": "17.1 KB",
+      "liteSizeFormatted": "5.7 KB",
+      "savedPercent": 67,
+      "mtime": 1776893357
+    },
+    "assets/images/enchanted-shears/enchanted-shears-spin.gif": {
+      "normalPath": "assets/images/enchanted-shears/enchanted-shears-spin.gif",
+      "litePath": "assets/lite/enchanted-shears/enchanted-shears-spin.gif",
+      "normalSize": 5516135,
+      "liteSize": 1802889,
+      "normalSizeFormatted": "5.26 MB",
+      "liteSizeFormatted": "1.72 MB",
+      "savedPercent": 67,
+      "mtime": 1792237732
+    },
+    "assets/images/enchanted-shears/enchanted-shears-spin_frame.gif": {
+      "normalPath": "assets/images/enchanted-shears/enchanted-shears-spin_frame.gif",
+      "litePath": "assets/lite/enchanted-shears/enchanted-shears-spin_frame.gif",
+      "normalSize": 466374,
+      "liteSize": 231817,
+      "normalSizeFormatted": "0.44 MB",
+      "liteSizeFormatted": "0.22 MB",
+      "savedPercent": 50,
+      "mtime": 1792251241
+    },
+    "assets/images/enchanted-shears/enchanted-shears-spin_frame_banner.gif": {
+      "normalPath": "assets/images/enchanted-shears/enchanted-shears-spin_frame_banner.gif",
+      "litePath": "assets/lite/enchanted-shears/enchanted-shears-spin_frame_banner.gif",
+      "normalSize": 461036,
+      "liteSize": 230057,
+      "normalSizeFormatted": "0.44 MB",
+      "liteSizeFormatted": "0.22 MB",
+      "savedPercent": 50,
+      "mtime": 1792251259
+    },
+    "assets/images/enchanted-shears/footer.png": {
+      "normalPath": "assets/images/enchanted-shears/footer.png",
+      "litePath": "assets/lite/enchanted-shears/footer.png",
+      "normalSize": 22817,
+      "liteSize": 7342,
+      "normalSizeFormatted": "22.3 KB",
+      "liteSizeFormatted": "7.2 KB",
+      "savedPercent": 68,
+      "mtime": 1776891348
+    },
+    "assets/images/enchanted-shears/icon.png": {
+      "normalPath": "assets/images/enchanted-shears/icon.png",
+      "litePath": "assets/lite/enchanted-shears/icon.png",
+      "normalSize": 18355,
+      "liteSize": 4698,
+      "normalSizeFormatted": "17.9 KB",
+      "liteSizeFormatted": "4.6 KB",
+      "savedPercent": 74,
+      "mtime": 1776889964
+    },
+    "assets/images/enchanted-shears/info.png": {
+      "normalPath": "assets/images/enchanted-shears/info.png",
+      "litePath": "assets/lite/enchanted-shears/info.png",
+      "normalSize": 28333,
+      "liteSize": 9345,
+      "normalSizeFormatted": "27.7 KB",
+      "liteSizeFormatted": "9.1 KB",
+      "savedPercent": 67,
+      "mtime": 1776893039
+    },
+    "assets/images/erozeqs-assets/erozeq_question_mark.jpg": {
+      "normalPath": "assets/images/erozeqs-assets/erozeq_question_mark.jpg",
+      "litePath": "assets/lite/erozeqs-assets/erozeq_question_mark.jpg",
+      "normalSize": 7497,
+      "liteSize": 4591,
+      "normalSizeFormatted": "7.3 KB",
+      "liteSizeFormatted": "4.5 KB",
+      "savedPercent": 39,
+      "mtime": 1776810589
+    },
+    "assets/images/erozeqs-assets/profile.jpg": {
+      "normalPath": "assets/images/erozeqs-assets/profile.jpg",
+      "litePath": "assets/lite/erozeqs-assets/profile.jpg",
+      "normalSize": 272708,
+      "liteSize": 233181,
+      "normalSizeFormatted": "0.26 MB",
+      "liteSizeFormatted": "0.22 MB",
+      "savedPercent": 14,
+      "mtime": 1775158317
+    },
+    "assets/images/tnt-fall-blocks/banner.png": {
+      "normalPath": "assets/images/tnt-fall-blocks/banner.png",
+      "litePath": "assets/lite/tnt-fall-blocks/banner.png",
+      "normalSize": 42711,
+      "liteSize": 10549,
+      "normalSizeFormatted": "41.7 KB",
+      "liteSizeFormatted": "10.3 KB",
+      "savedPercent": 75,
+      "mtime": 1791638259
+    },
+    "assets/images/tnt-fall-blocks/icon-full-v2.png": {
+      "normalPath": "assets/images/tnt-fall-blocks/icon-full-v2.png",
+      "litePath": "assets/lite/tnt-fall-blocks/icon-full-v2.png",
+      "normalSize": 388488,
+      "liteSize": 80868,
+      "normalSizeFormatted": "0.37 MB",
+      "liteSizeFormatted": "79.0 KB",
+      "savedPercent": 79,
+      "mtime": 1790544897
+    },
+    "assets/images/tnt-fall-blocks/icon-ramka-v2.png": {
+      "normalPath": "assets/images/tnt-fall-blocks/icon-ramka-v2.png",
+      "litePath": "assets/lite/tnt-fall-blocks/icon-ramka-v2.png",
+      "normalSize": 171195,
+      "liteSize": 33817,
+      "normalSizeFormatted": "0.16 MB",
+      "liteSizeFormatted": "33.0 KB",
+      "savedPercent": 80,
+      "mtime": 1790547217
+    },
+    "assets/images/tnt-fall-blocks/icon.png": {
+      "normalPath": "assets/images/tnt-fall-blocks/icon.png",
+      "litePath": "assets/lite/tnt-fall-blocks/icon.png",
+      "normalSize": 145247,
+      "liteSize": 26103,
+      "normalSizeFormatted": "0.14 MB",
+      "liteSizeFormatted": "25.5 KB",
+      "savedPercent": 82,
+      "mtime": 1778356335
+    },
+    "assets/images/tnt-fall-blocks/island-mountain-360.gif": {
+      "normalPath": "assets/images/tnt-fall-blocks/island-mountain-360.gif",
+      "litePath": "assets/lite/tnt-fall-blocks/island-mountain-360.gif",
+      "normalSize": 7603497,
+      "liteSize": 3065843,
+      "normalSizeFormatted": "7.25 MB",
+      "liteSizeFormatted": "2.92 MB",
+      "savedPercent": 60,
+      "mtime": 1791375117
+    },
+    "assets/images/tnt-fall-blocks/island-mountain-360_frame.gif": {
+      "normalPath": "assets/images/tnt-fall-blocks/island-mountain-360_frame.gif",
+      "litePath": "assets/lite/tnt-fall-blocks/island-mountain-360_frame.gif",
+      "normalSize": 3819031,
+      "liteSize": 866095,
+      "normalSizeFormatted": "3.64 MB",
+      "liteSizeFormatted": "0.83 MB",
+      "savedPercent": 77,
+      "mtime": 1791376363
+    },
+    "assets/images/tnt-fall-blocks/island-mountain-360_frame2.gif": {
+      "normalPath": "assets/images/tnt-fall-blocks/island-mountain-360_frame2.gif",
+      "litePath": "assets/lite/tnt-fall-blocks/island-mountain-360_frame2.gif",
+      "normalSize": 3781618,
+      "liteSize": 868035,
+      "normalSizeFormatted": "3.61 MB",
+      "liteSizeFormatted": "0.83 MB",
+      "savedPercent": 77,
+      "mtime": 1791376384
+    },
+    "assets/images/tnt-fall-blocks/pillager-outpost-360.gif": {
+      "normalPath": "assets/images/tnt-fall-blocks/pillager-outpost-360.gif",
+      "litePath": "assets/lite/tnt-fall-blocks/pillager-outpost-360.gif",
+      "normalSize": 5829423,
+      "liteSize": 1599466,
+      "normalSizeFormatted": "5.56 MB",
+      "liteSizeFormatted": "1.53 MB",
+      "savedPercent": 73,
+      "mtime": 1791375095
+    },
+    "assets/images/tnt-fall-blocks/recording.gif": {
+      "normalPath": "assets/images/tnt-fall-blocks/recording.gif",
+      "litePath": "assets/lite/tnt-fall-blocks/recording.gif",
+      "normalSize": 64876494,
+      "liteSize": 14454205,
+      "normalSizeFormatted": "61.87 MB",
+      "liteSizeFormatted": "13.78 MB",
+      "savedPercent": 78,
+      "mtime": 1778882672
+    },
+    "assets/images/tnt-fall-blocks/recording.mp4": {
+      "normalPath": "assets/images/tnt-fall-blocks/recording.mp4",
+      "litePath": "assets/images/tnt-fall-blocks/recording.mp4",
+      "normalSize": 6256655,
+      "liteSize": 6256655,
+      "normalSizeFormatted": "5.97 MB",
+      "liteSizeFormatted": "5.97 MB",
+      "savedPercent": 0,
+      "mtime": 1778881993
+    },
+    "assets/images/tnt-fall-blocks/tnt_logic.png": {
+      "normalPath": "assets/images/tnt-fall-blocks/tnt_logic.png",
+      "litePath": "assets/lite/tnt-fall-blocks/tnt_logic.png",
+      "normalSize": 53296,
+      "liteSize": 12449,
+      "normalSizeFormatted": "52.0 KB",
+      "liteSizeFormatted": "12.2 KB",
+      "savedPercent": 77,
+      "mtime": 1778884081
+    },
+    "assets/images/tnt-fall-blocks/tntlogic-icon-banner-v2.png": {
+      "normalPath": "assets/images/tnt-fall-blocks/tntlogic-icon-banner-v2.png",
+      "litePath": "assets/lite/tnt-fall-blocks/tntlogic-icon-banner-v2.png",
+      "normalSize": 53725,
+      "liteSize": 13024,
+      "normalSizeFormatted": "52.5 KB",
+      "liteSizeFormatted": "12.7 KB",
+      "savedPercent": 76,
+      "mtime": 1790547126
+    },
+    "assets/images/tnt-fall-blocks/video_project_5.gif": {
+      "normalPath": "assets/images/tnt-fall-blocks/video_project_5.gif",
+      "litePath": "assets/lite/tnt-fall-blocks/video_project_5.gif",
+      "normalSize": 5494799,
+      "liteSize": 741337,
+      "normalSizeFormatted": "5.24 MB",
+      "liteSizeFormatted": "0.71 MB",
+      "savedPercent": 87,
+      "mtime": 1778364239
+    },
+    "assets/images/tnt-fall-blocks/video_project_7.gif": {
+      "normalPath": "assets/images/tnt-fall-blocks/video_project_7.gif",
+      "litePath": "assets/lite/tnt-fall-blocks/video_project_7.gif",
+      "normalSize": 4034181,
+      "liteSize": 646411,
+      "normalSizeFormatted": "3.85 MB",
+      "liteSizeFormatted": "0.62 MB",
+      "savedPercent": 84,
+      "mtime": 1778432732
+    },
+    "assets/images/tnt-fall-blocks/video_project_8.gif": {
+      "normalPath": "assets/images/tnt-fall-blocks/video_project_8.gif",
+      "litePath": "assets/lite/tnt-fall-blocks/video_project_8.gif",
+      "normalSize": 4786422,
+      "liteSize": 1951247,
+      "normalSizeFormatted": "4.56 MB",
+      "liteSizeFormatted": "1.86 MB",
+      "savedPercent": 59,
+      "mtime": 1778432820
+    },
+    "assets/images/tnt-fall-blocks/video_project_9.gif": {
+      "normalPath": "assets/images/tnt-fall-blocks/video_project_9.gif",
+      "litePath": "assets/lite/tnt-fall-blocks/video_project_9.gif",
+      "normalSize": 9021148,
+      "liteSize": 3195943,
+      "normalSizeFormatted": "8.60 MB",
+      "liteSizeFormatted": "3.05 MB",
+      "savedPercent": 65,
+      "mtime": 1778432890
+    },
+    "assets/images/universal-portals/all_items.png": {
+      "normalPath": "assets/images/universal-portals/all_items.png",
+      "litePath": "assets/lite/universal-portals/all_items.png",
+      "normalSize": 59161,
+      "liteSize": 13995,
+      "normalSizeFormatted": "57.8 KB",
+      "liteSizeFormatted": "13.7 KB",
+      "savedPercent": 76,
+      "mtime": 1776112781
+    },
+    "assets/images/universal-portals/banner.png": {
+      "normalPath": "assets/images/universal-portals/banner.png",
+      "litePath": "assets/lite/universal-portals/banner.png",
+      "normalSize": 31859,
+      "liteSize": 6821,
+      "normalSizeFormatted": "31.1 KB",
+      "liteSizeFormatted": "6.7 KB",
+      "savedPercent": 79,
+      "mtime": 1791638101
+    },
+    "assets/images/universal-portals/biome-ice_spikes.png": {
+      "normalPath": "assets/images/universal-portals/biome-ice_spikes.png",
+      "litePath": "assets/lite/universal-portals/biome-ice_spikes.png",
+      "normalSize": 327389,
+      "liteSize": 84922,
+      "normalSizeFormatted": "0.31 MB",
+      "liteSizeFormatted": "82.9 KB",
+      "savedPercent": 74,
+      "mtime": 1791543249
+    },
+    "assets/images/universal-portals/biome-jungle.png": {
+      "normalPath": "assets/images/universal-portals/biome-jungle.png",
+      "litePath": "assets/lite/universal-portals/biome-jungle.png",
+      "normalSize": 477520,
+      "liteSize": 136601,
+      "normalSizeFormatted": "0.46 MB",
+      "liteSizeFormatted": "0.13 MB",
+      "savedPercent": 71,
+      "mtime": 1791543250
+    },
+    "assets/images/universal-portals/biome-mushroom_fields.png": {
+      "normalPath": "assets/images/universal-portals/biome-mushroom_fields.png",
+      "litePath": "assets/lite/universal-portals/biome-mushroom_fields.png",
+      "normalSize": 414089,
+      "liteSize": 111677,
+      "normalSizeFormatted": "0.39 MB",
+      "liteSizeFormatted": "0.11 MB",
+      "savedPercent": 73,
+      "mtime": 1791543250
+    },
+    "assets/images/universal-portals/biome-the_end.png": {
+      "normalPath": "assets/images/universal-portals/biome-the_end.png",
+      "litePath": "assets/lite/universal-portals/biome-the_end.png",
+      "normalSize": 453669,
+      "liteSize": 121592,
+      "normalSizeFormatted": "0.43 MB",
+      "liteSizeFormatted": "0.12 MB",
+      "savedPercent": 73,
+      "mtime": 1791543250
+    },
+    "assets/images/universal-portals/bottle_0.png": {
+      "normalPath": "assets/images/universal-portals/bottle_0.png",
+      "litePath": "assets/lite/universal-portals/bottle_0.png",
+      "normalSize": 13011,
+      "liteSize": 1929,
+      "normalSizeFormatted": "12.7 KB",
+      "liteSizeFormatted": "1.9 KB",
+      "savedPercent": 85,
+      "mtime": 1775856102
+    },
+    "assets/images/universal-portals/bottle_1.png": {
+      "normalPath": "assets/images/universal-portals/bottle_1.png",
+      "litePath": "assets/lite/universal-portals/bottle_1.png",
+      "normalSize": 12947,
+      "liteSize": 1923,
+      "normalSizeFormatted": "12.6 KB",
+      "liteSizeFormatted": "1.9 KB",
+      "savedPercent": 85,
+      "mtime": 1775856136
+    },
+    "assets/images/universal-portals/cycle-360.gif": {
+      "normalPath": "assets/images/universal-portals/cycle-360.gif",
+      "litePath": "assets/lite/universal-portals/cycle-360.gif",
+      "normalSize": 6143857,
+      "liteSize": 2036460,
+      "normalSizeFormatted": "5.86 MB",
+      "liteSizeFormatted": "1.94 MB",
+      "savedPercent": 67,
+      "mtime": 1791543084
+    },
+    "assets/images/universal-portals/cycle-duo.png": {
+      "normalPath": "assets/images/universal-portals/cycle-duo.png",
+      "litePath": "assets/lite/universal-portals/cycle-duo.png",
+      "normalSize": 483956,
+      "liteSize": 123199,
+      "normalSizeFormatted": "0.46 MB",
+      "liteSizeFormatted": "0.12 MB",
+      "savedPercent": 75,
+      "mtime": 1791543116
+    },
+    "assets/images/universal-portals/gameplay_1.png": {
+      "normalPath": "assets/images/universal-portals/gameplay_1.png",
+      "litePath": "assets/lite/universal-portals/gameplay_1.png",
+      "normalSize": 7095600,
+      "liteSize": 442388,
+      "normalSizeFormatted": "6.77 MB",
+      "liteSizeFormatted": "0.42 MB",
+      "savedPercent": 94,
+      "mtime": 1775411290
+    },
+    "assets/images/universal-portals/gameplay_2.png": {
+      "normalPath": "assets/images/universal-portals/gameplay_2.png",
+      "litePath": "assets/lite/universal-portals/gameplay_2.png",
+      "normalSize": 6760682,
+      "liteSize": 296671,
+      "normalSizeFormatted": "6.45 MB",
+      "liteSizeFormatted": "0.28 MB",
+      "savedPercent": 96,
+      "mtime": 1775411852
+    },
+    "assets/images/universal-portals/gameplay_3.png": {
+      "normalPath": "assets/images/universal-portals/gameplay_3.png",
+      "litePath": "assets/lite/universal-portals/gameplay_3.png",
+      "normalSize": 8795839,
+      "liteSize": 930993,
+      "normalSizeFormatted": "8.39 MB",
+      "liteSizeFormatted": "0.89 MB",
+      "savedPercent": 89,
+      "mtime": 1775412301
+    },
+    "assets/images/universal-portals/how_to_make_portal.gif": {
+      "normalPath": "assets/images/universal-portals/how_to_make_portal.gif",
+      "litePath": "assets/lite/universal-portals/how_to_make_portal.gif",
+      "normalSize": 16981323,
+      "liteSize": 11665074,
+      "normalSizeFormatted": "16.19 MB",
+      "liteSizeFormatted": "11.12 MB",
+      "savedPercent": 31,
+      "mtime": 1776729217
+    },
+    "assets/images/universal-portals/icon.png": {
+      "normalPath": "assets/images/universal-portals/icon.png",
+      "litePath": "assets/lite/universal-portals/icon.png",
+      "normalSize": 45739,
+      "liteSize": 9952,
+      "normalSizeFormatted": "44.7 KB",
+      "liteSizeFormatted": "9.7 KB",
+      "savedPercent": 78,
+      "mtime": 1775329552
+    },
+    "assets/images/universal-portals/icon_mc.gif": {
+      "normalPath": "assets/images/universal-portals/icon_mc.gif",
+      "litePath": "assets/lite/universal-portals/icon_mc.gif",
+      "normalSize": 497902,
+      "liteSize": 260579,
+      "normalSizeFormatted": "0.47 MB",
+      "liteSizeFormatted": "0.25 MB",
+      "savedPercent": 48,
+      "mtime": 1791564171
+    },
+    "assets/images/universal-portals/portal-360-above.gif": {
+      "normalPath": "assets/images/universal-portals/portal-360-above.gif",
+      "litePath": "assets/lite/universal-portals/portal-360-above.gif",
+      "normalSize": 3437715,
+      "liteSize": 1215280,
+      "normalSizeFormatted": "3.28 MB",
+      "liteSizeFormatted": "1.16 MB",
+      "savedPercent": 65,
+      "mtime": 1791543629
+    },
+    "assets/images/universal-portals/portal-360-above_frame.gif": {
+      "normalPath": "assets/images/universal-portals/portal-360-above_frame.gif",
+      "litePath": "assets/lite/universal-portals/portal-360-above_frame.gif",
+      "normalSize": 477244,
+      "liteSize": 263730,
+      "normalSizeFormatted": "0.46 MB",
+      "liteSizeFormatted": "0.25 MB",
+      "savedPercent": 45,
+      "mtime": 1791564145
+    },
+    "assets/images/universal-portals/portal.png": {
+      "normalPath": "assets/images/universal-portals/portal.png",
+      "litePath": "assets/lite/universal-portals/portal.png",
+      "normalSize": 7919,
+      "liteSize": 2184,
+      "normalSizeFormatted": "7.7 KB",
+      "liteSizeFormatted": "2.1 KB",
+      "savedPercent": 72,
+      "mtime": 1775599105
+    },
+    "assets/images/universal-portals/portal_powder.png": {
+      "normalPath": "assets/images/universal-portals/portal_powder.png",
+      "litePath": "assets/lite/universal-portals/portal_powder.png",
+      "normalSize": 7663,
+      "liteSize": 1687,
+      "normalSizeFormatted": "7.5 KB",
+      "liteSizeFormatted": "1.6 KB",
+      "savedPercent": 78,
+      "mtime": 1775993186
+    },
+    "assets/images/universal-portals/recording_1.gif": {
+      "normalPath": "assets/images/universal-portals/recording_1.gif",
+      "litePath": "assets/lite/universal-portals/recording_1.gif",
+      "normalSize": 40456,
+      "liteSize": 4183,
+      "normalSizeFormatted": "39.5 KB",
+      "liteSizeFormatted": "4.1 KB",
+      "savedPercent": 90,
+      "mtime": 1775599381
+    },
+    "assets/images/universal-portals/screenshot_1.png": {
+      "normalPath": "assets/images/universal-portals/screenshot_1.png",
+      "litePath": "assets/lite/universal-portals/screenshot_1.png",
+      "normalSize": 40816,
+      "liteSize": 11219,
+      "normalSizeFormatted": "39.9 KB",
+      "liteSizeFormatted": "11.0 KB",
+      "savedPercent": 73,
+      "mtime": 1775417528
+    },
+    "assets/images/universal-portals/screenshot_2.png": {
+      "normalPath": "assets/images/universal-portals/screenshot_2.png",
+      "litePath": "assets/lite/universal-portals/screenshot_2.png",
+      "normalSize": 60943,
+      "liteSize": 17815,
+      "normalSizeFormatted": "59.5 KB",
+      "liteSizeFormatted": "17.4 KB",
+      "savedPercent": 71,
+      "mtime": 1775600472
+    },
+    "assets/images/universal-portals/screenshot_3.png": {
+      "normalPath": "assets/images/universal-portals/screenshot_3.png",
+      "litePath": "assets/lite/universal-portals/screenshot_3.png",
+      "normalSize": 63280,
+      "liteSize": 19478,
+      "normalSizeFormatted": "61.8 KB",
+      "liteSizeFormatted": "19.0 KB",
+      "savedPercent": 69,
+      "mtime": 1775601219
+    },
+    "assets/images/universal-portals/screenshot_4.png": {
+      "normalPath": "assets/images/universal-portals/screenshot_4.png",
+      "litePath": "assets/lite/universal-portals/screenshot_4.png",
+      "normalSize": 59056,
+      "liteSize": 16477,
+      "normalSizeFormatted": "57.7 KB",
+      "liteSizeFormatted": "16.1 KB",
+      "savedPercent": 72,
+      "mtime": 1775601554
+    },
+    "assets/images/universal-portals/screenshot_5.png": {
+      "normalPath": "assets/images/universal-portals/screenshot_5.png",
+      "litePath": "assets/lite/universal-portals/screenshot_5.png",
+      "normalSize": 92784,
+      "liteSize": 25456,
+      "normalSizeFormatted": "90.6 KB",
+      "liteSizeFormatted": "24.9 KB",
+      "savedPercent": 73,
+      "mtime": 1775605232
+    },
+    "assets/images/universal-portals/screenshot_6.png": {
+      "normalPath": "assets/images/universal-portals/screenshot_6.png",
+      "litePath": "assets/lite/universal-portals/screenshot_6.png",
+      "normalSize": 81803,
+      "liteSize": 18411,
+      "normalSizeFormatted": "79.9 KB",
+      "liteSizeFormatted": "18.0 KB",
+      "savedPercent": 77,
+      "mtime": 1776039015
+    }
+  }
+}
