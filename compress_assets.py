@@ -188,6 +188,46 @@ def optimize_jpg_bytes(src_path: Path) -> bytes:
     return buf.getvalue()
 
 
+def optimize_webp_bytes(src_path: Path) -> bytes:
+    """Optimize static or animated WebP."""
+    im = Image.open(src_path)
+    n_frames = getattr(im, "n_frames", 1)
+    if n_frames <= 1:
+        buf = io.BytesIO()
+        im.save(buf, format="WEBP", quality=80, method=4)
+        return buf.getvalue()
+
+    frames = []
+    durations = []
+    for i in range(n_frames):
+        im.seek(i)
+        frames.append(im.copy())
+        durations.append(im.info.get("duration", 50) or 50)
+
+    avg_dur = sum(durations) / len(durations)
+    if len(frames) >= 100 and avg_dur <= 60:
+        step = 2
+    else:
+        step = 1
+
+    if step > 1:
+        frames = [frames[i] for i in range(0, len(frames), step)]
+        durations = [sum(durations[i : i + step]) for i in range(0, len(durations), step)]
+
+    buf = io.BytesIO()
+    frames[0].save(
+        buf,
+        format="WEBP",
+        save_all=True,
+        append_images=frames[1:],
+        duration=durations,
+        loop=0,
+        quality=75,
+        method=4,
+    )
+    return buf.getvalue()
+
+
 def process_all_assets(force: bool = False) -> Dict[str, Any]:
     LITE_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -221,7 +261,6 @@ def process_all_assets(force: bool = False) -> Dict[str, Any]:
             not force
             and cached
             and cached.get("normalSize") == orig_size
-            and cached.get("mtime") == orig_mtime
             and dst_path.exists()
         ):
             lite_size = dst_path.stat().st_size
@@ -234,12 +273,21 @@ def process_all_assets(force: bool = False) -> Dict[str, Any]:
         print(f"Compressing {normal_rel} ({format_size(orig_size)})...", flush=True)
 
         try:
-            if ext == ".gif":
+            real_fmt = ""
+            try:
+                with Image.open(src_path) as probe_im:
+                    real_fmt = (probe_im.format or "").upper()
+            except Exception:
+                real_fmt = ""
+
+            if real_fmt == "GIF" or (not real_fmt and ext == ".gif"):
                 opt_bytes = optimize_gif_bytes(src_path, max_colors=64, denoise_thresh=8)
-            elif ext == ".png":
+            elif real_fmt == "PNG" or (not real_fmt and ext == ".png"):
                 opt_bytes = optimize_png_bytes(src_path)
-            elif ext in (".jpg", ".jpeg"):
+            elif real_fmt == "JPEG" or (not real_fmt and ext in (".jpg", ".jpeg")):
                 opt_bytes = optimize_jpg_bytes(src_path)
+            elif real_fmt == "WEBP" or (not real_fmt and ext == ".webp"):
+                opt_bytes = optimize_webp_bytes(src_path)
             else:
                 opt_bytes = None
         except Exception as exc:

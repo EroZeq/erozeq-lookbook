@@ -1,11 +1,11 @@
 {
   "summary": {
-    "totalNormalBytes": 269471864,
-    "totalLiteBytes": 87440272,
-    "totalNormalFormatted": "256.99 MB",
-    "totalLiteFormatted": "83.39 MB",
-    "totalSavedFormatted": "173.60 MB",
-    "totalSavedPercent": 68
+    "totalNormalBytes": 282683126,
+    "totalLiteBytes": 93259696,
+    "totalNormalFormatted": "269.59 MB",
+    "totalLiteFormatted": "88.94 MB",
+    "totalSavedFormatted": "180.65 MB",
+    "totalSavedPercent": 67
   },
   "assets": {
     "assets/images/cubeatlas/banner.png": {
@@ -366,7 +366,7 @@
       "normalSizeFormatted": "5.97 MB",
       "liteSizeFormatted": "5.97 MB",
       "savedPercent": 0,
-      "mtime": 1792512606
+      "mtime": 1778881993
     },
     "assets/images/tnt-fall-blocks/tnt_logic.png": {
       "normalPath": "assets/images/tnt-fall-blocks/tnt_logic.png",
@@ -431,12 +431,22 @@
     "assets/images/universal-portals/all_items.png": {
       "normalPath": "assets/images/universal-portals/all_items.png",
       "litePath": "assets/lite/universal-portals/all_items.png",
+      "normalSize": 1891707,
+      "liteSize": 751116,
+      "normalSizeFormatted": "1.80 MB",
+      "liteSizeFormatted": "0.72 MB",
+      "savedPercent": 60,
+      "mtime": 1793226747
+    },
+    "assets/images/universal-portals/all_items_v2.png": {
+      "normalPath": "assets/images/universal-portals/all_items_v2.png",
+      "litePath": "assets/lite/universal-portals/all_items_v2.png",
       "normalSize": 59161,
-      "liteSize": 14054,
+      "liteSize": 13995,
       "normalSizeFormatted": "57.8 KB",
       "liteSizeFormatted": "13.7 KB",
       "savedPercent": 76,
-      "mtime": 1792512606
+      "mtime": 1776112781
     },
     "assets/images/universal-portals/banner.png": {
       "normalPath": "assets/images/universal-portals/banner.png",
@@ -587,6 +597,56 @@
       "liteSizeFormatted": "0.25 MB",
       "savedPercent": 48,
       "mtime": 1792512606
+    },
+    "assets/images/universal-portals/items-3.0.0.gif": {
+      "normalPath": "assets/images/universal-portals/items-3.0.0.gif",
+      "litePath": "assets/lite/universal-portals/items-3.0.0.gif",
+      "normalSize": 1891707,
+      "liteSize": 751116,
+      "normalSizeFormatted": "1.80 MB",
+      "liteSizeFormatted": "0.72 MB",
+      "savedPercent": 60,
+      "mtime": 1793226747
+    },
+    "assets/images/universal-portals/items-3.0.0.png": {
+      "normalPath": "assets/images/universal-portals/items-3.0.0.png",
+      "litePath": "assets/lite/universal-portals/items-3.0.0.png",
+      "normalSize": 32481,
+      "liteSize": 15890,
+      "normalSizeFormatted": "31.7 KB",
+      "liteSizeFormatted": "15.5 KB",
+      "savedPercent": 51,
+      "mtime": 1793226637
+    },
+    "assets/images/universal-portals/items-3.0.0.webp": {
+      "normalPath": "assets/images/universal-portals/items-3.0.0.webp",
+      "litePath": "assets/lite/universal-portals/items-3.0.0.webp",
+      "normalSize": 3474348,
+      "liteSize": 1967682,
+      "normalSizeFormatted": "3.31 MB",
+      "liteSizeFormatted": "1.88 MB",
+      "savedPercent": 43,
+      "mtime": 1793226742
+    },
+    "assets/images/universal-portals/key-transition-3.0.0.gif": {
+      "normalPath": "assets/images/universal-portals/key-transition-3.0.0.gif",
+      "litePath": "assets/lite/universal-portals/key-transition-3.0.0.gif",
+      "normalSize": 2952031,
+      "liteSize": 739353,
+      "normalSizeFormatted": "2.82 MB",
+      "liteSizeFormatted": "0.71 MB",
+      "savedPercent": 75,
+      "mtime": 1793226921
+    },
+    "assets/images/universal-portals/key-transition-3.0.0.webp": {
+      "normalPath": "assets/images/universal-portals/key-transition-3.0.0.webp",
+      "litePath": "assets/lite/universal-portals/key-transition-3.0.0.webp",
+      "normalSize": 2968988,
+      "liteSize": 1594326,
+      "normalSizeFormatted": "2.83 MB",
+      "liteSizeFormatted": "1.52 MB",
+      "savedPercent": 46,
+      "mtime": 1793226912
     },
     "assets/images/universal-portals/portal-360-above.gif": {
       "normalPath": "assets/images/universal-portals/portal-360-above.gif",
