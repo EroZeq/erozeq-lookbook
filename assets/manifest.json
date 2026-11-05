@@ -11,12 +11,12 @@
     "assets/images/cubeatlas/banner.png": {
       "normalPath": "assets/images/cubeatlas/banner.png",
       "litePath": "assets/lite/cubeatlas/banner.png",
-      "normalSize": 37221,
-      "liteSize": 10310,
-      "normalSizeFormatted": "36.3 KB",
-      "liteSizeFormatted": "10.1 KB",
-      "savedPercent": 72,
-      "mtime": 1793833120
+      "normalSize": 93058,
+      "liteSize": 11238,
+      "normalSizeFormatted": "90.9 KB",
+      "liteSizeFormatted": "11.0 KB",
+      "savedPercent": 88,
+      "mtime": 1793842800
     },
     "assets/images/cubeatlas/biome-ancient-city-flat-360.gif": {
       "normalPath": "assets/images/cubeatlas/biome-ancient-city-flat-360.gif",
@@ -178,6 +178,356 @@
       "savedPercent": 62,
       "mtime": 1793833597
     },
+    "assets/images/curseforge/common/btn-discord-big.png": {
+      "normalPath": "assets/images/curseforge/common/btn-discord-big.png",
+      "litePath": "assets/lite/curseforge/common/btn-discord-big.png",
+      "normalSize": 9405,
+      "liteSize": 1987,
+      "normalSizeFormatted": "9.2 KB",
+      "liteSizeFormatted": "1.9 KB",
+      "savedPercent": 79,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/common/btn-discord.png": {
+      "normalPath": "assets/images/curseforge/common/btn-discord.png",
+      "litePath": "assets/lite/curseforge/common/btn-discord.png",
+      "normalSize": 5235,
+      "liteSize": 1368,
+      "normalSizeFormatted": "5.1 KB",
+      "liteSizeFormatted": "1.3 KB",
+      "savedPercent": 74,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/common/btn-web-big.png": {
+      "normalPath": "assets/images/curseforge/common/btn-web-big.png",
+      "litePath": "assets/lite/curseforge/common/btn-web-big.png",
+      "normalSize": 8538,
+      "liteSize": 1730,
+      "normalSizeFormatted": "8.3 KB",
+      "liteSizeFormatted": "1.7 KB",
+      "savedPercent": 80,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/common/btn-web.png": {
+      "normalPath": "assets/images/curseforge/common/btn-web.png",
+      "litePath": "assets/lite/curseforge/common/btn-web.png",
+      "normalSize": 4972,
+      "liteSize": 1306,
+      "normalSizeFormatted": "4.9 KB",
+      "liteSizeFormatted": "1.3 KB",
+      "savedPercent": 74,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/common/btn-youtube-big.png": {
+      "normalPath": "assets/images/curseforge/common/btn-youtube-big.png",
+      "litePath": "assets/lite/curseforge/common/btn-youtube-big.png",
+      "normalSize": 9051,
+      "liteSize": 1920,
+      "normalSizeFormatted": "8.8 KB",
+      "liteSizeFormatted": "1.9 KB",
+      "savedPercent": 79,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/common/btn-youtube.png": {
+      "normalPath": "assets/images/curseforge/common/btn-youtube.png",
+      "litePath": "assets/lite/curseforge/common/btn-youtube.png",
+      "normalSize": 4800,
+      "liteSize": 1290,
+      "normalSizeFormatted": "4.7 KB",
+      "liteSizeFormatted": "1.3 KB",
+      "savedPercent": 73,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/common/h-community.png": {
+      "normalPath": "assets/images/curseforge/common/h-community.png",
+      "litePath": "assets/lite/curseforge/common/h-community.png",
+      "normalSize": 7750,
+      "liteSize": 2716,
+      "normalSizeFormatted": "7.6 KB",
+      "liteSizeFormatted": "2.7 KB",
+      "savedPercent": 65,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/cubeatlas/banner.png": {
+      "normalPath": "assets/images/curseforge/cubeatlas/banner.png",
+      "litePath": "assets/lite/curseforge/cubeatlas/banner.png",
+      "normalSize": 93058,
+      "liteSize": 11238,
+      "normalSizeFormatted": "90.9 KB",
+      "liteSizeFormatted": "11.0 KB",
+      "savedPercent": 88,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/cubeatlas/btn-web.png": {
+      "normalPath": "assets/images/curseforge/cubeatlas/btn-web.png",
+      "litePath": "assets/lite/curseforge/cubeatlas/btn-web.png",
+      "normalSize": 4794,
+      "liteSize": 1230,
+      "normalSizeFormatted": "4.7 KB",
+      "liteSizeFormatted": "1.2 KB",
+      "savedPercent": 74,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/cubeatlas/h-community.png": {
+      "normalPath": "assets/images/curseforge/cubeatlas/h-community.png",
+      "litePath": "assets/lite/curseforge/cubeatlas/h-community.png",
+      "normalSize": 6832,
+      "liteSize": 2739,
+      "normalSizeFormatted": "6.7 KB",
+      "liteSizeFormatted": "2.7 KB",
+      "savedPercent": 60,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/cubeatlas/h-compat.png": {
+      "normalPath": "assets/images/curseforge/cubeatlas/h-compat.png",
+      "litePath": "assets/lite/curseforge/cubeatlas/h-compat.png",
+      "normalSize": 6617,
+      "liteSize": 2539,
+      "normalSizeFormatted": "6.5 KB",
+      "liteSizeFormatted": "2.5 KB",
+      "savedPercent": 62,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/cubeatlas/h-features.png": {
+      "normalPath": "assets/images/curseforge/cubeatlas/h-features.png",
+      "litePath": "assets/lite/curseforge/cubeatlas/h-features.png",
+      "normalSize": 6434,
+      "liteSize": 2384,
+      "normalSizeFormatted": "6.3 KB",
+      "liteSizeFormatted": "2.3 KB",
+      "savedPercent": 63,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/cubeatlas/h-howto.png": {
+      "normalPath": "assets/images/curseforge/cubeatlas/h-howto.png",
+      "litePath": "assets/lite/curseforge/cubeatlas/h-howto.png",
+      "normalSize": 5980,
+      "liteSize": 2287,
+      "normalSizeFormatted": "5.8 KB",
+      "liteSizeFormatted": "2.2 KB",
+      "savedPercent": 62,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/cubeatlas/h-moremods.png": {
+      "normalPath": "assets/images/curseforge/cubeatlas/h-moremods.png",
+      "litePath": "assets/lite/curseforge/cubeatlas/h-moremods.png",
+      "normalSize": 6063,
+      "liteSize": 2460,
+      "normalSizeFormatted": "5.9 KB",
+      "liteSizeFormatted": "2.4 KB",
+      "savedPercent": 59,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/cubeatlas/h-server.png": {
+      "normalPath": "assets/images/curseforge/cubeatlas/h-server.png",
+      "litePath": "assets/lite/curseforge/cubeatlas/h-server.png",
+      "normalSize": 7096,
+      "liteSize": 2670,
+      "normalSizeFormatted": "6.9 KB",
+      "liteSizeFormatted": "2.6 KB",
+      "savedPercent": 62,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/enchanted-shears/banner.png": {
+      "normalPath": "assets/images/curseforge/enchanted-shears/banner.png",
+      "litePath": "assets/lite/curseforge/enchanted-shears/banner.png",
+      "normalSize": 84587,
+      "liteSize": 11816,
+      "normalSizeFormatted": "82.6 KB",
+      "liteSizeFormatted": "11.5 KB",
+      "savedPercent": 86,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/enchanted-shears/btn-web.png": {
+      "normalPath": "assets/images/curseforge/enchanted-shears/btn-web.png",
+      "litePath": "assets/lite/curseforge/enchanted-shears/btn-web.png",
+      "normalSize": 4795,
+      "liteSize": 1230,
+      "normalSizeFormatted": "4.7 KB",
+      "liteSizeFormatted": "1.2 KB",
+      "savedPercent": 74,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/enchanted-shears/h-config.png": {
+      "normalPath": "assets/images/curseforge/enchanted-shears/h-config.png",
+      "litePath": "assets/lite/curseforge/enchanted-shears/h-config.png",
+      "normalSize": 7079,
+      "liteSize": 2249,
+      "normalSizeFormatted": "6.9 KB",
+      "liteSizeFormatted": "2.2 KB",
+      "savedPercent": 68,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/enchanted-shears/h-enchantments.png": {
+      "normalPath": "assets/images/curseforge/enchanted-shears/h-enchantments.png",
+      "litePath": "assets/lite/curseforge/enchanted-shears/h-enchantments.png",
+      "normalSize": 8216,
+      "liteSize": 2608,
+      "normalSizeFormatted": "8.0 KB",
+      "liteSizeFormatted": "2.5 KB",
+      "savedPercent": 68,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/tnt-logic/banner.png": {
+      "normalPath": "assets/images/curseforge/tnt-logic/banner.png",
+      "litePath": "assets/lite/curseforge/tnt-logic/banner.png",
+      "normalSize": 84588,
+      "liteSize": 9023,
+      "normalSizeFormatted": "82.6 KB",
+      "liteSizeFormatted": "8.8 KB",
+      "savedPercent": 89,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/tnt-logic/btn-web.png": {
+      "normalPath": "assets/images/curseforge/tnt-logic/btn-web.png",
+      "litePath": "assets/lite/curseforge/tnt-logic/btn-web.png",
+      "normalSize": 4798,
+      "liteSize": 1230,
+      "normalSizeFormatted": "4.7 KB",
+      "liteSizeFormatted": "1.2 KB",
+      "savedPercent": 74,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/tnt-logic/h-config.png": {
+      "normalPath": "assets/images/curseforge/tnt-logic/h-config.png",
+      "litePath": "assets/lite/curseforge/tnt-logic/h-config.png",
+      "normalSize": 6764,
+      "liteSize": 2120,
+      "normalSizeFormatted": "6.6 KB",
+      "liteSizeFormatted": "2.1 KB",
+      "savedPercent": 69,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/tnt-logic/h-containers.png": {
+      "normalPath": "assets/images/curseforge/tnt-logic/h-containers.png",
+      "litePath": "assets/lite/curseforge/tnt-logic/h-containers.png",
+      "normalSize": 6732,
+      "liteSize": 2071,
+      "normalSizeFormatted": "6.6 KB",
+      "liteSizeFormatted": "2.0 KB",
+      "savedPercent": 69,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/tnt-logic/h-details.png": {
+      "normalPath": "assets/images/curseforge/tnt-logic/h-details.png",
+      "litePath": "assets/lite/curseforge/tnt-logic/h-details.png",
+      "normalSize": 6590,
+      "liteSize": 1955,
+      "normalSizeFormatted": "6.4 KB",
+      "liteSizeFormatted": "1.9 KB",
+      "savedPercent": 70,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/tnt-logic/h-howitworks.png": {
+      "normalPath": "assets/images/curseforge/tnt-logic/h-howitworks.png",
+      "litePath": "assets/lite/curseforge/tnt-logic/h-howitworks.png",
+      "normalSize": 7051,
+      "liteSize": 2185,
+      "normalSizeFormatted": "6.9 KB",
+      "liteSizeFormatted": "2.1 KB",
+      "savedPercent": 69,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/tnt-logic/h-supports.png": {
+      "normalPath": "assets/images/curseforge/tnt-logic/h-supports.png",
+      "litePath": "assets/lite/curseforge/tnt-logic/h-supports.png",
+      "normalSize": 6927,
+      "liteSize": 2236,
+      "normalSizeFormatted": "6.8 KB",
+      "liteSizeFormatted": "2.2 KB",
+      "savedPercent": 68,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/tnt-logic/h-warning.png": {
+      "normalPath": "assets/images/curseforge/tnt-logic/h-warning.png",
+      "litePath": "assets/lite/curseforge/tnt-logic/h-warning.png",
+      "normalSize": 6787,
+      "liteSize": 2268,
+      "normalSizeFormatted": "6.6 KB",
+      "liteSizeFormatted": "2.2 KB",
+      "savedPercent": 67,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/tnt-logic/h-whatsnew.png": {
+      "normalPath": "assets/images/curseforge/tnt-logic/h-whatsnew.png",
+      "litePath": "assets/lite/curseforge/tnt-logic/h-whatsnew.png",
+      "normalSize": 7177,
+      "liteSize": 2367,
+      "normalSizeFormatted": "7.0 KB",
+      "liteSizeFormatted": "2.3 KB",
+      "savedPercent": 67,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/universal-portals/banner.png": {
+      "normalPath": "assets/images/curseforge/universal-portals/banner.png",
+      "litePath": "assets/lite/curseforge/universal-portals/banner.png",
+      "normalSize": 90597,
+      "liteSize": 11681,
+      "normalSizeFormatted": "88.5 KB",
+      "liteSizeFormatted": "11.4 KB",
+      "savedPercent": 87,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/universal-portals/btn-web.png": {
+      "normalPath": "assets/images/curseforge/universal-portals/btn-web.png",
+      "litePath": "assets/lite/curseforge/universal-portals/btn-web.png",
+      "normalSize": 4797,
+      "liteSize": 1230,
+      "normalSizeFormatted": "4.7 KB",
+      "liteSizeFormatted": "1.2 KB",
+      "savedPercent": 74,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/universal-portals/h-features.png": {
+      "normalPath": "assets/images/curseforge/universal-portals/h-features.png",
+      "litePath": "assets/lite/curseforge/universal-portals/h-features.png",
+      "normalSize": 7472,
+      "liteSize": 2458,
+      "normalSizeFormatted": "7.3 KB",
+      "liteSizeFormatted": "2.4 KB",
+      "savedPercent": 67,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/universal-portals/h-horizontal.png": {
+      "normalPath": "assets/images/curseforge/universal-portals/h-horizontal.png",
+      "litePath": "assets/lite/curseforge/universal-portals/h-horizontal.png",
+      "normalSize": 7270,
+      "liteSize": 2538,
+      "normalSizeFormatted": "7.1 KB",
+      "liteSizeFormatted": "2.5 KB",
+      "savedPercent": 65,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/universal-portals/h-important.png": {
+      "normalPath": "assets/images/curseforge/universal-portals/h-important.png",
+      "litePath": "assets/lite/curseforge/universal-portals/h-important.png",
+      "normalSize": 7305,
+      "liteSize": 2435,
+      "normalSizeFormatted": "7.1 KB",
+      "liteSizeFormatted": "2.4 KB",
+      "savedPercent": 67,
+      "mtime": 1793842800
+    },
+    "assets/images/curseforge/universal-portals/h-linkportals.png": {
+      "normalPath": "assets/images/curseforge/universal-portals/h-linkportals.png",
+      "litePath": "assets/lite/curseforge/universal-portals/h-linkportals.png",
+      "normalSize": 7618,
+      "liteSize": 2625,
+      "normalSizeFormatted": "7.4 KB",
+      "liteSizeFormatted": "2.6 KB",
+      "savedPercent": 66,
+      "mtime": 1793842800
+    },
+    "assets/images/enchanted-shears/banner.png": {
+      "normalPath": "assets/images/enchanted-shears/banner.png",
+      "litePath": "assets/lite/enchanted-shears/banner.png",
+      "normalSize": 84587,
+      "liteSize": 11816,
+      "normalSizeFormatted": "82.6 KB",
+      "liteSizeFormatted": "11.5 KB",
+      "savedPercent": 86,
+      "mtime": 1793842800
+    },
     "assets/images/enchanted-shears/config.png": {
       "normalPath": "assets/images/enchanted-shears/config.png",
       "litePath": "assets/lite/enchanted-shears/config.png",
@@ -271,12 +621,12 @@
     "assets/images/tnt-fall-blocks/banner.png": {
       "normalPath": "assets/images/tnt-fall-blocks/banner.png",
       "litePath": "assets/lite/tnt-fall-blocks/banner.png",
-      "normalSize": 43345,
-      "liteSize": 10549,
-      "normalSizeFormatted": "42.3 KB",
-      "liteSizeFormatted": "10.3 KB",
-      "savedPercent": 76,
-      "mtime": 1793833184
+      "normalSize": 84588,
+      "liteSize": 9023,
+      "normalSizeFormatted": "82.6 KB",
+      "liteSizeFormatted": "8.8 KB",
+      "savedPercent": 89,
+      "mtime": 1793842801
     },
     "assets/images/tnt-fall-blocks/icon-full-v2.png": {
       "normalPath": "assets/images/tnt-fall-blocks/icon-full-v2.png",
@@ -451,12 +801,12 @@
     "assets/images/universal-portals/banner.png": {
       "normalPath": "assets/images/universal-portals/banner.png",
       "litePath": "assets/lite/universal-portals/banner.png",
-      "normalSize": 32493,
-      "liteSize": 6821,
-      "normalSizeFormatted": "31.7 KB",
-      "liteSizeFormatted": "6.7 KB",
-      "savedPercent": 79,
-      "mtime": 1793833234
+      "normalSize": 90597,
+      "liteSize": 11681,
+      "normalSizeFormatted": "88.5 KB",
+      "liteSizeFormatted": "11.4 KB",
+      "savedPercent": 87,
+      "mtime": 1793842802
     },
     "assets/images/universal-portals/biome-ice_spikes.png": {
       "normalPath": "assets/images/universal-portals/biome-ice_spikes.png",
