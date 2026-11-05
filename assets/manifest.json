@@ -1,10 +1,10 @@
 {
   "summary": {
-    "totalNormalBytes": 282734708,
-    "totalLiteBytes": 93305748,
-    "totalNormalFormatted": "269.64 MB",
-    "totalLiteFormatted": "88.98 MB",
-    "totalSavedFormatted": "180.65 MB",
+    "totalNormalBytes": 283528254,
+    "totalLiteBytes": 93426113,
+    "totalNormalFormatted": "270.39 MB",
+    "totalLiteFormatted": "89.10 MB",
+    "totalSavedFormatted": "181.30 MB",
     "totalSavedPercent": 67
   },
   "assets": {
@@ -716,7 +716,7 @@
       "normalSizeFormatted": "5.97 MB",
       "liteSizeFormatted": "5.97 MB",
       "savedPercent": 0,
-      "mtime": 1793838090
+      "mtime": 1793842934
     },
     "assets/images/tnt-fall-blocks/tnt_logic.png": {
       "normalPath": "assets/images/tnt-fall-blocks/tnt_logic.png",
