@@ -328,6 +328,56 @@
       "savedPercent": 62,
       "mtime": 1793842800
     },
+    "assets/images/curseforge/enchanted-bundles/banner.png": {
+      "normalPath": "assets/images/curseforge/enchanted-bundles/banner.png",
+      "litePath": "assets/lite/curseforge/enchanted-bundles/banner.png",
+      "normalSize": 88955,
+      "liteSize": 11963,
+      "normalSizeFormatted": "86.9 KB",
+      "liteSizeFormatted": "11.7 KB",
+      "savedPercent": 87,
+      "mtime": 1793998100
+    },
+    "assets/images/curseforge/enchanted-bundles/btn-web.png": {
+      "normalPath": "assets/images/curseforge/enchanted-bundles/btn-web.png",
+      "litePath": "assets/lite/curseforge/enchanted-bundles/btn-web.png",
+      "normalSize": 4795,
+      "liteSize": 1230,
+      "normalSizeFormatted": "4.7 KB",
+      "liteSizeFormatted": "1.2 KB",
+      "savedPercent": 74,
+      "mtime": 1793998100
+    },
+    "assets/images/curseforge/enchanted-bundles/h-customization.png": {
+      "normalPath": "assets/images/curseforge/enchanted-bundles/h-customization.png",
+      "litePath": "assets/lite/curseforge/enchanted-bundles/h-customization.png",
+      "normalSize": 7540,
+      "liteSize": 2331,
+      "normalSizeFormatted": "7.4 KB",
+      "liteSizeFormatted": "2.3 KB",
+      "savedPercent": 69,
+      "mtime": 1793998100
+    },
+    "assets/images/curseforge/enchanted-bundles/h-enchantments.png": {
+      "normalPath": "assets/images/curseforge/enchanted-bundles/h-enchantments.png",
+      "litePath": "assets/lite/curseforge/enchanted-bundles/h-enchantments.png",
+      "normalSize": 7774,
+      "liteSize": 2416,
+      "normalSizeFormatted": "7.6 KB",
+      "liteSizeFormatted": "2.4 KB",
+      "savedPercent": 69,
+      "mtime": 1793998100
+    },
+    "assets/images/curseforge/enchanted-bundles/h-howtoget.png": {
+      "normalPath": "assets/images/curseforge/enchanted-bundles/h-howtoget.png",
+      "litePath": "assets/lite/curseforge/enchanted-bundles/h-howtoget.png",
+      "normalSize": 7522,
+      "liteSize": 2383,
+      "normalSizeFormatted": "7.3 KB",
+      "liteSizeFormatted": "2.3 KB",
+      "savedPercent": 68,
+      "mtime": 1793998100
+    },
     "assets/images/curseforge/enchanted-shears/banner.png": {
       "normalPath": "assets/images/curseforge/enchanted-shears/banner.png",
       "litePath": "assets/lite/curseforge/enchanted-shears/banner.png",
@@ -517,6 +567,76 @@
       "liteSizeFormatted": "2.6 KB",
       "savedPercent": 66,
       "mtime": 1793842800
+    },
+    "assets/images/enchanted-bundles/banner.png": {
+      "normalPath": "assets/images/enchanted-bundles/banner.png",
+      "litePath": "assets/lite/enchanted-bundles/banner.png",
+      "normalSize": 88955,
+      "liteSize": 11963,
+      "normalSizeFormatted": "86.9 KB",
+      "liteSizeFormatted": "11.7 KB",
+      "savedPercent": 87,
+      "mtime": 1793998100
+    },
+    "assets/images/enchanted-bundles/enchanted-bundle-icon_frame.gif": {
+      "normalPath": "assets/images/enchanted-bundles/enchanted-bundle-icon_frame.gif",
+      "litePath": "assets/lite/enchanted-bundles/enchanted-bundle-icon_frame.gif",
+      "normalSize": 65281,
+      "liteSize": 20948,
+      "normalSizeFormatted": "63.8 KB",
+      "liteSizeFormatted": "20.5 KB",
+      "savedPercent": 68,
+      "mtime": 1793998100
+    },
+    "assets/images/enchanted-bundles/enchanted-bundle-spin-500_frame.gif": {
+      "normalPath": "assets/images/enchanted-bundles/enchanted-bundle-spin-500_frame.gif",
+      "litePath": "assets/lite/enchanted-bundles/enchanted-bundle-spin-500_frame.gif",
+      "normalSize": 1557353,
+      "liteSize": 733556,
+      "normalSizeFormatted": "1.49 MB",
+      "liteSizeFormatted": "0.70 MB",
+      "savedPercent": 53,
+      "mtime": 1793998100
+    },
+    "assets/images/enchanted-bundles/enchanted-bundle-spin-500_frame_2.gif": {
+      "normalPath": "assets/images/enchanted-bundles/enchanted-bundle-spin-500_frame_2.gif",
+      "litePath": "assets/lite/enchanted-bundles/enchanted-bundle-spin-500_frame_2.gif",
+      "normalSize": 1551013,
+      "liteSize": 736141,
+      "normalSizeFormatted": "1.48 MB",
+      "liteSizeFormatted": "0.70 MB",
+      "savedPercent": 53,
+      "mtime": 1793998100
+    },
+    "assets/images/enchanted-bundles/enchanted-bundle-spin.webp": {
+      "normalPath": "assets/images/enchanted-bundles/enchanted-bundle-spin.webp",
+      "litePath": "assets/lite/enchanted-bundles/enchanted-bundle-spin.webp",
+      "normalSize": 4513044,
+      "liteSize": 1606604,
+      "normalSizeFormatted": "4.30 MB",
+      "liteSizeFormatted": "1.53 MB",
+      "savedPercent": 64,
+      "mtime": 1793998100
+    },
+    "assets/images/enchanted-bundles/icon-512.png": {
+      "normalPath": "assets/images/enchanted-bundles/icon-512.png",
+      "litePath": "assets/lite/enchanted-bundles/icon-512.png",
+      "normalSize": 52112,
+      "liteSize": 8624,
+      "normalSizeFormatted": "50.9 KB",
+      "liteSizeFormatted": "8.4 KB",
+      "savedPercent": 83,
+      "mtime": 1793998100
+    },
+    "assets/images/enchanted-bundles/icon-mod.png": {
+      "normalPath": "assets/images/enchanted-bundles/icon-mod.png",
+      "litePath": "assets/lite/enchanted-bundles/icon-mod.png",
+      "normalSize": 16917,
+      "liteSize": 3630,
+      "normalSizeFormatted": "16.5 KB",
+      "liteSizeFormatted": "3.5 KB",
+      "savedPercent": 79,
+      "mtime": 1793998100
     },
     "assets/images/enchanted-shears/banner.png": {
       "normalPath": "assets/images/enchanted-shears/banner.png",
