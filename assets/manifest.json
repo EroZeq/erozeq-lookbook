@@ -1,11 +1,11 @@
 {
   "summary": {
-    "totalNormalBytes": 291489515,
-    "totalLiteBytes": 96591994,
-    "totalNormalFormatted": "277.99 MB",
-    "totalLiteFormatted": "92.12 MB",
-    "totalSavedFormatted": "185.87 MB",
-    "totalSavedPercent": 67
+    "totalNormalBytes": 369559373,
+    "totalLiteBytes": 127184124,
+    "totalNormalFormatted": "352.44 MB",
+    "totalLiteFormatted": "121.29 MB",
+    "totalSavedFormatted": "231.15 MB",
+    "totalSavedPercent": 66
   },
   "assets": {
     "assets/images/cubeatlas/banner.png": {
@@ -508,6 +508,106 @@
       "savedPercent": 67,
       "mtime": 1793842800
     },
+    "assets/images/curseforge/tnt-logic-debris/banner.png": {
+      "normalPath": "assets/images/curseforge/tnt-logic-debris/banner.png",
+      "litePath": "assets/lite/curseforge/tnt-logic-debris/banner.png",
+      "normalSize": 83688,
+      "liteSize": 10953,
+      "normalSizeFormatted": "81.7 KB",
+      "liteSizeFormatted": "10.7 KB",
+      "savedPercent": 87,
+      "mtime": 1794061729
+    },
+    "assets/images/curseforge/tnt-logic-debris/btn-tnt-logic.png": {
+      "normalPath": "assets/images/curseforge/tnt-logic-debris/btn-tnt-logic.png",
+      "litePath": "assets/lite/curseforge/tnt-logic-debris/btn-tnt-logic.png",
+      "normalSize": 10666,
+      "liteSize": 2018,
+      "normalSizeFormatted": "10.4 KB",
+      "liteSizeFormatted": "2.0 KB",
+      "savedPercent": 81,
+      "mtime": 1794061729
+    },
+    "assets/images/curseforge/tnt-logic-debris/btn-web.png": {
+      "normalPath": "assets/images/curseforge/tnt-logic-debris/btn-web.png",
+      "litePath": "assets/lite/curseforge/tnt-logic-debris/btn-web.png",
+      "normalSize": 4798,
+      "liteSize": 1230,
+      "normalSizeFormatted": "4.7 KB",
+      "liteSizeFormatted": "1.2 KB",
+      "savedPercent": 74,
+      "mtime": 1794061729
+    },
+    "assets/images/curseforge/tnt-logic-debris/h-blast.png": {
+      "normalPath": "assets/images/curseforge/tnt-logic-debris/h-blast.png",
+      "litePath": "assets/lite/curseforge/tnt-logic-debris/h-blast.png",
+      "normalSize": 6645,
+      "liteSize": 2009,
+      "normalSizeFormatted": "6.5 KB",
+      "liteSizeFormatted": "2.0 KB",
+      "savedPercent": 70,
+      "mtime": 1794061729
+    },
+    "assets/images/curseforge/tnt-logic-debris/h-compat.png": {
+      "normalPath": "assets/images/curseforge/tnt-logic-debris/h-compat.png",
+      "litePath": "assets/lite/curseforge/tnt-logic-debris/h-compat.png",
+      "normalSize": 6902,
+      "liteSize": 2204,
+      "normalSizeFormatted": "6.7 KB",
+      "liteSizeFormatted": "2.2 KB",
+      "savedPercent": 68,
+      "mtime": 1794061729
+    },
+    "assets/images/curseforge/tnt-logic-debris/h-config.png": {
+      "normalPath": "assets/images/curseforge/tnt-logic-debris/h-config.png",
+      "litePath": "assets/lite/curseforge/tnt-logic-debris/h-config.png",
+      "normalSize": 6764,
+      "liteSize": 2120,
+      "normalSizeFormatted": "6.6 KB",
+      "liteSizeFormatted": "2.1 KB",
+      "savedPercent": 69,
+      "mtime": 1794061729
+    },
+    "assets/images/curseforge/tnt-logic-debris/h-glass.png": {
+      "normalPath": "assets/images/curseforge/tnt-logic-debris/h-glass.png",
+      "litePath": "assets/lite/curseforge/tnt-logic-debris/h-glass.png",
+      "normalSize": 7460,
+      "liteSize": 2498,
+      "normalSizeFormatted": "7.3 KB",
+      "liteSizeFormatted": "2.4 KB",
+      "savedPercent": 67,
+      "mtime": 1794061729
+    },
+    "assets/images/curseforge/tnt-logic-debris/h-liquids.png": {
+      "normalPath": "assets/images/curseforge/tnt-logic-debris/h-liquids.png",
+      "litePath": "assets/lite/curseforge/tnt-logic-debris/h-liquids.png",
+      "normalSize": 7189,
+      "liteSize": 2292,
+      "normalSizeFormatted": "7.0 KB",
+      "liteSizeFormatted": "2.2 KB",
+      "savedPercent": 68,
+      "mtime": 1794061729
+    },
+    "assets/images/curseforge/tnt-logic-debris/h-rubble.png": {
+      "normalPath": "assets/images/curseforge/tnt-logic-debris/h-rubble.png",
+      "litePath": "assets/lite/curseforge/tnt-logic-debris/h-rubble.png",
+      "normalSize": 6371,
+      "liteSize": 1899,
+      "normalSizeFormatted": "6.2 KB",
+      "liteSizeFormatted": "1.9 KB",
+      "savedPercent": 70,
+      "mtime": 1794061729
+    },
+    "assets/images/curseforge/tnt-logic-debris/h-warning.png": {
+      "normalPath": "assets/images/curseforge/tnt-logic-debris/h-warning.png",
+      "litePath": "assets/lite/curseforge/tnt-logic-debris/h-warning.png",
+      "normalSize": 6787,
+      "liteSize": 2268,
+      "normalSizeFormatted": "6.6 KB",
+      "liteSizeFormatted": "2.2 KB",
+      "savedPercent": 67,
+      "mtime": 1794061729
+    },
     "assets/images/curseforge/universal-portals/banner.png": {
       "normalPath": "assets/images/curseforge/universal-portals/banner.png",
       "litePath": "assets/lite/curseforge/universal-portals/banner.png",
@@ -836,7 +936,7 @@
       "normalSizeFormatted": "5.97 MB",
       "liteSizeFormatted": "5.97 MB",
       "savedPercent": 0,
-      "mtime": 1793998204
+      "mtime": 1778881993
     },
     "assets/images/tnt-fall-blocks/tnt_logic.png": {
       "normalPath": "assets/images/tnt-fall-blocks/tnt_logic.png",
@@ -897,6 +997,136 @@
       "liteSizeFormatted": "3.05 MB",
       "savedPercent": 65,
       "mtime": 1793833597
+    },
+    "assets/images/tnt-logic-debris/banner.png": {
+      "normalPath": "assets/images/tnt-logic-debris/banner.png",
+      "litePath": "assets/lite/tnt-logic-debris/banner.png",
+      "normalSize": 83688,
+      "liteSize": 10953,
+      "normalSizeFormatted": "81.7 KB",
+      "liteSizeFormatted": "10.7 KB",
+      "savedPercent": 87,
+      "mtime": 1794061729
+    },
+    "assets/images/tnt-logic-debris/castle-360-512.gif": {
+      "normalPath": "assets/images/tnt-logic-debris/castle-360-512.gif",
+      "litePath": "assets/lite/tnt-logic-debris/castle-360-512.gif",
+      "normalSize": 7944000,
+      "liteSize": 2556004,
+      "normalSizeFormatted": "7.58 MB",
+      "liteSizeFormatted": "2.44 MB",
+      "savedPercent": 68,
+      "mtime": 1794061729
+    },
+    "assets/images/tnt-logic-debris/forest-outpost-collapse.gif": {
+      "normalPath": "assets/images/tnt-logic-debris/forest-outpost-collapse.gif",
+      "litePath": "assets/lite/tnt-logic-debris/forest-outpost-collapse.gif",
+      "normalSize": 7598505,
+      "liteSize": 3683769,
+      "normalSizeFormatted": "7.25 MB",
+      "liteSizeFormatted": "3.51 MB",
+      "savedPercent": 52,
+      "mtime": 1794061729
+    },
+    "assets/images/tnt-logic-debris/house-360-512.gif": {
+      "normalPath": "assets/images/tnt-logic-debris/house-360-512.gif",
+      "litePath": "assets/lite/tnt-logic-debris/house-360-512.gif",
+      "normalSize": 9089489,
+      "liteSize": 3278927,
+      "normalSizeFormatted": "8.67 MB",
+      "liteSizeFormatted": "3.13 MB",
+      "savedPercent": 64,
+      "mtime": 1794061729
+    },
+    "assets/images/tnt-logic-debris/house-collapse.gif": {
+      "normalPath": "assets/images/tnt-logic-debris/house-collapse.gif",
+      "litePath": "assets/lite/tnt-logic-debris/house-collapse.gif",
+      "normalSize": 5906803,
+      "liteSize": 2716126,
+      "normalSizeFormatted": "5.63 MB",
+      "liteSizeFormatted": "2.59 MB",
+      "savedPercent": 54,
+      "mtime": 1794061729
+    },
+    "assets/images/tnt-logic-debris/icon.png": {
+      "normalPath": "assets/images/tnt-logic-debris/icon.png",
+      "litePath": "assets/lite/tnt-logic-debris/icon.png",
+      "normalSize": 42510,
+      "liteSize": 8142,
+      "normalSizeFormatted": "41.5 KB",
+      "liteSizeFormatted": "8.0 KB",
+      "savedPercent": 81,
+      "mtime": 1794061729
+    },
+    "assets/images/tnt-logic-debris/lake-360-512.gif": {
+      "normalPath": "assets/images/tnt-logic-debris/lake-360-512.gif",
+      "litePath": "assets/lite/tnt-logic-debris/lake-360-512.gif",
+      "normalSize": 8160612,
+      "liteSize": 2605317,
+      "normalSizeFormatted": "7.78 MB",
+      "liteSizeFormatted": "2.48 MB",
+      "savedPercent": 68,
+      "mtime": 1794061729
+    },
+    "assets/images/tnt-logic-debris/lighthouse-360-512.gif": {
+      "normalPath": "assets/images/tnt-logic-debris/lighthouse-360-512.gif",
+      "litePath": "assets/lite/tnt-logic-debris/lighthouse-360-512.gif",
+      "normalSize": 8939769,
+      "liteSize": 2542121,
+      "normalSizeFormatted": "8.53 MB",
+      "liteSizeFormatted": "2.42 MB",
+      "savedPercent": 72,
+      "mtime": 1794061729
+    },
+    "assets/images/tnt-logic-debris/lighthouse_hq_4_frame.gif": {
+      "normalPath": "assets/images/tnt-logic-debris/lighthouse_hq_4_frame.gif",
+      "litePath": "assets/lite/tnt-logic-debris/lighthouse_hq_4_frame.gif",
+      "normalSize": 76910,
+      "liteSize": 30533,
+      "normalSizeFormatted": "75.1 KB",
+      "liteSizeFormatted": "29.8 KB",
+      "savedPercent": 60,
+      "mtime": 1794061729
+    },
+    "assets/images/tnt-logic-debris/savanna-outpost-collapse.gif": {
+      "normalPath": "assets/images/tnt-logic-debris/savanna-outpost-collapse.gif",
+      "litePath": "assets/lite/tnt-logic-debris/savanna-outpost-collapse.gif",
+      "normalSize": 9160419,
+      "liteSize": 4355485,
+      "normalSizeFormatted": "8.74 MB",
+      "liteSizeFormatted": "4.15 MB",
+      "savedPercent": 52,
+      "mtime": 1794061729
+    },
+    "assets/images/tnt-logic-debris/snow-mountain-blast.gif": {
+      "normalPath": "assets/images/tnt-logic-debris/snow-mountain-blast.gif",
+      "litePath": "assets/lite/tnt-logic-debris/snow-mountain-blast.gif",
+      "normalSize": 5594693,
+      "liteSize": 2787495,
+      "normalSizeFormatted": "5.34 MB",
+      "liteSizeFormatted": "2.66 MB",
+      "savedPercent": 50,
+      "mtime": 1794061729
+    },
+    "assets/images/tnt-logic-debris/stone-tower-collapse.gif": {
+      "normalPath": "assets/images/tnt-logic-debris/stone-tower-collapse.gif",
+      "litePath": "assets/lite/tnt-logic-debris/stone-tower-collapse.gif",
+      "normalSize": 7166849,
+      "liteSize": 3286900,
+      "normalSizeFormatted": "6.83 MB",
+      "liteSizeFormatted": "3.13 MB",
+      "savedPercent": 54,
+      "mtime": 1794061730
+    },
+    "assets/images/tnt-logic-debris/tower-360-512.gif": {
+      "normalPath": "assets/images/tnt-logic-debris/tower-360-512.gif",
+      "litePath": "assets/lite/tnt-logic-debris/tower-360-512.gif",
+      "normalSize": 8158341,
+      "liteSize": 2693215,
+      "normalSizeFormatted": "7.78 MB",
+      "liteSizeFormatted": "2.57 MB",
+      "savedPercent": 67,
+      "mtime": 1794061730
     },
     "assets/images/universal-portals/all_items.png": {
       "normalPath": "assets/images/universal-portals/all_items.png",
