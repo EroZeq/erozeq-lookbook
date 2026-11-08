@@ -1,10 +1,10 @@
 {
   "summary": {
-    "totalNormalBytes": 369559373,
-    "totalLiteBytes": 127184124,
-    "totalNormalFormatted": "352.44 MB",
-    "totalLiteFormatted": "121.29 MB",
-    "totalSavedFormatted": "231.15 MB",
+    "totalNormalBytes": 369570641,
+    "totalLiteBytes": 127203116,
+    "totalNormalFormatted": "352.45 MB",
+    "totalLiteFormatted": "121.31 MB",
+    "totalSavedFormatted": "231.14 MB",
     "totalSavedPercent": 66
   },
   "assets": {
@@ -427,6 +427,16 @@
       "liteSizeFormatted": "8.8 KB",
       "savedPercent": 89,
       "mtime": 1793842800
+    },
+    "assets/images/curseforge/tnt-logic/btn-debris-addon.png": {
+      "normalPath": "assets/images/curseforge/tnt-logic/btn-debris-addon.png",
+      "litePath": "assets/lite/curseforge/tnt-logic/btn-debris-addon.png",
+      "normalSize": 11268,
+      "liteSize": 2254,
+      "normalSizeFormatted": "11.0 KB",
+      "liteSizeFormatted": "2.2 KB",
+      "savedPercent": 80,
+      "mtime": 1794156298
     },
     "assets/images/curseforge/tnt-logic/btn-web.png": {
       "normalPath": "assets/images/curseforge/tnt-logic/btn-web.png",
