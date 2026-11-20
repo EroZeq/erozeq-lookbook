@@ -1,10 +1,10 @@
 {
   "summary": {
-    "totalNormalBytes": 369570641,
-    "totalLiteBytes": 127203116,
-    "totalNormalFormatted": "352.45 MB",
-    "totalLiteFormatted": "121.31 MB",
-    "totalSavedFormatted": "231.14 MB",
+    "totalNormalBytes": 411164539,
+    "totalLiteBytes": 140595909,
+    "totalNormalFormatted": "392.12 MB",
+    "totalLiteFormatted": "134.08 MB",
+    "totalSavedFormatted": "258.03 MB",
     "totalSavedPercent": 66
   },
   "assets": {
@@ -97,6 +97,26 @@
       "liteSizeFormatted": "2.89 MB",
       "savedPercent": 60,
       "mtime": 1793833596
+    },
+    "assets/images/cubeatlas/cubeatlas-prism-256.gif": {
+      "normalPath": "assets/images/cubeatlas/cubeatlas-prism-256.gif",
+      "litePath": "assets/lite/cubeatlas/cubeatlas-prism-256.gif",
+      "normalSize": 2943582,
+      "liteSize": 1012880,
+      "normalSizeFormatted": "2.81 MB",
+      "liteSizeFormatted": "0.97 MB",
+      "savedPercent": 66,
+      "mtime": 1795202912
+    },
+    "assets/images/cubeatlas/cubeatlas-prism-340.gif": {
+      "normalPath": "assets/images/cubeatlas/cubeatlas-prism-340.gif",
+      "litePath": "assets/lite/cubeatlas/cubeatlas-prism-340.gif",
+      "normalSize": 4665198,
+      "liteSize": 1566390,
+      "normalSizeFormatted": "4.45 MB",
+      "liteSizeFormatted": "1.49 MB",
+      "savedPercent": 66,
+      "mtime": 1795202912
     },
     "assets/images/cubeatlas/icon-g3-flat-360_frame.gif": {
       "normalPath": "assets/images/cubeatlas/icon-g3-flat-360_frame.gif",
@@ -678,6 +698,76 @@
       "savedPercent": 66,
       "mtime": 1793842800
     },
+    "assets/images/curseforge/world-config/banner.png": {
+      "normalPath": "assets/images/curseforge/world-config/banner.png",
+      "litePath": "assets/lite/curseforge/world-config/banner.png",
+      "normalSize": 92525,
+      "liteSize": 11673,
+      "normalSizeFormatted": "90.4 KB",
+      "liteSizeFormatted": "11.4 KB",
+      "savedPercent": 87,
+      "mtime": 1795202912
+    },
+    "assets/images/curseforge/world-config/btn-web.png": {
+      "normalPath": "assets/images/curseforge/world-config/btn-web.png",
+      "litePath": "assets/lite/curseforge/world-config/btn-web.png",
+      "normalSize": 4795,
+      "liteSize": 1230,
+      "normalSizeFormatted": "4.7 KB",
+      "liteSizeFormatted": "1.2 KB",
+      "savedPercent": 74,
+      "mtime": 1795202912
+    },
+    "assets/images/curseforge/world-config/btn-wiki-big.png": {
+      "normalPath": "assets/images/curseforge/world-config/btn-wiki-big.png",
+      "litePath": "assets/lite/curseforge/world-config/btn-wiki-big.png",
+      "normalSize": 9056,
+      "liteSize": 1799,
+      "normalSizeFormatted": "8.8 KB",
+      "liteSizeFormatted": "1.8 KB",
+      "savedPercent": 80,
+      "mtime": 1795202912
+    },
+    "assets/images/curseforge/world-config/btn-wiki.png": {
+      "normalPath": "assets/images/curseforge/world-config/btn-wiki.png",
+      "litePath": "assets/lite/curseforge/world-config/btn-wiki.png",
+      "normalSize": 4137,
+      "liteSize": 1124,
+      "normalSizeFormatted": "4.0 KB",
+      "liteSizeFormatted": "1.1 KB",
+      "savedPercent": 73,
+      "mtime": 1795202912
+    },
+    "assets/images/curseforge/world-config/h-features.png": {
+      "normalPath": "assets/images/curseforge/world-config/h-features.png",
+      "litePath": "assets/lite/curseforge/world-config/h-features.png",
+      "normalSize": 7481,
+      "liteSize": 2304,
+      "normalSizeFormatted": "7.3 KB",
+      "liteSizeFormatted": "2.2 KB",
+      "savedPercent": 69,
+      "mtime": 1795202912
+    },
+    "assets/images/curseforge/world-config/h-modmakers.png": {
+      "normalPath": "assets/images/curseforge/world-config/h-modmakers.png",
+      "litePath": "assets/lite/curseforge/world-config/h-modmakers.png",
+      "normalSize": 7798,
+      "liteSize": 2711,
+      "normalSizeFormatted": "7.6 KB",
+      "liteSizeFormatted": "2.6 KB",
+      "savedPercent": 65,
+      "mtime": 1795202912
+    },
+    "assets/images/curseforge/world-config/h-servers.png": {
+      "normalPath": "assets/images/curseforge/world-config/h-servers.png",
+      "litePath": "assets/lite/curseforge/world-config/h-servers.png",
+      "normalSize": 7857,
+      "liteSize": 2482,
+      "normalSizeFormatted": "7.7 KB",
+      "liteSizeFormatted": "2.4 KB",
+      "savedPercent": 68,
+      "mtime": 1795202912
+    },
     "assets/images/enchanted-bundles/banner.png": {
       "normalPath": "assets/images/enchanted-bundles/banner.png",
       "litePath": "assets/lite/enchanted-bundles/banner.png",
@@ -728,6 +818,26 @@
       "savedPercent": 64,
       "mtime": 1793998100
     },
+    "assets/images/enchanted-bundles/enchanted-bundles-prism-256.gif": {
+      "normalPath": "assets/images/enchanted-bundles/enchanted-bundles-prism-256.gif",
+      "litePath": "assets/lite/enchanted-bundles/enchanted-bundles-prism-256.gif",
+      "normalSize": 2078917,
+      "liteSize": 1101670,
+      "normalSizeFormatted": "1.98 MB",
+      "liteSizeFormatted": "1.05 MB",
+      "savedPercent": 47,
+      "mtime": 1795202912
+    },
+    "assets/images/enchanted-bundles/enchanted-bundles-prism-340.gif": {
+      "normalPath": "assets/images/enchanted-bundles/enchanted-bundles-prism-340.gif",
+      "litePath": "assets/lite/enchanted-bundles/enchanted-bundles-prism-340.gif",
+      "normalSize": 2997862,
+      "liteSize": 1673240,
+      "normalSizeFormatted": "2.86 MB",
+      "liteSizeFormatted": "1.60 MB",
+      "savedPercent": 44,
+      "mtime": 1795202912
+    },
     "assets/images/enchanted-bundles/icon-512.png": {
       "normalPath": "assets/images/enchanted-bundles/icon-512.png",
       "litePath": "assets/lite/enchanted-bundles/icon-512.png",
@@ -767,6 +877,26 @@
       "liteSizeFormatted": "5.7 KB",
       "savedPercent": 68,
       "mtime": 1793833170
+    },
+    "assets/images/enchanted-shears/enchanted-shears-prism-256.gif": {
+      "normalPath": "assets/images/enchanted-shears/enchanted-shears-prism-256.gif",
+      "litePath": "assets/lite/enchanted-shears/enchanted-shears-prism-256.gif",
+      "normalSize": 1078085,
+      "liteSize": 452374,
+      "normalSizeFormatted": "1.03 MB",
+      "liteSizeFormatted": "0.43 MB",
+      "savedPercent": 58,
+      "mtime": 1795202912
+    },
+    "assets/images/enchanted-shears/enchanted-shears-prism-340.gif": {
+      "normalPath": "assets/images/enchanted-shears/enchanted-shears-prism-340.gif",
+      "litePath": "assets/lite/enchanted-shears/enchanted-shears-prism-340.gif",
+      "normalSize": 1633371,
+      "liteSize": 665025,
+      "normalSizeFormatted": "1.56 MB",
+      "liteSizeFormatted": "0.63 MB",
+      "savedPercent": 59,
+      "mtime": 1795202912
     },
     "assets/images/enchanted-shears/enchanted-shears-spin.gif": {
       "normalPath": "assets/images/enchanted-shears/enchanted-shears-spin.gif",
@@ -946,7 +1076,27 @@
       "normalSizeFormatted": "5.97 MB",
       "liteSizeFormatted": "5.97 MB",
       "savedPercent": 0,
-      "mtime": 1794156417
+      "mtime": 1778881993
+    },
+    "assets/images/tnt-fall-blocks/tnt-logic-prism-256.gif": {
+      "normalPath": "assets/images/tnt-fall-blocks/tnt-logic-prism-256.gif",
+      "litePath": "assets/lite/tnt-fall-blocks/tnt-logic-prism-256.gif",
+      "normalSize": 3544711,
+      "liteSize": 1059832,
+      "normalSizeFormatted": "3.38 MB",
+      "liteSizeFormatted": "1.01 MB",
+      "savedPercent": 70,
+      "mtime": 1795202912
+    },
+    "assets/images/tnt-fall-blocks/tnt-logic-prism-340.gif": {
+      "normalPath": "assets/images/tnt-fall-blocks/tnt-logic-prism-340.gif",
+      "litePath": "assets/lite/tnt-fall-blocks/tnt-logic-prism-340.gif",
+      "normalSize": 5171965,
+      "liteSize": 1642365,
+      "normalSizeFormatted": "4.93 MB",
+      "liteSizeFormatted": "1.57 MB",
+      "savedPercent": 68,
+      "mtime": 1795202912
     },
     "assets/images/tnt-fall-blocks/tnt_logic.png": {
       "normalPath": "assets/images/tnt-fall-blocks/tnt_logic.png",
@@ -1127,6 +1277,26 @@
       "liteSizeFormatted": "3.13 MB",
       "savedPercent": 54,
       "mtime": 1794061730
+    },
+    "assets/images/tnt-logic-debris/tnt-logic-debris-prism-256.gif": {
+      "normalPath": "assets/images/tnt-logic-debris/tnt-logic-debris-prism-256.gif",
+      "litePath": "assets/lite/tnt-logic-debris/tnt-logic-debris-prism-256.gif",
+      "normalSize": 2388548,
+      "liteSize": 742023,
+      "normalSizeFormatted": "2.28 MB",
+      "liteSizeFormatted": "0.71 MB",
+      "savedPercent": 69,
+      "mtime": 1795202912
+    },
+    "assets/images/tnt-logic-debris/tnt-logic-debris-prism-340.gif": {
+      "normalPath": "assets/images/tnt-logic-debris/tnt-logic-debris-prism-340.gif",
+      "litePath": "assets/lite/tnt-logic-debris/tnt-logic-debris-prism-340.gif",
+      "normalSize": 3767919,
+      "liteSize": 1186460,
+      "normalSizeFormatted": "3.59 MB",
+      "liteSizeFormatted": "1.13 MB",
+      "savedPercent": 69,
+      "mtime": 1795202912
     },
     "assets/images/tnt-logic-debris/tower-360-512.gif": {
       "normalPath": "assets/images/tnt-logic-debris/tower-360-512.gif",
@@ -1467,6 +1637,136 @@
       "liteSizeFormatted": "18.0 KB",
       "savedPercent": 78,
       "mtime": 1793833329
+    },
+    "assets/images/universal-portals/universal-portals-prism-256.gif": {
+      "normalPath": "assets/images/universal-portals/universal-portals-prism-256.gif",
+      "litePath": "assets/lite/universal-portals/universal-portals-prism-256.gif",
+      "normalSize": 1992839,
+      "liteSize": 500369,
+      "normalSizeFormatted": "1.90 MB",
+      "liteSizeFormatted": "0.48 MB",
+      "savedPercent": 75,
+      "mtime": 1795202913
+    },
+    "assets/images/universal-portals/universal-portals-prism-340.gif": {
+      "normalPath": "assets/images/universal-portals/universal-portals-prism-340.gif",
+      "litePath": "assets/lite/universal-portals/universal-portals-prism-340.gif",
+      "normalSize": 3106367,
+      "liteSize": 779291,
+      "normalSizeFormatted": "2.96 MB",
+      "liteSizeFormatted": "0.74 MB",
+      "savedPercent": 75,
+      "mtime": 1795202913
+    },
+    "assets/images/world-config/banner.png": {
+      "normalPath": "assets/images/world-config/banner.png",
+      "litePath": "assets/lite/world-config/banner.png",
+      "normalSize": 92525,
+      "liteSize": 11673,
+      "normalSizeFormatted": "90.4 KB",
+      "liteSizeFormatted": "11.4 KB",
+      "savedPercent": 87,
+      "mtime": 1795202913
+    },
+    "assets/images/world-config/icon.gif": {
+      "normalPath": "assets/images/world-config/icon.gif",
+      "litePath": "assets/lite/world-config/icon.gif",
+      "normalSize": 147462,
+      "liteSize": 30355,
+      "normalSizeFormatted": "0.14 MB",
+      "liteSizeFormatted": "29.6 KB",
+      "savedPercent": 79,
+      "mtime": 1795202913
+    },
+    "assets/images/world-config/icon.png": {
+      "normalPath": "assets/images/world-config/icon.png",
+      "litePath": "assets/lite/world-config/icon.png",
+      "normalSize": 4091,
+      "liteSize": 2420,
+      "normalSizeFormatted": "4.0 KB",
+      "liteSizeFormatted": "2.4 KB",
+      "savedPercent": 41,
+      "mtime": 1795202913
+    },
+    "assets/images/world-config/icon_frame.gif": {
+      "normalPath": "assets/images/world-config/icon_frame.gif",
+      "litePath": "assets/lite/world-config/icon_frame.gif",
+      "normalSize": 104017,
+      "liteSize": 79704,
+      "normalSizeFormatted": "101.6 KB",
+      "liteSizeFormatted": "77.8 KB",
+      "savedPercent": 23,
+      "mtime": 1795202913
+    },
+    "assets/images/world-config/mod_page.png": {
+      "normalPath": "assets/images/world-config/mod_page.png",
+      "litePath": "assets/lite/world-config/mod_page.png",
+      "normalSize": 1013581,
+      "liteSize": 59926,
+      "normalSizeFormatted": "0.97 MB",
+      "liteSizeFormatted": "58.5 KB",
+      "savedPercent": 94,
+      "mtime": 1795202913
+    },
+    "assets/images/world-config/panel.png": {
+      "normalPath": "assets/images/world-config/panel.png",
+      "litePath": "assets/lite/world-config/panel.png",
+      "normalSize": 995965,
+      "liteSize": 59534,
+      "normalSizeFormatted": "0.95 MB",
+      "liteSizeFormatted": "58.1 KB",
+      "savedPercent": 94,
+      "mtime": 1795202913
+    },
+    "assets/images/world-config/preset_load.png": {
+      "normalPath": "assets/images/world-config/preset_load.png",
+      "litePath": "assets/lite/world-config/preset_load.png",
+      "normalSize": 862118,
+      "liteSize": 39266,
+      "normalSizeFormatted": "0.82 MB",
+      "liteSizeFormatted": "38.3 KB",
+      "savedPercent": 95,
+      "mtime": 1795202913
+    },
+    "assets/images/world-config/start_dimension.png": {
+      "normalPath": "assets/images/world-config/start_dimension.png",
+      "litePath": "assets/lite/world-config/start_dimension.png",
+      "normalSize": 984548,
+      "liteSize": 59600,
+      "normalSizeFormatted": "0.94 MB",
+      "liteSizeFormatted": "58.2 KB",
+      "savedPercent": 94,
+      "mtime": 1795202913
+    },
+    "assets/images/world-config/world-config-prism-256.gif": {
+      "normalPath": "assets/images/world-config/world-config-prism-256.gif",
+      "litePath": "assets/lite/world-config/world-config-prism-256.gif",
+      "normalSize": 235052,
+      "liteSize": 112545,
+      "normalSizeFormatted": "0.22 MB",
+      "liteSizeFormatted": "0.11 MB",
+      "savedPercent": 52,
+      "mtime": 1795202913
+    },
+    "assets/images/world-config/world-config-prism-340.gif": {
+      "normalPath": "assets/images/world-config/world-config-prism-340.gif",
+      "litePath": "assets/lite/world-config/world-config-prism-340.gif",
+      "normalSize": 325378,
+      "liteSize": 158474,
+      "normalSizeFormatted": "0.31 MB",
+      "liteSizeFormatted": "0.15 MB",
+      "savedPercent": 51,
+      "mtime": 1795202913
+    },
+    "assets/images/world-config/world-config-prism.gif": {
+      "normalPath": "assets/images/world-config/world-config-prism.gif",
+      "litePath": "assets/lite/world-config/world-config-prism.gif",
+      "normalSize": 1326148,
+      "liteSize": 351068,
+      "normalSizeFormatted": "1.26 MB",
+      "liteSizeFormatted": "0.33 MB",
+      "savedPercent": 74,
+      "mtime": 1795202913
     }
   }
 }
