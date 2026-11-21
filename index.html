@@ -1712,6 +1712,64 @@
         buildModNav.relayout = layout;
     }
 
+    // ---------- Reliable jump to a section ----------
+    // Lazy images above the target load during the scroll and push it down,
+    // so keep re-aiming until the layout settles (stops if the user scrolls).
+    function scrollToSection(id, smooth) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        const header = document.querySelector('header');
+        const wantedY = () => {
+            const y = el.getBoundingClientRect().top + window.scrollY - ((header ? header.offsetHeight : 0) + 16);
+            const maxY = document.documentElement.scrollHeight - window.innerHeight;
+            return Math.max(0, Math.min(y, maxY));
+        };
+
+        let cancelled = false;
+        const cancel = () => { cancelled = true; };
+        const evs = ['wheel', 'touchstart', 'keydown', 'mousedown'];
+        evs.forEach((ev) => window.addEventListener(ev, cancel, { passive: true }));
+
+        let aim = wantedY();
+        window.scrollTo({ top: aim, behavior: smooth ? 'smooth' : 'instant' });
+
+        const started = performance.now();
+        let lastY = -1;
+        let settled = 0;
+        const timer = setInterval(() => {
+            const now = wantedY();
+            const done = Math.abs(window.scrollY - now) <= 2;
+            const stalled = Math.abs(window.scrollY - lastY) < 1;
+            lastY = window.scrollY;
+            if (Math.abs(now - aim) > 2) {
+                aim = now;
+                window.scrollTo({ top: aim, behavior: smooth ? 'smooth' : 'instant' });
+            } else if (!done && stalled) {
+                window.scrollTo({ top: aim, behavior: 'instant' });
+            }
+            settled = done ? settled + 1 : 0;
+            if (cancelled || settled >= 6 || performance.now() - started > 6000) {
+                clearInterval(timer);
+                evs.forEach((ev) => window.removeEventListener(ev, cancel));
+            }
+        }, 120);
+    }
+
+    document.addEventListener('click', (e) => {
+        const a = e.target.closest('a[href^="#"]');
+        if (!a || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey) return;
+        const id = decodeURIComponent(a.getAttribute('href').slice(1));
+        if (!id || !document.getElementById(id)) return;
+        e.preventDefault();
+        history.pushState(null, '', '#' + id);
+        scrollToSection(id, true);
+    });
+
+    window.addEventListener('popstate', () => {
+        const id = decodeURIComponent(location.hash.slice(1));
+        if (id) scrollToSection(id, false);
+    });
+
     async function initLookbook() {
         try {
             const res = await fetch('assets/manifest.json', { cache: 'no-cache' });
@@ -1726,6 +1784,9 @@
         buildModNav();
         document.querySelectorAll('.gallery-item').forEach(enhanceGalleryItem);
         applyLanguage(currentLang);
+
+        const initialId = decodeURIComponent(location.hash.slice(1));
+        if (initialId) scrollToSection(initialId, false);
 
         document.querySelectorAll('.lang-btn').forEach((btn) => {
             btn.addEventListener('click', () => {
