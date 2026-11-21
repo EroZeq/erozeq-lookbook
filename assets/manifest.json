@@ -1,10 +1,10 @@
 {
   "summary": {
-    "totalNormalBytes": 411164539,
-    "totalLiteBytes": 140595909,
-    "totalNormalFormatted": "392.12 MB",
-    "totalLiteFormatted": "134.08 MB",
-    "totalSavedFormatted": "258.03 MB",
+    "totalNormalBytes": 411173486,
+    "totalLiteBytes": 140601156,
+    "totalNormalFormatted": "392.13 MB",
+    "totalLiteFormatted": "134.09 MB",
+    "totalSavedFormatted": "258.04 MB",
     "totalSavedPercent": 66
   },
   "assets": {
@@ -977,6 +977,16 @@
       "liteSizeFormatted": "0.22 MB",
       "savedPercent": 15,
       "mtime": 1793833184
+    },
+    "assets/images/notkilbys-assets/profile.jpg": {
+      "normalPath": "assets/images/notkilbys-assets/profile.jpg",
+      "litePath": "assets/lite/notkilbys-assets/profile.jpg",
+      "normalSize": 8947,
+      "liteSize": 5247,
+      "normalSizeFormatted": "8.7 KB",
+      "liteSizeFormatted": "5.1 KB",
+      "savedPercent": 41,
+      "mtime": 1794349874
     },
     "assets/images/tnt-fall-blocks/banner.png": {
       "normalPath": "assets/images/tnt-fall-blocks/banner.png",
