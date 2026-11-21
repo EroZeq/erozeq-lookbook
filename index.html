@@ -41,7 +41,7 @@
     <style>
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
         .pixel-grid { background-image: radial-gradient(rgba(201, 190, 255, 0.05) 1px, transparent 1px); background-size: 20px 20px; }
-        html { scroll-behavior: smooth; scroll-padding-top: 9.5rem; }
+        html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
         
         .gallery-item {
             position: relative;
@@ -193,68 +193,30 @@
             padding-bottom: 1rem;
             border-bottom: 2px solid var(--surface-container-high, #2a2a2a);
         }
-        .mod-nav-track {
-            display: flex;
-            gap: 0.5rem;
-            overflow-x: auto;
-            scrollbar-width: none;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            -webkit-mask-image: linear-gradient(to right, transparent 0, #000 1rem, #000 calc(100% - 1rem), transparent 100%);
-            mask-image: linear-gradient(to right, transparent 0, #000 1rem, #000 calc(100% - 1rem), transparent 100%);
-        }
-        .mod-nav-track::-webkit-scrollbar { display: none; }
-        .mod-nav-link {
-            flex: 0 0 auto;
-            font-family: 'Space Grotesk', sans-serif;
-            font-weight: 700;
-            font-size: 0.78rem;
-            text-transform: uppercase;
-            letter-spacing: -0.01em;
-            white-space: nowrap;
-            padding: 0.35rem 0.75rem;
-            border: 1.5px solid #2a2a2a;
-            background: #1c1b1b;
-            color: #c9c4d8;
-            transition: all 0.18s ease;
-        }
-        .mod-nav-link:hover { border-color: #c9beff; color: #c9beff; }
-        .mod-nav-link.active { background: #c9beff; border-color: #c9beff; color: #30009b; }
-        .gallery-item.auto-item {
-            min-height: 11rem;
+        .gallery-item.short-item {
+            min-height: 9rem;
             display: flex;
             align-items: center;
-            justify-content: center;
         }
-        .gallery-item.auto-item img, .gallery-item.auto-item video {
-            width: auto;
-            max-width: 100%;
-            max-height: 28rem;
-            margin: auto;
-        }
-        .gallery-item.auto-item.pixelated img { image-rendering: pixelated; }
-        .auto-subheading {
-            font-family: 'Space Grotesk', sans-serif;
-            font-weight: 800;
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: -0.01em;
-            color: #c9beff;
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-        }
+        #mod-nav > a { white-space: nowrap; }
     </style>
 </head>
 <body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary min-h-screen flex flex-col">
 
 <!-- Header -->
-<div class="sticky top-0 z-50">
-<header class="w-full flex justify-between items-center px-4 sm:px-6 h-16 sm:h-20 bg-background/90 backdrop-blur-md border-b-2 border-surface-container-high">
-    <div class="flex items-center gap-3 sm:gap-4 min-w-0">
+<header class="sticky top-0 w-full flex justify-between items-center px-4 sm:px-6 h-16 sm:h-20 bg-background/90 backdrop-blur-md z-50 border-b-2 border-surface-container-high">
+    <div class="flex items-center gap-3 sm:gap-4 min-w-0 md:shrink-0">
         <div class="text-xl sm:text-2xl font-black text-[#7A5CFF] bg-surface-container-high px-3 py-1 border-0 font-headline uppercase tracking-tighter shrink-0">E</div>
         <span data-i18n="brandTitle" class="font-headline font-black text-base sm:text-xl tracking-tighter text-primary uppercase truncate max-w-[40vw] sm:max-w-none">EroZeq's Assets</span>
     </div>
-    <div class="flex items-center gap-4 sm:gap-8 h-full">
+    <div class="flex items-center justify-end gap-4 sm:gap-8 h-full min-w-0 flex-1 pl-8">
+        <nav id="mod-nav" class="hidden md:flex items-center gap-8 h-full min-w-0 overflow-hidden"></nav>
+        <div id="mod-nav-more" class="relative hidden">
+            <button id="mod-nav-more-btn" type="button" aria-haspopup="true" aria-expanded="false" class="font-headline uppercase tracking-tighter text-on-surface-variant pb-1 hover:text-primary transition-colors flex items-center gap-2 whitespace-nowrap">
+                <span data-i18n="navMore">More</span><span class="material-symbols-outlined text-base">expand_more</span>
+            </button>
+            <div id="mod-nav-more-menu" class="hidden absolute right-0 top-full mt-3 min-w-[14rem] bg-surface-container-low border-2 border-surface-container-high py-2 flex-col z-50"></div>
+        </div>
         <!-- Language Switcher: EN | ES | PT | PL -->
         <div class="flex items-center bg-surface-container-low border border-surface-container-high p-0.5" role="group" aria-label="Language Switcher">
             <button type="button" data-lang="en" class="lang-btn px-2 py-1 text-xs font-headline font-bold uppercase tracking-wider transition-colors bg-primary text-on-primary" title="English">EN</button>
@@ -264,11 +226,6 @@
         </div>
     </div>
 </header>
-<!-- Mod navigation (auto-generated from sections) -->
-<nav id="mod-nav" aria-label="Mods" class="bg-background/90 backdrop-blur-md border-b-2 border-surface-container-high">
-    <div id="mod-nav-track" class="mod-nav-track max-w-7xl mx-auto px-4 md:px-12"></div>
-</nav>
-</div>
 
 <!-- Main Content -->
 <main class="flex-grow py-12 px-4 md:px-12 max-w-7xl mx-auto w-full pixel-grid">
@@ -857,6 +814,7 @@
             footerModsSite: "EroZeq's Mods Site",
             authorsHeading: 'Authors',
             cfAssetsHeading: 'CurseForge Page Assets',
+            navMore: 'More',
             titles: {
                 "Mod Banner": "Mod Banner",
                 "Mod Icon Frame + Title (GIF)": "Mod Icon Frame + Title (GIF)",
@@ -947,6 +905,7 @@
             footerModsSite: 'Sitio de Mods de EroZeq',
             authorsHeading: 'Autores',
             cfAssetsHeading: 'Recursos de la página de CurseForge',
+            navMore: 'Más',
             titles: {
                 "Mod Banner": "Banner del Mod",
                 "Mod Icon Frame + Title (GIF)": "Marco de Icono + Título (GIF)",
@@ -1037,6 +996,7 @@
             footerModsSite: 'Site de Mods do EroZeq',
             authorsHeading: 'Autores',
             cfAssetsHeading: 'Recursos da página do CurseForge',
+            navMore: 'Mais',
             titles: {
                 "Mod Banner": "Banner do Mod",
                 "Mod Icon Frame + Title (GIF)": "Moldura do Ícone + Título (GIF)",
@@ -1127,6 +1087,7 @@
             footerModsSite: 'Strona Modów EroZeq',
             authorsHeading: 'Autorzy',
             cfAssetsHeading: 'Grafiki strony CurseForge',
+            navMore: 'Więcej',
             titles: {
                 "Mod Banner": "Baner Moda",
                 "Mod Icon Frame + Title (GIF)": "Ikona w Ramce + Tytuł (GIF)",
@@ -1368,6 +1329,7 @@
         });
 
         updateBandwidthSummary();
+        if (buildModNav.relayout) buildModNav.relayout();
     }
 
     function enhanceGalleryItem(item) {
@@ -1597,7 +1559,7 @@
         const litePath = entry.litePath || normalPath.replace(/^assets\/images\//, 'assets/lite/');
         const ext = (fileName.split('.').pop() || '').toLowerCase();
         const item = document.createElement('div');
-        item.className = 'gallery-item auto-item';
+        item.className = 'gallery-item';
         if (/^banner/.test(fileName)) item.classList.add('sm:col-span-2', 'lg:col-span-3');
 
         if (VIDEO_EXT.includes(ext)) {
@@ -1617,11 +1579,7 @@
             img.loading = 'lazy';
             img.onerror = () => { if (img.getAttribute('src') !== normalPath) img.setAttribute('src', normalPath); };
             img.addEventListener('load', () => {
-                const w = img.naturalWidth;
-                if (w && w < 128) {
-                    img.style.width = (w * Math.ceil(128 / w)) + 'px';
-                    item.classList.add('pixelated');
-                }
+                if (img.naturalWidth / img.naturalHeight > 3.5) item.classList.add('short-item');
             });
             item.appendChild(img);
         }
@@ -1676,67 +1634,82 @@
                 grid = sectionGrid(group.target) || createSection(group.target, SECTION_TITLES[group.target] || prettify(group.target));
             } else {
                 const mainGrid = sectionGrid(group.target) || createSection(group.target, SECTION_TITLES[group.target] || prettify(group.target));
-                const sub = document.createElement('h3');
-                sub.className = 'auto-subheading';
-                sub.setAttribute('data-i18n', 'cfAssetsHeading');
-                sub.textContent = t().cfAssetsHeading || 'CurseForge Page Assets';
+                const sectionName = (document.querySelector('#' + CSS.escape(group.target) + ' h2') || {}).textContent || prettify(group.target);
+                const head = document.createElement('div');
+                head.id = group.target + '-curseforge';
+                head.className = 'mod-section-title';
+                head.dataset.nav = 'off';
+                const h2 = document.createElement('h2');
+                h2.className = 'font-headline text-2xl sm:text-3xl font-black uppercase tracking-tighter text-on-surface';
+                h2.textContent = sectionName.trim() + ' · CurseForge';
+                head.appendChild(h2);
                 grid = createGrid();
-                mainGrid.after(sub, grid);
+                mainGrid.after(head, grid);
             }
             group.files.forEach((f) => grid.appendChild(createAutoItem(f.path, f.file, f.label)));
         });
     }
 
-    // ---------- Section navigation (auto-generated from .mod-section-title) ----------
+    // ---------- Header navigation (built from sections; overflow goes to "More") ----------
     function buildModNav() {
-        const track = document.getElementById('mod-nav-track');
-        if (!track) return;
-        const sections = [...document.querySelectorAll('main .mod-section-title[id]')];
-        track.innerHTML = '';
-        const links = sections.map((sec) => {
-            const h2 = sec.querySelector('h2');
-            const a = document.createElement('a');
-            a.className = 'mod-nav-link';
-            a.href = '#' + sec.id;
-            a.textContent = h2 ? h2.textContent.trim() : sec.id;
-            const key = h2 && h2.getAttribute('data-i18n');
-            if (key) a.setAttribute('data-i18n', key);
-            track.appendChild(a);
-            return a;
-        });
+        const nav = document.getElementById('mod-nav');
+        const more = document.getElementById('mod-nav-more');
+        const moreBtn = document.getElementById('mod-nav-more-btn');
+        const menu = document.getElementById('mod-nav-more-menu');
+        if (!nav || !more || !menu) return;
 
-        // Vertical mouse wheel scrolls the bar sideways while it can still move
-        track.addEventListener('wheel', (e) => {
-            if (Math.abs(e.deltaY) <= Math.abs(e.deltaX)) return;
-            const max = track.scrollWidth - track.clientWidth;
-            if (max <= 0) return;
-            if ((e.deltaY < 0 && track.scrollLeft <= 0) || (e.deltaY > 0 && track.scrollLeft >= max - 1)) return;
-            e.preventDefault();
-            track.scrollLeft = Math.max(0, Math.min(max, track.scrollLeft + e.deltaY));
-        }, { passive: false });
+        const LINK_CLS = 'font-headline uppercase tracking-tighter text-on-surface-variant pb-1 hover:text-primary transition-colors flex items-center gap-2';
+        const MENU_CLS = 'block px-4 py-2 font-headline uppercase tracking-tighter text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors whitespace-nowrap';
 
-        const stickyBar = document.querySelector('body > .sticky');
-        let activeIdx = -1;
-        let ticking = false;
-        function updateActive() {
-            ticking = false;
-            const offset = (stickyBar ? stickyBar.offsetHeight : 0) + 24;
-            let idx = 0;
-            sections.forEach((sec, i) => { if (sec.getBoundingClientRect().top - offset <= 0) idx = i; });
-            if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) idx = sections.length - 1;
-            if (idx === activeIdx) return;
-            activeIdx = idx;
-            links.forEach((l, i) => l.classList.toggle('active', i === idx));
-            const link = links[idx];
-            if (link) {
-                const left = link.offsetLeft - track.offsetLeft - (track.clientWidth - link.offsetWidth) / 2;
-                track.scrollTo({ left: Math.max(0, left), behavior: 'smooth' });
+        const links = [...document.querySelectorAll('main .mod-section-title[id]')]
+            .filter((sec) => sec.dataset.nav !== 'off')
+            .map((sec) => {
+                const h2 = sec.querySelector('h2');
+                const a = document.createElement('a');
+                a.href = '#' + sec.id;
+                a.textContent = h2 ? h2.textContent.trim() : sec.id;
+                const key = h2 && h2.getAttribute('data-i18n');
+                if (key) a.setAttribute('data-i18n', key);
+                return a;
+            });
+
+        const closeMenu = () => {
+            menu.classList.add('hidden');
+            menu.classList.remove('flex');
+            moreBtn.setAttribute('aria-expanded', 'false');
+        };
+
+        function layout() {
+            closeMenu();
+            links.forEach((a) => { a.className = LINK_CLS; nav.appendChild(a); });
+            more.classList.add('hidden');
+            if (getComputedStyle(nav).display === 'none') return;
+            if (nav.scrollWidth <= nav.clientWidth) return;
+            more.classList.remove('hidden');
+            const moved = [];
+            while (nav.children.length > 1 && nav.scrollWidth > nav.clientWidth) {
+                moved.unshift(nav.lastElementChild);
+                nav.removeChild(nav.lastElementChild);
             }
+            moved.forEach((a) => { a.className = MENU_CLS; menu.appendChild(a); });
         }
-        window.addEventListener('scroll', () => {
-            if (!ticking) { ticking = true; requestAnimationFrame(updateActive); }
-        }, { passive: true });
-        updateActive();
+
+        moreBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const open = menu.classList.contains('hidden');
+            menu.classList.toggle('hidden', !open);
+            menu.classList.toggle('flex', open);
+            moreBtn.setAttribute('aria-expanded', String(open));
+        });
+        menu.addEventListener('click', (e) => { if (e.target.closest('a')) closeMenu(); });
+        document.addEventListener('click', (e) => { if (!more.contains(e.target)) closeMenu(); });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
+
+        let resizeTimer = null;
+        window.addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(layout, 100); });
+        if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+        layout();
+        buildModNav.relayout = layout;
     }
 
     async function initLookbook() {
