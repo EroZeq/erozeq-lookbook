@@ -41,7 +41,7 @@
     <style>
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
         .pixel-grid { background-image: radial-gradient(rgba(201, 190, 255, 0.05) 1px, transparent 1px); background-size: 20px 20px; }
-        html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
+        html { scroll-behavior: smooth; scroll-padding-top: 9.5rem; }
         
         .gallery-item {
             position: relative;
@@ -193,37 +193,68 @@
             padding-bottom: 1rem;
             border-bottom: 2px solid var(--surface-container-high, #2a2a2a);
         }
+        .mod-nav-track {
+            display: flex;
+            gap: 0.5rem;
+            overflow-x: auto;
+            scrollbar-width: none;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            -webkit-mask-image: linear-gradient(to right, transparent 0, #000 1rem, #000 calc(100% - 1rem), transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0, #000 1rem, #000 calc(100% - 1rem), transparent 100%);
+        }
+        .mod-nav-track::-webkit-scrollbar { display: none; }
+        .mod-nav-link {
+            flex: 0 0 auto;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: -0.01em;
+            white-space: nowrap;
+            padding: 0.35rem 0.75rem;
+            border: 1.5px solid #2a2a2a;
+            background: #1c1b1b;
+            color: #c9c4d8;
+            transition: all 0.18s ease;
+        }
+        .mod-nav-link:hover { border-color: #c9beff; color: #c9beff; }
+        .mod-nav-link.active { background: #c9beff; border-color: #c9beff; color: #30009b; }
+        .gallery-item.auto-item {
+            min-height: 11rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gallery-item.auto-item img, .gallery-item.auto-item video {
+            width: auto;
+            max-width: 100%;
+            max-height: 28rem;
+            margin: auto;
+        }
+        .gallery-item.auto-item.pixelated img { image-rendering: pixelated; }
+        .auto-subheading {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 800;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: -0.01em;
+            color: #c9beff;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
     </style>
 </head>
 <body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary min-h-screen flex flex-col">
 
 <!-- Header -->
-<header class="sticky top-0 w-full flex justify-between items-center px-4 sm:px-6 h-16 sm:h-20 bg-background/90 backdrop-blur-md z-50 border-b-2 border-surface-container-high">
+<div class="sticky top-0 z-50">
+<header class="w-full flex justify-between items-center px-4 sm:px-6 h-16 sm:h-20 bg-background/90 backdrop-blur-md border-b-2 border-surface-container-high">
     <div class="flex items-center gap-3 sm:gap-4 min-w-0">
         <div class="text-xl sm:text-2xl font-black text-[#7A5CFF] bg-surface-container-high px-3 py-1 border-0 font-headline uppercase tracking-tighter shrink-0">E</div>
         <span data-i18n="brandTitle" class="font-headline font-black text-base sm:text-xl tracking-tighter text-primary uppercase truncate max-w-[40vw] sm:max-w-none">EroZeq's Assets</span>
     </div>
     <div class="flex items-center gap-4 sm:gap-8 h-full">
-        <nav class="hidden md:flex items-center gap-8 h-full">
-            <a class="font-headline uppercase tracking-tighter text-on-surface-variant pb-1 hover:text-primary transition-colors flex items-center gap-2" href="#cubeatlas">
-                CubeAtlas
-            </a>
-            <a class="font-headline uppercase tracking-tighter text-on-surface-variant pb-1 hover:text-primary transition-colors flex items-center gap-2" href="#tnt-fall-blocks">
-                TNT - Fall Blocks
-            </a>
-            <a class="font-headline uppercase tracking-tighter text-on-surface-variant pb-1 hover:text-primary transition-colors flex items-center gap-2" href="#universal-portals">
-                Universal Portals
-            </a>
-            <a class="font-headline uppercase tracking-tighter text-on-surface-variant pb-1 hover:text-primary transition-colors flex items-center gap-2" href="#enchanted-shears">
-                Enchanted Shears
-            </a>
-            <a class="font-headline uppercase tracking-tighter text-on-surface-variant pb-1 hover:text-primary transition-colors flex items-center gap-2" href="#enchanted-bundles">
-                Enchanted Bundles
-            </a>
-            <a class="font-headline uppercase tracking-tighter text-on-surface-variant pb-1 hover:text-primary transition-colors flex items-center gap-2" href="#tnt-logic-debris">
-                TNT Logic: Debris
-            </a>
-        </nav>
         <!-- Language Switcher: EN | ES | PT | PL -->
         <div class="flex items-center bg-surface-container-low border border-surface-container-high p-0.5" role="group" aria-label="Language Switcher">
             <button type="button" data-lang="en" class="lang-btn px-2 py-1 text-xs font-headline font-bold uppercase tracking-wider transition-colors bg-primary text-on-primary" title="English">EN</button>
@@ -233,6 +264,11 @@
         </div>
     </div>
 </header>
+<!-- Mod navigation (auto-generated from sections) -->
+<nav id="mod-nav" aria-label="Mods" class="bg-background/90 backdrop-blur-md border-b-2 border-surface-container-high">
+    <div id="mod-nav-track" class="mod-nav-track max-w-7xl mx-auto px-4 md:px-12"></div>
+</nav>
+</div>
 
 <!-- Main Content -->
 <main class="flex-grow py-12 px-4 md:px-12 max-w-7xl mx-auto w-full pixel-grid">
@@ -819,6 +855,8 @@
             footerRepo: 'GitHub Repo',
             footerGithub: "EroZeq's GitHub",
             footerModsSite: "EroZeq's Mods Site",
+            authorsHeading: 'Authors',
+            cfAssetsHeading: 'CurseForge Page Assets',
             titles: {
                 "Mod Banner": "Mod Banner",
                 "Mod Icon Frame + Title (GIF)": "Mod Icon Frame + Title (GIF)",
@@ -907,6 +945,8 @@
             footerRepo: 'Repositorio GitHub',
             footerGithub: 'GitHub de EroZeq',
             footerModsSite: 'Sitio de Mods de EroZeq',
+            authorsHeading: 'Autores',
+            cfAssetsHeading: 'Recursos de la página de CurseForge',
             titles: {
                 "Mod Banner": "Banner del Mod",
                 "Mod Icon Frame + Title (GIF)": "Marco de Icono + Título (GIF)",
@@ -995,6 +1035,8 @@
             footerRepo: 'Repositório GitHub',
             footerGithub: 'GitHub do EroZeq',
             footerModsSite: 'Site de Mods do EroZeq',
+            authorsHeading: 'Autores',
+            cfAssetsHeading: 'Recursos da página do CurseForge',
             titles: {
                 "Mod Banner": "Banner do Mod",
                 "Mod Icon Frame + Title (GIF)": "Moldura do Ícone + Título (GIF)",
@@ -1083,6 +1125,8 @@
             footerRepo: 'Repozytorium GitHub',
             footerGithub: 'GitHub EroZeq',
             footerModsSite: 'Strona Modów EroZeq',
+            authorsHeading: 'Autorzy',
+            cfAssetsHeading: 'Grafiki strony CurseForge',
             titles: {
                 "Mod Banner": "Baner Moda",
                 "Mod Icon Frame + Title (GIF)": "Ikona w Ramce + Tytuł (GIF)",
@@ -1471,6 +1515,230 @@
         }
     }
 
+    // ---------- Auto-listing of assets missing from the HTML ----------
+    // Every file in assets/manifest.json that has no hand-written tile gets one automatically.
+    const SECTION_ALIASES = { 'tnt-logic': 'tnt-fall-blocks' };
+    const SECTION_TITLES = { common: 'CurseForge Common' };
+    const AUTHOR_NAMES = { erozeq: 'EroZeq', notkilby: 'NotKilby' };
+    const WORD_CASE = { tnt: 'TNT', mp4: 'MP4', gif: 'GIF', png: 'PNG', jpg: 'JPG', webp: 'WEBP', ui: 'UI', mc: 'MC' };
+    const VIDEO_EXT = ['mp4', 'webm'];
+
+    function prettify(slug) {
+        return slug.split(/[-_\s]+/).filter(Boolean)
+            .map((w) => WORD_CASE[w.toLowerCase()] || (w.charAt(0).toUpperCase() + w.slice(1)))
+            .join(' ');
+    }
+
+    function autoTitle(fileName, stripPrefix) {
+        const dot = fileName.lastIndexOf('.');
+        let base = dot > 0 ? fileName.slice(0, dot) : fileName;
+        const ext = dot > 0 ? fileName.slice(dot + 1).toUpperCase() : '';
+        if (stripPrefix) base = base.replace(new RegExp('^' + stripPrefix + '[-_]?', 'i'), '') || base;
+        let label;
+        if (/^h-/.test(base)) {
+            label = 'Header: ' + prettify(base.slice(2));
+        } else if (/^btn-/.test(base)) {
+            const big = /-big$/.test(base);
+            label = 'Button: ' + prettify(base.slice(4).replace(/-big$/, '')) + (big ? ' (Big)' : '');
+        } else {
+            label = prettify(base);
+        }
+        return ext ? `${label} (${ext})` : label;
+    }
+
+    function sortWeight(fileName) {
+        if (/^banner/.test(fileName)) return 0;
+        if (/^(icon|profile)/.test(fileName)) return 1;
+        if (/^h-/.test(fileName)) return 3;
+        if (/^btn-/.test(fileName)) return 4;
+        return 2;
+    }
+
+    function collectUsedPaths() {
+        const used = new Set();
+        document.querySelectorAll('.gallery-item img').forEach((img) => {
+            used.add(img.dataset.normal || (img.getAttribute('src') || '').replace(/^assets\/lite\//, 'assets/images/'));
+        });
+        document.querySelectorAll('.gallery-item video source').forEach((src) => used.add(src.getAttribute('src')));
+        return used;
+    }
+
+    function createGrid() {
+        const grid = document.createElement('div');
+        grid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start';
+        return grid;
+    }
+
+    function createSection(id, title, i18nKey) {
+        const head = document.createElement('div');
+        head.id = id;
+        head.className = 'mod-section-title';
+        const h2 = document.createElement('h2');
+        h2.className = 'font-headline text-2xl sm:text-3xl font-black uppercase tracking-tighter text-on-surface';
+        h2.textContent = title;
+        if (i18nKey) h2.setAttribute('data-i18n', i18nKey);
+        head.appendChild(h2);
+        const grid = createGrid();
+        const main = document.querySelector('main');
+        main.appendChild(head);
+        main.appendChild(grid);
+        return grid;
+    }
+
+    function sectionGrid(id) {
+        const head = document.getElementById(id);
+        if (!head || !head.classList.contains('mod-section-title')) return null;
+        const grid = head.nextElementSibling;
+        return grid && grid.classList.contains('grid') ? grid : null;
+    }
+
+    function createAutoItem(normalPath, fileName, label) {
+        const entry = manifestData.assets[normalPath] || {};
+        const litePath = entry.litePath || normalPath.replace(/^assets\/images\//, 'assets/lite/');
+        const ext = (fileName.split('.').pop() || '').toLowerCase();
+        const item = document.createElement('div');
+        item.className = 'gallery-item auto-item';
+        if (/^banner/.test(fileName)) item.classList.add('sm:col-span-2', 'lg:col-span-3');
+
+        if (VIDEO_EXT.includes(ext)) {
+            const video = document.createElement('video');
+            Object.assign(video, { autoplay: true, loop: true, muted: true, playsInline: true });
+            const source = document.createElement('source');
+            source.setAttribute('src', normalPath);
+            source.setAttribute('type', 'video/' + ext);
+            video.appendChild(source);
+            item.appendChild(video);
+        } else {
+            const img = document.createElement('img');
+            img.setAttribute('src', previewMode === 'lite' ? litePath : normalPath);
+            img.dataset.normal = normalPath;
+            img.dataset.lite = litePath;
+            img.alt = label;
+            img.loading = 'lazy';
+            img.onerror = () => { if (img.getAttribute('src') !== normalPath) img.setAttribute('src', normalPath); };
+            img.addEventListener('load', () => {
+                const w = img.naturalWidth;
+                if (w && w < 128) {
+                    img.style.width = (w * Math.ceil(128 / w)) + 'px';
+                    item.classList.add('pixelated');
+                }
+            });
+            item.appendChild(img);
+        }
+
+        const overlay = document.createElement('div');
+        overlay.className = 'item-overlay';
+        const title = document.createElement('span');
+        title.className = 'item-title';
+        title.textContent = label;
+        overlay.appendChild(title);
+        item.appendChild(overlay);
+        return item;
+    }
+
+    function renderMissingAssets() {
+        const used = collectUsedPaths();
+        const groups = new Map();
+        const addTo = (key, kind, target, rec) => {
+            if (!groups.has(key)) groups.set(key, { kind, target, files: [] });
+            groups.get(key).files.push(rec);
+        };
+
+        Object.keys(manifestData.assets || {}).sort().forEach((path) => {
+            if (used.has(path) || !path.startsWith('assets/images/')) return;
+            const parts = path.slice('assets/images/'.length).split('/');
+            if (parts.length < 2) return;
+            const file = parts[parts.length - 1];
+            if (parts[0] === 'curseforge' && parts.length >= 3) {
+                const target = SECTION_ALIASES[parts[1]] || parts[1];
+                addTo('cf:' + target, 'cf', target, { path, file, label: autoTitle(file) });
+            } else if (/-assets$/.test(parts[0])) {
+                const slug = parts[0].replace(/s?-assets$/, '');
+                const name = AUTHOR_NAMES[slug] || prettify(slug);
+                addTo('authors', 'authors', 'authors', { path, file, label: `${name} · ${autoTitle(file, slug)}` });
+            } else {
+                const target = SECTION_ALIASES[parts[0]] || parts[0];
+                addTo('dir:' + target, 'dir', target, { path, file, label: autoTitle(file) });
+            }
+        });
+
+        const byWeight = (a, b) => (sortWeight(a.file) - sortWeight(b.file)) || a.path.localeCompare(b.path);
+        // Plain folders first (so a new mod section exists before its CurseForge block), authors last
+        const rank = { dir: 0, cf: 1, authors: 2 };
+        const ordered = [...groups.values()].sort((a, b) => rank[a.kind] - rank[b.kind]);
+
+        ordered.forEach((group) => {
+            group.files.sort(byWeight);
+            let grid;
+            if (group.kind === 'authors') {
+                grid = createSection('authors', t().authorsHeading || 'Authors', 'authorsHeading');
+            } else if (group.kind === 'dir') {
+                grid = sectionGrid(group.target) || createSection(group.target, SECTION_TITLES[group.target] || prettify(group.target));
+            } else {
+                const mainGrid = sectionGrid(group.target) || createSection(group.target, SECTION_TITLES[group.target] || prettify(group.target));
+                const sub = document.createElement('h3');
+                sub.className = 'auto-subheading';
+                sub.setAttribute('data-i18n', 'cfAssetsHeading');
+                sub.textContent = t().cfAssetsHeading || 'CurseForge Page Assets';
+                grid = createGrid();
+                mainGrid.after(sub, grid);
+            }
+            group.files.forEach((f) => grid.appendChild(createAutoItem(f.path, f.file, f.label)));
+        });
+    }
+
+    // ---------- Section navigation (auto-generated from .mod-section-title) ----------
+    function buildModNav() {
+        const track = document.getElementById('mod-nav-track');
+        if (!track) return;
+        const sections = [...document.querySelectorAll('main .mod-section-title[id]')];
+        track.innerHTML = '';
+        const links = sections.map((sec) => {
+            const h2 = sec.querySelector('h2');
+            const a = document.createElement('a');
+            a.className = 'mod-nav-link';
+            a.href = '#' + sec.id;
+            a.textContent = h2 ? h2.textContent.trim() : sec.id;
+            const key = h2 && h2.getAttribute('data-i18n');
+            if (key) a.setAttribute('data-i18n', key);
+            track.appendChild(a);
+            return a;
+        });
+
+        // Vertical mouse wheel scrolls the bar sideways while it can still move
+        track.addEventListener('wheel', (e) => {
+            if (Math.abs(e.deltaY) <= Math.abs(e.deltaX)) return;
+            const max = track.scrollWidth - track.clientWidth;
+            if (max <= 0) return;
+            if ((e.deltaY < 0 && track.scrollLeft <= 0) || (e.deltaY > 0 && track.scrollLeft >= max - 1)) return;
+            e.preventDefault();
+            track.scrollLeft = Math.max(0, Math.min(max, track.scrollLeft + e.deltaY));
+        }, { passive: false });
+
+        const stickyBar = document.querySelector('body > .sticky');
+        let activeIdx = -1;
+        let ticking = false;
+        function updateActive() {
+            ticking = false;
+            const offset = (stickyBar ? stickyBar.offsetHeight : 0) + 24;
+            let idx = 0;
+            sections.forEach((sec, i) => { if (sec.getBoundingClientRect().top - offset <= 0) idx = i; });
+            if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) idx = sections.length - 1;
+            if (idx === activeIdx) return;
+            activeIdx = idx;
+            links.forEach((l, i) => l.classList.toggle('active', i === idx));
+            const link = links[idx];
+            if (link) {
+                const left = link.offsetLeft - track.offsetLeft - (track.clientWidth - link.offsetWidth) / 2;
+                track.scrollTo({ left: Math.max(0, left), behavior: 'smooth' });
+            }
+        }
+        window.addEventListener('scroll', () => {
+            if (!ticking) { ticking = true; requestAnimationFrame(updateActive); }
+        }, { passive: true });
+        updateActive();
+    }
+
     async function initLookbook() {
         try {
             const res = await fetch('assets/manifest.json', { cache: 'no-cache' });
@@ -1481,6 +1749,8 @@
             console.warn('Manifest not loaded, falling back to live HEAD size detection.', err);
         }
 
+        renderMissingAssets();
+        buildModNav();
         document.querySelectorAll('.gallery-item').forEach(enhanceGalleryItem);
         applyLanguage(currentLang);
 
