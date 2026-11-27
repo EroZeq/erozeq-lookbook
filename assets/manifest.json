@@ -1,10 +1,10 @@
 {
   "summary": {
-    "totalNormalBytes": 411173486,
-    "totalLiteBytes": 140601156,
-    "totalNormalFormatted": "392.13 MB",
-    "totalLiteFormatted": "134.09 MB",
-    "totalSavedFormatted": "258.04 MB",
+    "totalNormalBytes": 445175571,
+    "totalLiteBytes": 151612266,
+    "totalNormalFormatted": "424.55 MB",
+    "totalLiteFormatted": "144.59 MB",
+    "totalSavedFormatted": "279.96 MB",
     "totalSavedPercent": 66
   },
   "assets": {
@@ -118,6 +118,16 @@
       "savedPercent": 66,
       "mtime": 1795202912
     },
+    "assets/images/cubeatlas/gems-flat-360.gif": {
+      "normalPath": "assets/images/cubeatlas/gems-flat-360.gif",
+      "litePath": "assets/lite/cubeatlas/gems-flat-360.gif",
+      "normalSize": 6082550,
+      "liteSize": 2061200,
+      "normalSizeFormatted": "5.80 MB",
+      "liteSizeFormatted": "1.97 MB",
+      "savedPercent": 66,
+      "mtime": 1795777719
+    },
     "assets/images/cubeatlas/icon-g3-flat-360_frame.gif": {
       "normalPath": "assets/images/cubeatlas/icon-g3-flat-360_frame.gif",
       "litePath": "assets/lite/cubeatlas/icon-g3-flat-360_frame.gif",
@@ -148,6 +158,36 @@
       "savedPercent": 75,
       "mtime": 1793833596
     },
+    "assets/images/cubeatlas/mobs-outline-flat-360.gif": {
+      "normalPath": "assets/images/cubeatlas/mobs-outline-flat-360.gif",
+      "litePath": "assets/lite/cubeatlas/mobs-outline-flat-360.gif",
+      "normalSize": 3470323,
+      "liteSize": 1304586,
+      "normalSizeFormatted": "3.31 MB",
+      "liteSizeFormatted": "1.24 MB",
+      "savedPercent": 62,
+      "mtime": 1795777725
+    },
+    "assets/images/cubeatlas/mobs-ring-flat-360.gif": {
+      "normalPath": "assets/images/cubeatlas/mobs-ring-flat-360.gif",
+      "litePath": "assets/lite/cubeatlas/mobs-ring-flat-360.gif",
+      "normalSize": 3332766,
+      "liteSize": 1198925,
+      "normalSizeFormatted": "3.18 MB",
+      "liteSizeFormatted": "1.14 MB",
+      "savedPercent": 64,
+      "mtime": 1795777731
+    },
+    "assets/images/cubeatlas/mobs-tint-flat-360.gif": {
+      "normalPath": "assets/images/cubeatlas/mobs-tint-flat-360.gif",
+      "litePath": "assets/lite/cubeatlas/mobs-tint-flat-360.gif",
+      "normalSize": 3213198,
+      "liteSize": 1176789,
+      "normalSizeFormatted": "3.06 MB",
+      "liteSizeFormatted": "1.12 MB",
+      "savedPercent": 63,
+      "mtime": 1795777737
+    },
     "assets/images/cubeatlas/players-flat-360.gif": {
       "normalPath": "assets/images/cubeatlas/players-flat-360.gif",
       "litePath": "assets/lite/cubeatlas/players-flat-360.gif",
@@ -157,6 +197,26 @@
       "liteSizeFormatted": "2.15 MB",
       "savedPercent": 64,
       "mtime": 1793833596
+    },
+    "assets/images/cubeatlas/players-heads-flat-360.gif": {
+      "normalPath": "assets/images/cubeatlas/players-heads-flat-360.gif",
+      "litePath": "assets/lite/cubeatlas/players-heads-flat-360.gif",
+      "normalSize": 3753931,
+      "liteSize": 1324147,
+      "normalSizeFormatted": "3.58 MB",
+      "liteSizeFormatted": "1.26 MB",
+      "savedPercent": 65,
+      "mtime": 1795777743
+    },
+    "assets/images/cubeatlas/players-models-flat-360.gif": {
+      "normalPath": "assets/images/cubeatlas/players-models-flat-360.gif",
+      "litePath": "assets/lite/cubeatlas/players-models-flat-360.gif",
+      "normalSize": 3673703,
+      "liteSize": 1294301,
+      "normalSizeFormatted": "3.50 MB",
+      "liteSizeFormatted": "1.23 MB",
+      "savedPercent": 65,
+      "mtime": 1795777749
     },
     "assets/images/cubeatlas/screen.png": {
       "normalPath": "assets/images/cubeatlas/screen.png",
@@ -177,6 +237,26 @@
       "liteSizeFormatted": "0.13 MB",
       "savedPercent": 86,
       "mtime": 1793833160
+    },
+    "assets/images/cubeatlas/shadows-on-flat-360.gif": {
+      "normalPath": "assets/images/cubeatlas/shadows-on-flat-360.gif",
+      "litePath": "assets/lite/cubeatlas/shadows-on-flat-360.gif",
+      "normalSize": 6480463,
+      "liteSize": 2146021,
+      "normalSizeFormatted": "6.18 MB",
+      "liteSizeFormatted": "2.05 MB",
+      "savedPercent": 67,
+      "mtime": 1795777755
+    },
+    "assets/images/cubeatlas/shadows-sweep-flat.gif": {
+      "normalPath": "assets/images/cubeatlas/shadows-sweep-flat.gif",
+      "litePath": "assets/lite/cubeatlas/shadows-sweep-flat.gif",
+      "normalSize": 3995151,
+      "liteSize": 505141,
+      "normalSizeFormatted": "3.81 MB",
+      "liteSizeFormatted": "0.48 MB",
+      "savedPercent": 87,
+      "mtime": 1795777760
     },
     "assets/images/cubeatlas/village-flat-360.gif": {
       "normalPath": "assets/images/cubeatlas/village-flat-360.gif",
@@ -1086,7 +1166,7 @@
       "normalSizeFormatted": "5.97 MB",
       "liteSizeFormatted": "5.97 MB",
       "savedPercent": 0,
-      "mtime": 1795267423
+      "mtime": 1778881993
     },
     "assets/images/tnt-fall-blocks/tnt-logic-prism-256.gif": {
       "normalPath": "assets/images/tnt-fall-blocks/tnt-logic-prism-256.gif",
